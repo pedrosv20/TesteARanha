@@ -130,7 +130,11 @@ extension ViewController: ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        print(sceneView.scene.rootNode.childNode(withName: "spider", recursively: false)?.position)
-        sceneView.scene.rootNode.childNode(withName: "spider", recursively: false)?.position.x += 100
+        print(sceneView.scene.rootNode.childNodes.count)
+        if let spider = sceneView.scene.rootNode.childNode(withName: "spider", recursively: false) {
+            print(spider.position.x)
+            spider.position.x += 0.001
+        }
+        
     }
 }
