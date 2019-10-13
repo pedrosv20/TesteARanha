@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4202350BB3400AB67C9 /* AppDelegate.swift */; };
-		07C5C4232350BB3400AB67C9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4222350BB3400AB67C9 /* art.scnassets */; };
 		07C5C4252350BB3400AB67C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4242350BB3400AB67C9 /* ViewController.swift */; };
 		07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4262350BB3400AB67C9 /* Main.storyboard */; };
 		07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4292350BB3700AB67C9 /* Assets.xcassets */; };
@@ -38,7 +37,6 @@
 /* Begin PBXFileReference section */
 		07C5C41D2350BB3400AB67C9 /* TesteARanha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteARanha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C5C4202350BB3400AB67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07C5C4222350BB3400AB67C9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		07C5C4242350BB3400AB67C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07C5C4272350BB3400AB67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C5C4292350BB3700AB67C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				07CAB042235103B100E19AB4 /* 3D Objects */,
 				07C5C4202350BB3400AB67C9 /* AppDelegate.swift */,
-				07C5C4222350BB3400AB67C9 /* art.scnassets */,
 				07C5C4242350BB3400AB67C9 /* ViewController.swift */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C4292350BB3700AB67C9 /* Assets.xcassets */,
@@ -220,7 +217,6 @@
 				07CAB051235103C800E19AB4 /* ship.png in Resources */,
 				07CAB04D235103C800E19AB4 /* spider2_color.jpg in Resources */,
 				07CAB04F235103C800E19AB4 /* spider5_color.jpg in Resources */,
-				07C5C4232350BB3400AB67C9 /* art.scnassets in Resources */,
 				07C5C42D2350BB3700AB67C9 /* LaunchScreen.storyboard in Resources */,
 				07CAB04E235103C800E19AB4 /* spider3_color.jpg in Resources */,
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,

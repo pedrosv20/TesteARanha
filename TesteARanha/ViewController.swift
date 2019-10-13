@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         shipNode.name = "spider"
         
         shipNode.position = SCNVector3(x,y,z)
-        shipNode.scale = SCNVector3(0.2, 0.2, 0.2)
+        shipNode.scale = SCNVector3(3, 3, 3)
         sceneView.scene.rootNode.addChildNode(shipNode)
     }
     
