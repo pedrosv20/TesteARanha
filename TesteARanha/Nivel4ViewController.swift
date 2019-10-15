@@ -1,7 +1,7 @@
 import UIKit
 import ARKit
 
-class ViewController: UIViewController {
+class Nivel4ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         
         sceneView.session.run(configuration)
         
-        sceneView.delegate = self
+        sceneView.delegate = self as! ARSCNViewDelegate
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
     }
     
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     
     
     func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.addShipToSceneView(withGestureRecognizer:)))
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Nivel4ViewController.addShipToSceneView(withGestureRecognizer:)))
         sceneView.addGestureRecognizer(tapGestureRecognizer)
     }
 }
@@ -84,7 +84,7 @@ extension UIColor {
     }
 }
 
-extension ViewController: ARSCNViewDelegate {
+extension Nivel4ViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         // 1
         guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
