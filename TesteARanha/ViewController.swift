@@ -12,7 +12,6 @@ class ViewController: UIViewController {
         
         configureLighting()
         
-        self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
