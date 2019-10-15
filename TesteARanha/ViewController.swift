@@ -11,6 +11,8 @@ class ViewController: UIViewController {
         addTapGestureToSceneView()
         
         configureLighting()
+        
+        self.tabBarController?.tabBar.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -57,7 +59,7 @@ class ViewController: UIViewController {
         shipNode.name = "spider"
         
         shipNode.position = SCNVector3(x,y,z)
-        shipNode.scale = SCNVector3(3, 3, 3)
+        shipNode.scale = SCNVector3(1, 1, 1)
         sceneView.scene.rootNode.addChildNode(shipNode)
     }
     
@@ -133,7 +135,7 @@ extension ViewController: ARSCNViewDelegate {
         print(sceneView.scene.rootNode.childNodes.count)
         if let spider = sceneView.scene.rootNode.childNode(withName: "spider", recursively: false) {
             print(spider.position.x)
-            spider.position.x += 0.001
+            spider.position.x += 0.005
         }
         
     }

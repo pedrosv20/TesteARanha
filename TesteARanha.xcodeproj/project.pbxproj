@@ -22,6 +22,7 @@
 		07CAB052235103C800E19AB4 /* spider.scn in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB049235103C800E19AB4 /* spider.scn */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
+		9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		07CAB049235103C800E19AB4 /* spider.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = spider.scn; sourceTree = "<group>"; };
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
+		9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FobiasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				07CAB042235103B100E19AB4 /* 3D Objects */,
 				07C5C4202350BB3400AB67C9 /* AppDelegate.swift */,
+				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 				07C5C4242350BB3400AB67C9 /* ViewController.swift */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C4292350BB3700AB67C9 /* Assets.xcassets */,
@@ -242,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07C5C4252350BB3400AB67C9 /* ViewController.swift in Sources */,
+				9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
