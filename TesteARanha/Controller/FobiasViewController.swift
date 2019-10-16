@@ -19,15 +19,22 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         phobiasTableView?.dataSource = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if phobiasTableView != nil {
+            phobiasTableView.reloadData()
+            loadViewIfNeeded()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return Model.shared.fobias.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fobiaCell", for: indexPath) as! FobiaCell
         
-        cell.phobiaLabel.text = "ARANHAS"
-        cell.backgroundImage.image = UIImage(named: "spidersBackground")
+        cell.phobiaLabel.text = Model.shared.fobias[indexPath.row].type
+        cell.backgroundImage.image = Model.shared.fobias[indexPath.row].backgroundIcon
         
         return cell
     }
