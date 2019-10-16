@@ -17,6 +17,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         phobiasTableView?.delegate = self
         phobiasTableView?.dataSource = self
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {

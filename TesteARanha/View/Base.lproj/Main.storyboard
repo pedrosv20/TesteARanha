@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fobias View Controller-->
+        <!--Fobias-->
         <scene sceneID="UQk-Hs-DjR">
             <objects>
                 <viewController id="TiS-5i-uPy" customClass="FobiasViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="woo-La-sov"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Lky-49-qZa"/>
+                    <navigationItem key="navigationItem" title="Fobias" id="Lky-49-qZa"/>
                     <connections>
                         <outlet property="phobiasTableView" destination="9YL-eQ-tfx" id="5KJ-6K-PFl"/>
                     </connections>
