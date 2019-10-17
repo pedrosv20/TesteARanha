@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07009F342357ADEE0070FD28 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F312357ADEE0070FD28 /* FobiaCell.swift */; };
 		07009F352357ADEE0070FD28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F322357ADEE0070FD28 /* Model.swift */; };
 		07009F362357ADEE0070FD28 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F332357ADEE0070FD28 /* Fobia.swift */; };
 		07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4202350BB3400AB67C9 /* AppDelegate.swift */; };
@@ -25,9 +24,7 @@
 		07CAB052235103C800E19AB4 /* spider.scn in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB049235103C800E19AB4 /* spider.scn */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
-		56591B6F23588D1F00F3A657 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56591B6C23588D1F00F3A657 /* Model.swift */; };
 		56591B7023588D1F00F3A657 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56591B6D23588D1F00F3A657 /* FobiaCell.swift */; };
-		56591B7123588D1F00F3A657 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56591B6E23588D1F00F3A657 /* Fobia.swift */; };
 		9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */; };
 		9D67269D2355F31C0030CAE7 /* NiveisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */; };
 		9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */; };
@@ -46,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07009F312357ADEE0070FD28 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		07009F322357ADEE0070FD28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
 		07C5C41D2350BB3400AB67C9 /* TesteARanha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteARanha.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,12 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		074F37642358E087003A2262 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				56591B6E23588D1F00F3A657 /* Fobia.swift */,
+				56591B6C23588D1F00F3A657 /* Model.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		07C5C4142350BB3300AB67C9 = {
 			isa = PBXGroup;
 			children = (
 				07C5C41F2350BB3400AB67C9 /* TesteARanha */,
 				07C5C4362350BB3700AB67C9 /* TesteARanhaTests */,
 				07C5C41E2350BB3400AB67C9 /* Products */,
+				074F37642358E087003A2262 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				07009F332357ADEE0070FD28 /* Fobia.swift */,
-				07009F312357ADEE0070FD28 /* FobiaCell.swift */,
+				56591B6D23588D1F00F3A657 /* FobiaCell.swift */,
 				07009F322357ADEE0070FD28 /* Model.swift */,
 			);
 			path = Model;
@@ -179,7 +185,6 @@
 		9D6726A62355F99A0030CAE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				56591B6D23588D1F00F3A657 /* FobiaCell.swift */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
 			);
@@ -301,14 +306,11 @@
 				56591B7023588D1F00F3A657 /* FobiaCell.swift in Sources */,
 				9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */,
 				9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */,
-				07009F342357ADEE0070FD28 /* FobiaCell.swift in Sources */,
 				9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */,
 				9D67269D2355F31C0030CAE7 /* NiveisViewController.swift in Sources */,
 				07009F362357ADEE0070FD28 /* Fobia.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
-				56591B7123588D1F00F3A657 /* Fobia.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
-				56591B6F23588D1F00F3A657 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
