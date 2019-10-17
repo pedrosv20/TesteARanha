@@ -164,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				56591B6E23588D1F00F3A657 /* Fobia.swift */,
-				56591B6D23588D1F00F3A657 /* FobiaCell.swift */,
 				56591B6C23588D1F00F3A657 /* Model.swift */,
 			);
 			path = Model;
@@ -173,6 +172,7 @@
 		9D6726A62355F99A0030CAE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56591B6D23588D1F00F3A657 /* FobiaCell.swift */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
 			);
