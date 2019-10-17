@@ -50,16 +50,16 @@ class Nivel4ViewController: UIViewController {
         let y = translation.y
         let z = translation.z
         
-        guard let shipScene = SCNScene(named: "untitled.dae"),
+        guard let shipScene = SCNScene(named: "spider.dae"),
             
-            let shipNode = shipScene.rootNode.childNode(withName: "spider1", recursively: false)
+            let shipNode = shipScene.rootNode.childNode(withName: "spider", recursively: false)
             
             
             else { return }
         shipNode.name = "spider"
         
         shipNode.position = SCNVector3(x,y,z)
-        shipNode.scale = SCNVector3(1, 1, 1)
+        shipNode.scale = SCNVector3(0.005, 0.005, 0.005)
         sceneView.scene.rootNode.addChildNode(shipNode)
     }
     
@@ -135,7 +135,7 @@ extension Nivel4ViewController: ARSCNViewDelegate {
         print(sceneView.scene.rootNode.childNodes.count)
         if let spider = sceneView.scene.rootNode.childNode(withName: "spider", recursively: false) {
             print(spider.position.x)
-            spider.position.x += 0.005
+//            spider.position.x += 0.005
         }
         
     }

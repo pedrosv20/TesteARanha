@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		07009F352357ADEE0070FD28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F322357ADEE0070FD28 /* Model.swift */; };
 		07009F362357ADEE0070FD28 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F332357ADEE0070FD28 /* Fobia.swift */; };
+		07AAEC95235901B0001F6734 /* spider.dae in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC94235901B0001F6734 /* spider.dae */; };
+		07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */; };
+		07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */; };
+		07AAEC9E235901FB001F6734 /* SH3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC98235901FA001F6734 /* SH3.png */; };
+		07AAEC9F235901FB001F6734 /* Spinnen_Bein_tex.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC99235901FB001F6734 /* Spinnen_Bein_tex.jpg */; };
+		07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC9B235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg */; };
 		07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4202350BB3400AB67C9 /* AppDelegate.swift */; };
 		07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */; };
 		07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4262350BB3400AB67C9 /* Main.storyboard */; };
@@ -45,6 +51,12 @@
 /* Begin PBXFileReference section */
 		07009F322357ADEE0070FD28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
+		07AAEC94235901B0001F6734 /* spider.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = spider.dae; sourceTree = "<group>"; };
+		07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex_2.jpg; sourceTree = "<group>"; };
+		07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinnen_Bein_tex_COLOR_.png; sourceTree = "<group>"; };
+		07AAEC98235901FA001F6734 /* SH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SH3.png; sourceTree = "<group>"; };
+		07AAEC99235901FB001F6734 /* Spinnen_Bein_tex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex.jpg; sourceTree = "<group>"; };
+		07AAEC9B235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex_COLOR_.jpg; sourceTree = "<group>"; };
 		07C5C41D2350BB3400AB67C9 /* TesteARanha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteARanha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C5C4202350BB3400AB67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel4ViewController.swift; sourceTree = "<group>"; };
@@ -151,9 +163,15 @@
 				07CAB049235103C800E19AB4 /* spider.scn */,
 				07CAB04A235103C800E19AB4 /* spider1_color.jpg */,
 				07CAB044235103C700E19AB4 /* spider2_color.jpg */,
+				07AAEC98235901FA001F6734 /* SH3.png */,
+				07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */,
+				07AAEC9B235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg */,
+				07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */,
+				07AAEC99235901FB001F6734 /* Spinnen_Bein_tex.jpg */,
 				07CAB045235103C700E19AB4 /* spider3_color.jpg */,
 				07CAB04B235103C800E19AB4 /* spider4_color.jpg */,
 				07CAB046235103C700E19AB4 /* spider5_color.jpg */,
+				07AAEC94235901B0001F6734 /* spider.dae */,
 				07CAB047235103C700E19AB4 /* untitled.dae */,
 			);
 			path = "3D Objects";
@@ -276,13 +294,19 @@
 				07CAB04C235103C800E19AB4 /* ship.scn in Resources */,
 				07CAB051235103C800E19AB4 /* ship.png in Resources */,
 				07CAB04D235103C800E19AB4 /* spider2_color.jpg in Resources */,
+				07AAEC9F235901FB001F6734 /* Spinnen_Bein_tex.jpg in Resources */,
 				07CAB04F235103C800E19AB4 /* spider5_color.jpg in Resources */,
 				07C5C42D2350BB3700AB67C9 /* LaunchScreen.storyboard in Resources */,
 				07CAB04E235103C800E19AB4 /* spider3_color.jpg in Resources */,
+				07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */,
+				07AAEC95235901B0001F6734 /* spider.dae in Resources */,
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,
+				07AAEC9E235901FB001F6734 /* SH3.png in Resources */,
+				07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */,
 				07CAB050235103C800E19AB4 /* untitled.dae in Resources */,
 				07CAB052235103C800E19AB4 /* spider.scn in Resources */,
 				07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */,
+				07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */,
 				07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

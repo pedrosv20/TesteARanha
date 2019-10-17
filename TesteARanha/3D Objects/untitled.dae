@@ -4,14 +4,14 @@
   <contributor>
    <authoring_tool>SceneKit Collada Exporter v1.0</authoring_tool>
   </contributor>
-  <created>2019-10-17T15:22:52Z</created>
-  <modified>2019-10-17T15:22:52Z</modified>
+  <created>2019-10-17T20:15:43Z</created>
+  <modified>2019-10-17T20:15:43Z</modified>
   <unit meter="1.000000"/>
   <up_axis>Y_UP</up_axis>
  </asset>
  <library_images>
   <image id="image1">
-   <init_from>ship.png</init_from>
+   <init_from>Spinnen_Bein_tex_COLOR_.jpg</init_from>
   </image>
  </library_images>
  <library_materials>
@@ -38,15 +38,18 @@
      </sampler2D>
     </newparam>
     <technique sid="common">
-     <lambert>
+     <blinn>
       <diffuse>
        <texture texture="ID2_image1" texcoord="CHANNEL2"/>
       </diffuse>
+      <shininess>
+       <float>0.022516</float>
+      </shininess>
       <reflective>
        <color>0 0 0 1</color>
       </reflective>
       <transparent opaque="A_ONE">
-       <color>0.999155 0.999973 1 1</color>
+       <color>0.999628 0.999988 1 1</color>
       </transparent>
       <transparency>
        <float>1</float>
@@ -54,7 +57,7 @@
       <index_of_refraction>
        <float>1</float>
       </index_of_refraction>
-     </lambert>
+     </blinn>
     </technique>
    </profile_COMMON>
    <extra>
