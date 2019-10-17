@@ -15,6 +15,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
            super.viewDidLoad()
         
+        
         phobiasTableView?.delegate = self
         phobiasTableView?.dataSource = self
     
@@ -25,6 +26,8 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
             phobiasTableView.reloadData()
             loadViewIfNeeded()
         }
+        phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

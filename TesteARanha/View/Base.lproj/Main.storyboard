@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9YL-eQ-tfx">
-                                <rect key="frame" x="0.0" y="88" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="806.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,7 +40,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="VlZ-WP-8qj" firstAttribute="height" secondItem="SHh-Av-re7" secondAttribute="height" multiplier="0.8" id="2Uh-kl-9kK"/>
                                                 <constraint firstItem="VlZ-WP-8qj" firstAttribute="top" secondItem="SHh-Av-re7" secondAttribute="top" id="5ZR-wP-mHy"/>
@@ -53,7 +53,7 @@
                                                 <constraint firstItem="VlZ-WP-8qj" firstAttribute="width" secondItem="SHh-Av-re7" secondAttribute="width" id="zPZ-nU-360"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="backgroundImage" destination="VlZ-WP-8qj" id="Ki1-TA-Fmu"/>
                                             <outlet property="phobiaLabel" destination="A2D-ck-hch" id="PdC-aO-ntQ"/>
@@ -64,8 +64,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="9YL-eQ-tfx" firstAttribute="top" secondItem="woo-La-sov" secondAttribute="top" id="6S7-1E-aQS"/>
-                            <constraint firstItem="9YL-eQ-tfx" firstAttribute="height" secondItem="V1i-jj-nCc" secondAttribute="height" multiplier="0.8" id="9OB-7Y-L0m"/>
+                            <constraint firstItem="9YL-eQ-tfx" firstAttribute="top" secondItem="woo-La-sov" secondAttribute="top" constant="30" id="6S7-1E-aQS"/>
+                            <constraint firstItem="9YL-eQ-tfx" firstAttribute="height" secondItem="V1i-jj-nCc" secondAttribute="height" multiplier="0.9" id="9OB-7Y-L0m"/>
                             <constraint firstItem="woo-La-sov" firstAttribute="trailing" secondItem="9YL-eQ-tfx" secondAttribute="trailing" id="QCz-nQ-jK0"/>
                             <constraint firstItem="9YL-eQ-tfx" firstAttribute="leading" secondItem="woo-La-sov" secondAttribute="leading" id="pke-iM-qxG"/>
                         </constraints>
@@ -226,6 +226,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7vY-Ix-ZP0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

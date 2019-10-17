@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07009F342357ADEE0070FD28 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F312357ADEE0070FD28 /* FobiaCell.swift */; };
+		07009F352357ADEE0070FD28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F322357ADEE0070FD28 /* Model.swift */; };
+		07009F362357ADEE0070FD28 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F332357ADEE0070FD28 /* Fobia.swift */; };
 		07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4202350BB3400AB67C9 /* AppDelegate.swift */; };
 		07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */; };
 		07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4262350BB3400AB67C9 /* Main.storyboard */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07009F312357ADEE0070FD28 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
+		07009F322357ADEE0070FD28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
 		07C5C41D2350BB3400AB67C9 /* TesteARanha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteARanha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C5C4202350BB3400AB67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel4ViewController.swift; sourceTree = "<group>"; };
@@ -146,10 +152,10 @@
 			children = (
 				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
 				9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */,
-				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
 				9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */,
 				9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */,
+				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +163,9 @@
 		9D6726A52355F9840030CAE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				07009F332357ADEE0070FD28 /* Fobia.swift */,
+				07009F312357ADEE0070FD28 /* FobiaCell.swift */,
+				07009F322357ADEE0070FD28 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,11 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07009F352357ADEE0070FD28 /* Model.swift in Sources */,
 				07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */,
 				9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */,
 				9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */,
+				07009F342357ADEE0070FD28 /* FobiaCell.swift in Sources */,
 				9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */,
 				9D67269D2355F31C0030CAE7 /* NiveisViewController.swift in Sources */,
+				07009F362357ADEE0070FD28 /* Fobia.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
 			);
@@ -447,7 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 725HB8W2V6;
+				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,7 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 725HB8W2V6;
+				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
