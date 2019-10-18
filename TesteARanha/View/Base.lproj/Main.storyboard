@@ -22,19 +22,19 @@
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="191" id="0JS-oL-nRR" customClass="FobiaCell" customModule="TesteARanha" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="191"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="188" id="0JS-oL-nRR" customClass="FobiaCell" customModule="TesteARanha" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="188"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0JS-oL-nRR" id="SHh-Av-re7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="191"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spidersBackground" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-WP-8qj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150.5"/>
                                                     <color key="backgroundColor" red="0.42745098040000001" green="0.33725490200000002" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARANHAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-ck-hch">
-                                                    <rect key="frame" x="0.0" y="28.5" width="414" height="95.5"/>
+                                                    <rect key="frame" x="0.0" y="28" width="414" height="94"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -60,6 +60,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TiS-5i-uPy" id="Gss-Jh-K8R"/>
+                                    <outlet property="delegate" destination="TiS-5i-uPy" id="9Q0-da-peb"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,71 +84,12 @@
             </objects>
             <point key="canvasLocation" x="-139.13043478260872" y="87.723214285714278"/>
         </scene>
-        <!--Niveis View Controller-->
-        <scene sceneID="1Ou-aQ-xTF">
-            <objects>
-                <viewController storyboardIdentifier="niveis" id="cjc-Gw-5RD" customClass="NiveisViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NpS-2Q-QHx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9q-9Z-JeL">
-                                <rect key="frame" x="175" y="539" width="30" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="AR">
-                                    <color key="titleColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="show" id="6d7-zi-VtY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymq-Mp-yjb">
-                                <rect key="frame" x="163" y="454" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Imagem">
-                                    <color key="titleColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="syS-uO-4Xu" kind="show" id="FYN-OL-d3s"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJK-Au-0pq">
-                                <rect key="frame" x="170" y="385" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Audio">
-                                    <color key="titleColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jVU-15-b8P" kind="show" id="E8F-QQ-89b"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDD-On-rq4">
-                                <rect key="frame" x="174" y="306" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Texto">
-                                    <color key="titleColor" red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Ecc-JI-Be0" kind="show" id="ab2-FB-U1H"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Eqo-eX-jeb"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="lI5-eB-eOA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DiC-WL-rcO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="687" y="88"/>
-        </scene>
         <!--Nivel1 View Controller-->
         <scene sceneID="rjO-Pi-BqF">
             <objects>
                 <viewController id="Ecc-JI-Be0" customClass="Nivel1ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fRW-lZ-kJM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="PFx-yb-ltN"/>
@@ -155,12 +100,78 @@
             </objects>
             <point key="canvasLocation" x="1454" y="-573"/>
         </scene>
+        <!--Niveis View Controller-->
+        <scene sceneID="NZe-vp-EpV">
+            <objects>
+                <tableViewController storyboardIdentifier="niveis" id="7z2-DB-ggT" customClass="NiveisViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OPv-vT-Ul4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="181" id="hfv-g6-H7I" customClass="EtapaCell" customModule="TesteARanha" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="181"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hfv-g6-H7I" id="qTd-Tp-IZY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ot6-nu-hNo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                            <color key="backgroundColor" red="0.42745098039215684" green="0.33725490196078434" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etapa 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1E-ve-Mw0">
+                                            <rect key="frame" x="20" y="50" width="115" height="41"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etapa1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="zHh-GP-DCS">
+                                            <rect key="frame" x="296" y="48" width="71" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="zHh-GP-DCS" secondAttribute="height" multiplier="71:45" id="B7i-QB-dWx"/>
+                                                <constraint firstAttribute="width" constant="71" id="uts-Hs-7nO"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" id="15H-Gl-sAb"/>
+                                        <constraint firstItem="zHh-GP-DCS" firstAttribute="centerY" secondItem="e1E-ve-Mw0" secondAttribute="centerY" id="DQ4-WV-rik"/>
+                                        <constraint firstAttribute="bottom" secondItem="ot6-nu-hNo" secondAttribute="bottom" constant="40" id="HUN-2n-5sw"/>
+                                        <constraint firstItem="e1E-ve-Mw0" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" constant="20" id="OGU-nu-hji"/>
+                                        <constraint firstAttribute="trailing" secondItem="ot6-nu-hNo" secondAttribute="trailing" id="QGB-YD-zWq"/>
+                                        <constraint firstItem="e1E-ve-Mw0" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" constant="50" id="fXi-rG-pVb"/>
+                                        <constraint firstAttribute="bottom" secondItem="e1E-ve-Mw0" secondAttribute="bottom" constant="90" id="ics-ah-tEz"/>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" id="o2Y-bH-fhG"/>
+                                        <constraint firstAttribute="trailing" secondItem="zHh-GP-DCS" secondAttribute="trailing" constant="47" id="ylX-dG-XRk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="levelIcon" destination="zHh-GP-DCS" id="6g8-Qx-59K"/>
+                                    <outlet property="levelLabel" destination="e1E-ve-Mw0" id="DJJ-KW-fr2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7z2-DB-ggT" id="XdW-bs-8IR"/>
+                            <outlet property="delegate" destination="7z2-DB-ggT" id="uVV-TS-Opx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACi-JH-fJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="88"/>
+        </scene>
         <!--Nivel2 View Controller-->
         <scene sceneID="EKl-va-hES">
             <objects>
                 <viewController id="jVU-15-b8P" customClass="Nivel2ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAl-sx-zbQ" customClass="Nivel">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4Up-xc-30Z"/>
@@ -176,7 +187,7 @@
             <objects>
                 <viewController id="syS-uO-4Xu" customClass="Nivel3ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Md3-G2-tou">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="HZR-0R-NLd"/>
@@ -192,11 +203,11 @@
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="Nivel4ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -239,6 +250,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Etapa1Icon" width="71" height="45"/>
         <image name="spidersBackground" width="381" height="137"/>
     </resources>
 </document>

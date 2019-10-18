@@ -8,18 +8,9 @@
 
 import UIKit
 
-class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var phobiasTableView: UITableView!
-    
-    override func viewDidLoad() {
-           super.viewDidLoad()
-        
-        
-        phobiasTableView?.delegate = self
-        phobiasTableView?.dataSource = self
-    
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         if phobiasTableView != nil {
