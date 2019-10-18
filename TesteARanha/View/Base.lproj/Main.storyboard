@@ -87,7 +87,7 @@
         <!--Nivel1 View Controller-->
         <scene sceneID="rjO-Pi-BqF">
             <objects>
-                <viewController id="Ecc-JI-Be0" customClass="Nivel1ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="texto" id="Ecc-JI-Be0" customClass="Nivel1ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fRW-lZ-kJM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
         <!--Nivel2 View Controller-->
         <scene sceneID="EKl-va-hES">
             <objects>
-                <viewController id="jVU-15-b8P" customClass="Nivel2ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="audio" id="jVU-15-b8P" customClass="Nivel2ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAl-sx-zbQ" customClass="Nivel">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,7 @@
         <!--Nivel3 View Controller-->
         <scene sceneID="6J6-SC-5ld">
             <objects>
-                <viewController id="syS-uO-4Xu" customClass="Nivel3ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imagens" id="syS-uO-4Xu" customClass="Nivel3ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Md3-G2-tou">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +201,7 @@
         <!--Nivel4 View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="Nivel4ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AR" id="BV1-FR-VrT" customClass="Nivel4ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

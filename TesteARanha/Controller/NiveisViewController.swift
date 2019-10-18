@@ -49,6 +49,41 @@ class NiveisViewController: UITableViewController {
     
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        switch indexPath.row {
+        case 0:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController {
+                //vc.selectedPhobia = indexPath.row
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 1:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
+                //vc.selectedPhobia = indexPath.row
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 2:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as? Nivel3ViewController {
+                //vc.selectedPhobia = indexPath.row
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        case 3:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
+                //vc.selectedPhobia = indexPath.row
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        default:
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController {
+                //vc.selectedPhobia = indexPath.row
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
+        
+        
+        
+    }
 
     
 }
