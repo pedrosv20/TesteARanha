@@ -96,7 +96,7 @@
                                 <rect key="frame" x="0.0" y="402.5" width="414" height="537.5"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CAD-Nx-k7E">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="496"/>
+                                        <rect key="frame" x="0.0" y="8" width="414" height="487.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="qEA-ZI-U2c"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="btA-5T-ecK"/>
