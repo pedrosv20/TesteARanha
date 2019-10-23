@@ -18,6 +18,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
             loadViewIfNeeded()
         }
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
+
         
     }
     
@@ -28,8 +29,9 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fobiaCell", for: indexPath) as! FobiaCell
         
-        cell.phobiaLabel.text = Model.shared.fobias[indexPath.row].type
-        cell.backgroundImage.image = Model.shared.fobias[indexPath.row].backgroundIcon
+        cell.cardLabel.text = Model.shared.fobias[indexPath.row].type
+        cell.cardBackground.layer.masksToBounds = true
+        cell.cardBackground.layer.cornerRadius = cell.cardBackground.frame.width/17.0
         
         return cell
     }
