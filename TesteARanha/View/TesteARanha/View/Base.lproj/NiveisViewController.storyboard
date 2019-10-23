@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Etapas-->
+        <scene sceneID="NZe-vp-EpV">
+            <objects>
+                <tableViewController storyboardIdentifier="niveis" id="7z2-DB-ggT" customClass="NiveisViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OPv-vT-Ul4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="100" id="hfv-g6-H7I" customClass="EtapaCell" customModule="TesteARanha" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hfv-g6-H7I" id="qTd-Tp-IZY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ot6-nu-hNo">
+                                            <rect key="frame" x="22" y="0.0" width="370" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etapa 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="e1E-ve-Mw0">
+                                                    <rect key="frame" x="22" y="35" width="82.5" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etapa1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="zHh-GP-DCS">
+                                                    <rect key="frame" x="277" y="27.5" width="71" height="45"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.81568627450980391" green="0.44705882352941173" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="zHh-GP-DCS" secondAttribute="trailing" constant="22" id="91V-eW-CGQ"/>
+                                                <constraint firstItem="e1E-ve-Mw0" firstAttribute="centerY" secondItem="ot6-nu-hNo" secondAttribute="centerY" id="fug-BX-HvP"/>
+                                                <constraint firstItem="e1E-ve-Mw0" firstAttribute="leading" secondItem="ot6-nu-hNo" secondAttribute="leading" constant="22" id="w5r-Jd-PYm"/>
+                                                <constraint firstItem="zHh-GP-DCS" firstAttribute="centerY" secondItem="ot6-nu-hNo" secondAttribute="centerY" id="yhm-mB-Lae"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" id="15H-Gl-sAb"/>
+                                        <constraint firstAttribute="bottom" secondItem="ot6-nu-hNo" secondAttribute="bottom" id="HUN-2n-5sw"/>
+                                        <constraint firstAttribute="trailing" secondItem="ot6-nu-hNo" secondAttribute="trailing" constant="22" id="QGB-YD-zWq"/>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" constant="22" id="o2Y-bH-fhG"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="levelIcon" destination="zHh-GP-DCS" id="6g8-Qx-59K"/>
+                                    <outlet property="levelLabel" destination="e1E-ve-Mw0" id="DJJ-KW-fr2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7z2-DB-ggT" id="XdW-bs-8IR"/>
+                            <outlet property="delegate" destination="7z2-DB-ggT" id="uVV-TS-Opx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Etapas" largeTitleDisplayMode="always" id="AyX-zS-1bf">
+                        <barButtonItem key="backBarButtonItem" title="Fobias" id="mWW-LG-3PO"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACi-JH-fJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="744.92753623188412" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Etapa1Icon" width="71" height="45"/>
+    </resources>
+</document>

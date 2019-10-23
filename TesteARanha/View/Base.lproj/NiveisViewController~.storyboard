@@ -78,7 +78,7 @@
                     <navigationItem key="navigationItem" title="Fobias" largeTitleDisplayMode="always" id="Lky-49-qZa"/>
                     <connections>
                         <outlet property="phobiasTableView" destination="9YL-eQ-tfx" id="5KJ-6K-PFl"/>
-                        <segue destination="RBC-cW-5dU" kind="show" identifier="fobiasToNiveis" id="Yo5-h2-cg5"/>
+                        <segue destination="7z2-DB-ggT" kind="show" identifier="fobiasToNiveis" id="Yo5-h2-cg5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xzs-Oe-ULN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -174,6 +174,75 @@
             </objects>
             <point key="canvasLocation" x="1453.6231884057972" y="-573.21428571428567"/>
         </scene>
+        <!--Etapas-->
+        <scene sceneID="NZe-vp-EpV">
+            <objects>
+                <tableViewController storyboardIdentifier="niveis" id="7z2-DB-ggT" customClass="NiveisViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OPv-vT-Ul4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="181" id="hfv-g6-H7I" customClass="EtapaCell" customModule="TesteARanha" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="181"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hfv-g6-H7I" id="qTd-Tp-IZY">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ot6-nu-hNo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                            <color key="backgroundColor" red="0.42745098039215684" green="0.33725490196078434" blue="0.55686274509803924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etapa 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1E-ve-Mw0">
+                                            <rect key="frame" x="20" y="50" width="115" height="41"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etapa1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="zHh-GP-DCS">
+                                            <rect key="frame" x="296" y="48" width="71" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="zHh-GP-DCS" secondAttribute="height" multiplier="71:45" id="B7i-QB-dWx"/>
+                                                <constraint firstAttribute="width" constant="71" id="uts-Hs-7nO"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" id="15H-Gl-sAb"/>
+                                        <constraint firstItem="zHh-GP-DCS" firstAttribute="centerY" secondItem="e1E-ve-Mw0" secondAttribute="centerY" id="DQ4-WV-rik"/>
+                                        <constraint firstAttribute="bottom" secondItem="ot6-nu-hNo" secondAttribute="bottom" constant="40" id="HUN-2n-5sw"/>
+                                        <constraint firstItem="e1E-ve-Mw0" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" constant="20" id="OGU-nu-hji"/>
+                                        <constraint firstAttribute="trailing" secondItem="ot6-nu-hNo" secondAttribute="trailing" id="QGB-YD-zWq"/>
+                                        <constraint firstItem="e1E-ve-Mw0" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" constant="50" id="fXi-rG-pVb"/>
+                                        <constraint firstAttribute="bottom" secondItem="e1E-ve-Mw0" secondAttribute="bottom" constant="90" id="ics-ah-tEz"/>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" id="o2Y-bH-fhG"/>
+                                        <constraint firstAttribute="trailing" secondItem="zHh-GP-DCS" secondAttribute="trailing" constant="47" id="ylX-dG-XRk"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="levelIcon" destination="zHh-GP-DCS" id="6g8-Qx-59K"/>
+                                    <outlet property="levelLabel" destination="e1E-ve-Mw0" id="DJJ-KW-fr2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7z2-DB-ggT" id="XdW-bs-8IR"/>
+                            <outlet property="delegate" destination="7z2-DB-ggT" id="uVV-TS-Opx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Etapas" largeTitleDisplayMode="always" id="AyX-zS-1bf">
+                        <barButtonItem key="backBarButtonItem" title="Fobias" id="mWW-LG-3PO"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ACi-JH-fJ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="88"/>
+        </scene>
         <!--Nivel2 View Controller-->
         <scene sceneID="EKl-va-hES">
             <objects>
@@ -256,18 +325,9 @@
             </objects>
             <point key="canvasLocation" x="-1049.2753623188407" y="87.723214285714278"/>
         </scene>
-        <!--niveis-->
-        <scene sceneID="XAR-tr-X9Y">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="niveis" storyboardName="NiveisViewController" referencedIdentifier="niveis" id="RBC-cW-5dU" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bbb-6p-mZC"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pTP-I1-wdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="745" y="88"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="Etapa1Icon" width="71" height="45"/>
         <image name="spidersBackground" width="381" height="137"/>
     </resources>
 </document>

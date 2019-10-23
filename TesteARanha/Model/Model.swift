@@ -12,7 +12,7 @@ import UIKit
 class Model {
     static let shared = Model()
     
-    private init(){
+    private init() {
         
     }
     
@@ -22,6 +22,5 @@ class Model {
         Fobia(type: "COBRAS", backgroundIcon: UIImage(named: "snakesBackground")!),
         Fobia(type: "RATOS", backgroundIcon: UIImage(named: "snakesBackground")!)
     ]
-    
     
 }

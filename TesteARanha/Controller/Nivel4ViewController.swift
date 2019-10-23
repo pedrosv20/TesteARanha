@@ -31,7 +31,7 @@ class Nivel4ViewController: UIViewController {
         
         sceneView.session.run(configuration)
         
-        sceneView.delegate = self as! ARSCNViewDelegate
+        sceneView.delegate = self as ARSCNViewDelegate
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
     }
     
@@ -72,9 +72,9 @@ class Nivel4ViewController: UIViewController {
 }
 
 extension float4x4 {
-    var translation: float3 {
+    var translation: SIMD3<Float> {
         let translation = self.columns.3
-        return float3(translation.x, translation.y, translation.z)
+        return SIMD3<Float>(translation.x, translation.y, translation.z)
     }
 }
 
