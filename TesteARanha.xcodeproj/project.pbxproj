@@ -30,7 +30,9 @@
 		07CAB052235103C800E19AB4 /* spider.scn in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB049235103C800E19AB4 /* spider.scn */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
-		56591B7023588D1F00F3A657 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56591B6D23588D1F00F3A657 /* FobiaCell.swift */; };
+		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
+		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
+		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
 		9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */; };
 		9D67269D2355F31C0030CAE7 /* NiveisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */; };
 		9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */; };
@@ -77,8 +79,10 @@
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
 		56591B6C23588D1F00F3A657 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		56591B6D23588D1F00F3A657 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56591B6E23588D1F00F3A657 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
+		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
+		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
+		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
 		9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FobiasViewController.swift; sourceTree = "<group>"; };
 		9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisViewController.swift; sourceTree = "<group>"; };
 		9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel3ViewController.swift; sourceTree = "<group>"; };
@@ -180,12 +184,12 @@
 		9D6726A42355F9700030CAE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
+				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 				9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */,
-				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
 				9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */,
 				9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */,
-				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
+				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
+				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -194,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				07009F332357ADEE0070FD28 /* Fobia.swift */,
-				56591B6D23588D1F00F3A657 /* FobiaCell.swift */,
 				07009F322357ADEE0070FD28 /* Model.swift */,
 			);
 			path = Model;
@@ -203,8 +206,11 @@
 		9D6726A62355F99A0030CAE7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */,
+				56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
+				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */,
 				07CAB050235103C800E19AB4 /* untitled.dae in Resources */,
 				07CAB052235103C800E19AB4 /* spider.scn in Resources */,
+				56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */,
 				07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */,
 				07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */,
 				07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */,
@@ -325,9 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */,
 				07009F352357ADEE0070FD28 /* Model.swift in Sources */,
 				07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */,
-				56591B7023588D1F00F3A657 /* FobiaCell.swift in Sources */,
 				9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */,
 				9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */,
 				9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */,
@@ -335,6 +342,7 @@
 				07009F362357ADEE0070FD28 /* Fobia.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
+				56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +379,14 @@
 				07C5C42C2350BB3700AB67C9 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56A5DAAB23609D7E00BCC0F9 /* Base */,
+			);
+			name = NiveisViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -501,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PedroVargas.TesteARanha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -519,7 +535,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.PedroVargas.TesteARanha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
