@@ -236,12 +236,8 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="Etapa1Icon" width="71" height="45"/>
         <image name="Oval-1" width="263" height="263"/>
         <image name="aranhaIcon" width="53" height="47"/>
-=======
-        <image name="spidersBackground" width="381" height="137"/>
->>>>>>> 5db476ff1089e9b80b9d93973d2b8a8abbb3fcaa
     </resources>
 </document>
