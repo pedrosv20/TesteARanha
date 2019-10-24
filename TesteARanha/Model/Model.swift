@@ -23,5 +23,4 @@ class Model {
         Fobia(type: "Sapos", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!)
     ]
     
-    
 }
