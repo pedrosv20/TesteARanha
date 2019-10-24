@@ -78,6 +78,38 @@
             </objects>
             <point key="canvasLocation" x="744.92753623188412" y="87.723214285714278"/>
         </scene>
+        <!--texto-->
+        <scene sceneID="AWV-KC-BgM">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="texto" storyboardName="Etapa1ViewController" referencedIdentifier="texto" id="yn6-KJ-H3K" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eks-fz-Oyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1684" y="-204"/>
+        </scene>
+        <!--audio-->
+        <scene sceneID="DjJ-Yn-KyN">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="audio" storyboardName="Etapa2ViewController" referencedIdentifier="audio" id="m53-qg-TWV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrQ-jO-K7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="-17"/>
+        </scene>
+        <!--imagens-->
+        <scene sceneID="W71-qu-44b">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="imagens" storyboardName="Etapa3ViewController" referencedIdentifier="imagens" id="apt-0Q-BpR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qf4-JW-fJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="161"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="NMH-Tq-1af">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AR" storyboardName="Etapa4ViewController" referencedIdentifier="AR" id="L2f-MP-ByB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A7b-2R-L2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="379"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Etapa1Icon" width="71" height="45"/>
