@@ -36,6 +36,7 @@
 		56E8C5CC23631DD0000F53FD /* UIViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIViewShadow.swift */; };
 		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
 		56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D12363CF81000F53FD /* ProgressViewController.swift */; };
+		56E8C5D82363D205000F53FD /* ProgressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E8C5D62363D205000F53FD /* ProgressViewController.storyboard */; };
 		9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */; };
 		9D4C55752361D0D400062326 /* Etapa2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */; };
 		9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */; };
@@ -93,6 +94,7 @@
 		56E8C5CB23631DD0000F53FD /* UIViewShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewShadow.swift; sourceTree = "<group>"; };
 		56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		56E8C5D12363CF81000F53FD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		56E8C5D72363D205000F53FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TesteARanha/View/Base.lproj/ProgressViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55712361D0C200062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa1ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55742361D0D400062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa2ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55772361D0E100062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa3ViewController.storyboard; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
 				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
+				56E8C5D62363D205000F53FD /* ProgressViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				07CAB04C235103C800E19AB4 /* ship.scn in Resources */,
 				9D4C557B2361D0F400062326 /* Etapa4ViewController.storyboard in Resources */,
 				07CAB051235103C800E19AB4 /* ship.png in Resources */,
+				56E8C5D82363D205000F53FD /* ProgressViewController.storyboard in Resources */,
 				07CAB04D235103C800E19AB4 /* spider2_color.jpg in Resources */,
 				07AAEC9F235901FB001F6734 /* Spinnen_Bein_tex.jpg in Resources */,
 				9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */,
@@ -423,6 +427,14 @@
 				56A5DAAB23609D7E00BCC0F9 /* Base */,
 			);
 			name = NiveisViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		56E8C5D62363D205000F53FD /* ProgressViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56E8C5D72363D205000F53FD /* Base */,
+			);
+			name = ProgressViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */ = {
