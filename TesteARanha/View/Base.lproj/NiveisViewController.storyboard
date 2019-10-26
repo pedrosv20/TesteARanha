@@ -198,7 +198,7 @@
         <!--progress-->
         <scene sceneID="agx-0m-1cl">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="progress" id="nEt-pz-LaW" userLabel="progress" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="progress" storyboardName="ProgressViewController" referencedIdentifier="progress" id="nEt-pz-LaW" userLabel="progress" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="OmW-Br-ZkX"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4m-P8-qL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
