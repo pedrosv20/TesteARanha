@@ -147,19 +147,19 @@
             <point key="canvasLocation" x="1843" y="88"/>
         </scene>
         <!--Progress View Controller-->
-        <scene sceneID="r11-xt-Kk7">
+        <scene sceneID="hcL-bE-wNW">
             <objects>
-                <viewController id="Usr-we-pmw" customClass="ProgressViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bYD-y0-rfc">
+                <viewController id="rpS-b9-LeZ" customClass="ProgressViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCD-hd-x1g">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="4lp-93-srB"/>
+                        <viewLayoutGuide key="safeArea" id="bb3-hX-XrP"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1Z-jR-Wdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2j-3R-n95" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2675" y="88"/>
+            <point key="canvasLocation" x="2687" y="88"/>
         </scene>
         <!--AR-->
         <scene sceneID="NMH-Tq-1af">
