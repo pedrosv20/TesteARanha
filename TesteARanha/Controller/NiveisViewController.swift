@@ -11,7 +11,7 @@ import UIKit
 class NiveisViewController: UITableViewController {
     
     var selectedPhobia: Int!
-    let cellSpacingHeight: CGFloat = 0
+    let cellSpacingHeight: CGFloat = 10
     var nameOfPhobia: String {
         Model.shared.fobias[selectedPhobia].type.lowercased()
     }
@@ -25,7 +25,7 @@ class NiveisViewController: UITableViewController {
         description: "Você irá ouvir sobre \(nameOfPhobia). Será abordada em níveis. Vamos com calma."),
         (name: "Etapa Imagem",
         icon: UIImage(named: "Etapa3Icon"),
-        description: "Você vai ver imagens de \(nameOfPhobia) em três níveis: desenho, cartoon e fotografia"),
+        description: "Você vai ver imagens de \(nameOfPhobia) em três níveis: desenho, cartoon e fotografia."),
         (name: "Etapa Realidade",
         icon: UIImage(named: "Etapa4Icon"),
         description: "Você vai usar a câmera para interagir com \(nameOfPhobia) via realidade aumentada.")
@@ -34,7 +34,7 @@ class NiveisViewController: UITableViewController {
     
     override func viewDidLoad() {
         navigationItem.title = Model.shared.fobias[selectedPhobia].type
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
@@ -49,7 +49,7 @@ class NiveisViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stages.count
+        return stages.count+1
     }
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -63,21 +63,29 @@ class NiveisViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "etapaCell", for: indexPath) as! EtapaCell
-        
-        let content = stages[indexPath.row]
-        cell.levelLabel.text = content.name
-        cell.levelIcon.image = content.icon
-        cell.levelDescription.text = content.description
-        cell.levelView.dropShadow()
-        cell.selectionStyle = .none
-    
-        return cell
+        if indexPath.row == stages.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "seeProgressCell", for: indexPath) as! SeeProgressCell
+            
+            cell.selectionStyle = .none
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "etapaCell", for: indexPath) as! EtapaCell
+            
+            let content = stages[indexPath.row]
+            cell.levelLabel.text = content.name
+            cell.levelIcon.image = content.icon
+            cell.levelIconBig.image = content.icon
+            cell.levelDescription.text = content.description
+            cell.levelView.dropShadow()
+            //cell.levelView.clipsToBounds = true
+            cell.selectionStyle = .none
+            
+            return cell
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let cell = tableView.cellForRow(at: indexPath) as! EtapaCell
         
         var vc = UIViewController()
         if indexPath.row == 0 {
@@ -88,9 +96,18 @@ class NiveisViewController: UITableViewController {
             vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as! Nivel3ViewController
         } else if indexPath.row == 3 {
             vc = storyboard?.instantiateViewController(withIdentifier: "AR") as! Nivel4ViewController
+        } else if indexPath.row == stages.count {
+            vc = storyboard?.instantiateViewController(withIdentifier: "progress") as! ProgressViewController
         }
         
-        //vc.selectedPhobia = indexPath.row
+        if indexPath.row != stages.count {
+            //vc.selectedPhobia = selectedPhobia
+        }
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+
+// moving settings button
+// see progress button
+// mask with shadow
