@@ -36,7 +36,7 @@
 		56E8C5CC23631DD0000F53FD /* UIViewShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIViewShadow.swift */; };
 		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
 		56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D12363CF81000F53FD /* ProgressViewController.swift */; };
-		56E8C5DA2363D604000F53FD /* SeeProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D92363D604000F53FD /* SeeProgressCell.swift */; };
+		56E8C5DA2363D604000F53FD /* ViewProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D92363D604000F53FD /* ViewProgressCell.swift */; };
 		56E8C5DD2363DA47000F53FD /* ProgressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */; };
 		9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */; };
 		9D4C55752361D0D400062326 /* Etapa2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */; };
@@ -95,7 +95,7 @@
 		56E8C5CB23631DD0000F53FD /* UIViewShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewShadow.swift; sourceTree = "<group>"; };
 		56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		56E8C5D12363CF81000F53FD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
-		56E8C5D92363D604000F53FD /* SeeProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeProgressCell.swift; sourceTree = "<group>"; };
+		56E8C5D92363D604000F53FD /* ViewProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProgressCell.swift; sourceTree = "<group>"; };
 		56E8C5DC2363DA47000F53FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProgressViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55712361D0C200062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa1ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55742361D0D400062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa2ViewController.storyboard; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 			children = (
 				56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */,
 				56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */,
-				56E8C5D92363D604000F53FD /* SeeProgressCell.swift */,
+				56E8C5D92363D604000F53FD /* ViewProgressCell.swift */,
 				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
 				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
 				9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */,
@@ -386,7 +386,7 @@
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
 				56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */,
-				56E8C5DA2363D604000F53FD /* SeeProgressCell.swift in Sources */,
+				56E8C5DA2363D604000F53FD /* ViewProgressCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

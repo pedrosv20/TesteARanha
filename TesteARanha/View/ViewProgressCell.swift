@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SeeProgressCell: UITableViewCell {
+class ViewProgressCell: UITableViewCell {
     
     @IBOutlet weak var progressView: UIView!
     @IBOutlet weak var progressLabel: UILabel!

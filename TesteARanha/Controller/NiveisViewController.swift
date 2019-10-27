@@ -11,7 +11,7 @@ import UIKit
 class NiveisViewController: UITableViewController {
     
     var selectedPhobia: Int!
-    let cellSpacingHeight: CGFloat = 10
+    let cellSpacingHeight: CGFloat = 15
     var nameOfPhobia: String {
         Model.shared.fobias[selectedPhobia].type.lowercased()
     }
@@ -64,7 +64,7 @@ class NiveisViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == stages.count {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "seeProgressCell", for: indexPath) as! SeeProgressCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "viewProgressCell", for: indexPath) as! ViewProgressCell
             
             cell.selectionStyle = .none
             
@@ -78,7 +78,7 @@ class NiveisViewController: UITableViewController {
             cell.levelIconBig.image = content.icon
             cell.levelDescription.text = content.description
             cell.levelView.dropShadow()
-            //cell.levelView.clipsToBounds = true
+            cell.levelView.layer.masksToBounds = true
             cell.selectionStyle = .none
             
             return cell
@@ -108,6 +108,5 @@ class NiveisViewController: UITableViewController {
 }
 
 
-// moving settings button
-// see progress button
-// mask with shadow
+// mask with shadow (animated when selecting)
+// view progress only when touched directly onto the label/image
