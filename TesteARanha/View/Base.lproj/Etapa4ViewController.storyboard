@@ -19,8 +19,40 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hr-Yt-MvJ">
+                                <rect key="frame" x="0.0" y="717" width="414" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="GbL-vc-2hc">
+                                <rect key="frame" x="119.5" y="791.5" width="175" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAT-jH-cvF">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="add"/>
+                                        <connections>
+                                            <action selector="addSpider:" destination="BV1-FR-VrT" eventType="touchUpInside" id="OOS-BP-oGb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tI-9u-ynT">
+                                        <rect key="frame" x="69" y="0.0" width="37" height="30"/>
+                                        <state key="normal" title="show"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qvu-H2-wRo">
+                                        <rect key="frame" x="145" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="play"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GbL-vc-2hc" firstAttribute="centerY" secondItem="1hr-Yt-MvJ" secondAttribute="centerY" id="603-Sf-a0a"/>
+                            <constraint firstItem="1hr-Yt-MvJ" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="709-It-Psa"/>
+                            <constraint firstItem="1hr-Yt-MvJ" firstAttribute="width" secondItem="U0K-SW-4ec" secondAttribute="width" id="7OF-Ze-MNu"/>
+                            <constraint firstItem="1hr-Yt-MvJ" firstAttribute="height" secondItem="U0K-SW-4ec" secondAttribute="height" multiplier="0.2" id="YFZ-oz-9yG"/>
+                            <constraint firstItem="GbL-vc-2hc" firstAttribute="centerX" secondItem="1hr-Yt-MvJ" secondAttribute="centerX" id="qCC-vg-Fjv"/>
+                            <constraint firstItem="1hr-Yt-MvJ" firstAttribute="centerY" secondItem="U0K-SW-4ec" secondAttribute="centerY" multiplier="1.8" id="r5x-58-b4O"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <navigationItem key="navigationItem" id="VYM-rF-dCi"/>
