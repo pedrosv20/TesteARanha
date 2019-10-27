@@ -12,14 +12,24 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var phobiasTableView: UITableView!
     
+    override func viewDidLoad() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+        
         if phobiasTableView != nil {
             phobiasTableView.reloadData()
             loadViewIfNeeded()
         }
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
-
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

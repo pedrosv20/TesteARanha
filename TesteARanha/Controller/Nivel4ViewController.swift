@@ -31,7 +31,7 @@ class Nivel4ViewController: UIViewController {
         
         sceneView.session.run(configuration)
         
-        sceneView.delegate = self as! ARSCNViewDelegate
+        sceneView.delegate = self as ARSCNViewDelegate
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
     }
     
@@ -132,7 +132,6 @@ extension Nivel4ViewController: ARSCNViewDelegate {
     }
     
     func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        print(sceneView.scene.rootNode.childNodes.count)
         if let spider = sceneView.scene.rootNode.childNode(withName: "spider", recursively: false) {
             print(spider.position.x)
 //            spider.position.x += 0.005

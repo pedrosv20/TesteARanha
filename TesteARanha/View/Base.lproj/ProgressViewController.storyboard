@@ -7,21 +7,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Nivel2 View Controller-->
-        <scene sceneID="EKl-va-hES">
+        <!--Progress View Controller-->
+        <scene sceneID="r11-xt-Kk7">
             <objects>
-                <viewController storyboardIdentifier="audio" id="jVU-15-b8P" customClass="Nivel2ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uAl-sx-zbQ" customClass="Nivel">
+                <viewController storyboardIdentifier="progress" id="Usr-we-pmw" customClass="ProgressViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bYD-y0-rfc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="4Up-xc-30Z"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4lp-93-srB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Fa2-c6-3Bk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gWM-uU-ioS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1Z-jR-Wdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2157" y="-242"/>
+            <point key="canvasLocation" x="2673.913043478261" y="87.723214285714278"/>
         </scene>
     </scenes>
 </document>
