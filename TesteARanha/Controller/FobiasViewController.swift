@@ -40,8 +40,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCell(withIdentifier: "fobiaCell", for: indexPath) as! FobiaCell
         
         cell.cardLabel.text = Model.shared.fobias[indexPath.row].type
+        cell.cardIcon.image = Model.shared.fobias[indexPath.row].icon
+        cell.cardBackground.image = Model.shared.fobias[indexPath.row].backgroundIcon
         cell.cardBackground.layer.masksToBounds = true
-        cell.cardBackground.layer.cornerRadius = cell.cardBackground.frame.width/17.0
+        cell.cardBackground.layer.cornerRadius = cell.cardBackground.frame.width/19.0
         
         return cell
     }
