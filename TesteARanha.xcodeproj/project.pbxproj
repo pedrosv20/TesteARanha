@@ -30,6 +30,9 @@
 		07CAB052235103C800E19AB4 /* spider.scn in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB049235103C800E19AB4 /* spider.scn */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
+		56277D5F2369CEA9003CE021 /* AudioFobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D5D2369CEA8003CE021 /* AudioFobia.swift */; };
+		56277D602369CEA9003CE021 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D5E2369CEA9003CE021 /* AudioModel.swift */; };
+		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
 		56526EEB236618C600A3C641 /* PhobiaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEA236618C600A3C641 /* PhobiaInfo.swift */; };
 		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
@@ -89,6 +92,9 @@
 		07CAB049235103C800E19AB4 /* spider.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = spider.scn; sourceTree = "<group>"; };
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
+		56277D5D2369CEA8003CE021 /* AudioFobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFobia.swift; sourceTree = "<group>"; };
+		56277D5E2369CEA9003CE021 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		56526EEA236618C600A3C641 /* PhobiaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhobiaInfo.swift; sourceTree = "<group>"; };
 		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
 		56591B6C23588D1F00F3A657 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -230,6 +236,8 @@
 		9D6726A52355F9840030CAE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56277D5D2369CEA8003CE021 /* AudioFobia.swift */,
+				56277D5E2369CEA9003CE021 /* AudioModel.swift */,
 				07009F332357ADEE0070FD28 /* Fobia.swift */,
 				07009F322357ADEE0070FD28 /* Model.swift */,
 				56526EEA236618C600A3C641 /* PhobiaInfo.swift */,
@@ -243,6 +251,7 @@
 				56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */,
 				56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */,
 				56526EEC236618F000A3C641 /* TextoCell.swift */,
+				56277D612369CF01003CE021 /* AudioCell.swift */,
 				56E8C5D92363D604000F53FD /* ViewProgressCell.swift */,
 				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
 				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
@@ -382,7 +391,10 @@
 				56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */,
 				07009F352357ADEE0070FD28 /* Model.swift in Sources */,
 				56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */,
+				56277D622369CF01003CE021 /* AudioCell.swift in Sources */,
+				56277D5F2369CEA9003CE021 /* AudioFobia.swift in Sources */,
 				07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */,
+				56277D602369CEA9003CE021 /* AudioModel.swift in Sources */,
 				9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */,
 				9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */,
 				9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */,
