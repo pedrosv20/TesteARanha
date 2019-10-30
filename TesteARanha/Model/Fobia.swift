@@ -21,6 +21,5 @@ class Fobia {
     var type: String
     var backgroundIcon: UIImage
     var icon: UIImage
-
     
 }

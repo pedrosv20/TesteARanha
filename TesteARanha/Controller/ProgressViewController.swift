@@ -1,19 +1,19 @@
 //
-//  Nivel2ViewController.swift
+//  ProgressViewController.swift
 //  TesteARanha
 //
-//  Created by Maria Fernanda Azolin on 15/10/19.
+//  Created by Vinícius Binder on 25/10/19.
 //  Copyright © 2019 Pedro Vargas. All rights reserved.
 //
 
 import UIKit
 
-class Nivel2ViewController: UIViewController {
+class ProgressViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.title = "Progresso"
     }
     
 
