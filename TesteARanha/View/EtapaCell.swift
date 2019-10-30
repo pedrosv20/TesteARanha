@@ -12,6 +12,8 @@ class EtapaCell: UITableViewCell {
 
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var levelIcon: UIImageView!
-
+    @IBOutlet weak var levelView: UIView!
+    @IBOutlet weak var levelDescription: UILabel!
+    @IBOutlet weak var levelIconBig: UIImageView!
     
 }
