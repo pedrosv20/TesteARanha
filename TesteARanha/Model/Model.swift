@@ -17,10 +17,10 @@ class Model {
     }
     
     let fobias = [
-        Fobia(type: "Aranhas", backgroundIcon: UIImage(named: "cardSpider")!, icon: UIImage(named: "aranhaIcon")!),
-        Fobia(type: "Agulhas", backgroundIcon: UIImage(named: "needleCard")!, icon: UIImage(named: "agulhaIcon")!),
-        Fobia(type: "Cobras", backgroundIcon: UIImage(named: "snakeCard")!, icon: UIImage(named: "snakeIcon")!),
-        Fobia(type: "Sapos", backgroundIcon: UIImage(named: "frogCard")!, icon: UIImage(named: "frogIcon")!)
+        Fobia(type: "Aranhas", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!),
+        Fobia(type: "Agulhas", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!),
+        Fobia(type: "Cobras", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!),
+        Fobia(type: "Sapos", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!)
     ]
     
     let fobiasInfo = [

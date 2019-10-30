@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7z2-DB-ggT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -17,116 +17,51 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="125" id="hfv-g6-H7I" userLabel="EtapaCell" customClass="EtapaCell" customModule="TesteARanha" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="125"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="100" id="hfv-g6-H7I" customClass="EtapaCell" customModule="TesteARanha" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hfv-g6-H7I" id="qTd-Tp-IZY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ot6-nu-hNo">
-                                            <rect key="frame" x="18" y="12" width="378" height="101"/>
+                                            <rect key="frame" x="22" y="0.0" width="370" height="100"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etapa 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="e1E-ve-Mw0">
-                                                    <rect key="frame" x="17" y="15" width="231.5" height="24"/>
+                                                    <rect key="frame" x="22" y="35" width="82.5" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etapa1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="zHh-GP-DCS">
-                                                    <rect key="frame" x="283.5" y="27.5" width="77.5" height="46"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você irá acessar dados científicos sobre as aranhas numa abordagem de modo escrito." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFh-vr-yy9" userLabel="Level Description">
-                                                    <rect key="frame" x="17" y="40" width="231.5" height="43"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Etapa1Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Hl0-ZN-UYt" userLabel="Level Icon Big">
-                                                    <rect key="frame" x="227" y="-4.5" width="191" height="110"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="110" id="UwA-d8-osm"/>
-                                                        <constraint firstAttribute="width" constant="191" id="gez-VQ-SFA"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="277" y="27.5" width="71" height="45"/>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.81568627449999997" green="0.44705882349999998" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.81568627450980391" green="0.44705882352941173" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstItem="Hl0-ZN-UYt" firstAttribute="centerX" secondItem="zHh-GP-DCS" secondAttribute="centerX" id="8Be-lT-lo4"/>
-                                                <constraint firstAttribute="trailing" secondItem="zHh-GP-DCS" secondAttribute="trailing" constant="17" id="91V-eW-CGQ"/>
-                                                <constraint firstItem="zHh-GP-DCS" firstAttribute="leading" secondItem="PFh-vr-yy9" secondAttribute="trailing" constant="35" id="AaM-gV-26t"/>
-                                                <constraint firstAttribute="bottom" secondItem="e1E-ve-Mw0" secondAttribute="bottom" constant="62" id="Csg-2R-zqE"/>
-                                                <constraint firstItem="e1E-ve-Mw0" firstAttribute="top" secondItem="ot6-nu-hNo" secondAttribute="top" constant="15" id="DJP-NA-TrF"/>
-                                                <constraint firstItem="PFh-vr-yy9" firstAttribute="leading" secondItem="e1E-ve-Mw0" secondAttribute="leading" id="E41-MS-BEh"/>
-                                                <constraint firstAttribute="bottom" secondItem="zHh-GP-DCS" secondAttribute="bottom" constant="27.5" id="HAR-H9-jOB"/>
-                                                <constraint firstItem="PFh-vr-yy9" firstAttribute="trailing" secondItem="e1E-ve-Mw0" secondAttribute="trailing" id="NhO-e8-TsH"/>
-                                                <constraint firstItem="Hl0-ZN-UYt" firstAttribute="centerY" secondItem="zHh-GP-DCS" secondAttribute="centerY" id="mSb-zv-fLC"/>
-                                                <constraint firstItem="PFh-vr-yy9" firstAttribute="top" secondItem="e1E-ve-Mw0" secondAttribute="bottom" constant="1" id="o3N-Er-fmp"/>
-                                                <constraint firstItem="e1E-ve-Mw0" firstAttribute="leading" secondItem="ot6-nu-hNo" secondAttribute="leading" constant="17" id="w5r-Jd-PYm"/>
-                                                <constraint firstItem="zHh-GP-DCS" firstAttribute="top" secondItem="ot6-nu-hNo" secondAttribute="top" constant="27.5" id="wtK-bh-a9b"/>
+                                                <constraint firstAttribute="trailing" secondItem="zHh-GP-DCS" secondAttribute="trailing" constant="22" id="91V-eW-CGQ"/>
+                                                <constraint firstItem="e1E-ve-Mw0" firstAttribute="centerY" secondItem="ot6-nu-hNo" secondAttribute="centerY" id="fug-BX-HvP"/>
+                                                <constraint firstItem="e1E-ve-Mw0" firstAttribute="leading" secondItem="ot6-nu-hNo" secondAttribute="leading" constant="22" id="w5r-Jd-PYm"/>
+                                                <constraint firstItem="zHh-GP-DCS" firstAttribute="centerY" secondItem="ot6-nu-hNo" secondAttribute="centerY" id="yhm-mB-Lae"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <integer key="value" value="15"/>
+                                                    <integer key="value" value="0"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" constant="12" id="15H-Gl-sAb"/>
-                                        <constraint firstAttribute="bottom" secondItem="ot6-nu-hNo" secondAttribute="bottom" constant="12" id="HUN-2n-5sw"/>
-                                        <constraint firstAttribute="trailing" secondItem="ot6-nu-hNo" secondAttribute="trailing" constant="18" id="QGB-YD-zWq"/>
-                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" constant="18" id="o2Y-bH-fhG"/>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="top" secondItem="qTd-Tp-IZY" secondAttribute="top" id="15H-Gl-sAb"/>
+                                        <constraint firstAttribute="bottom" secondItem="ot6-nu-hNo" secondAttribute="bottom" id="HUN-2n-5sw"/>
+                                        <constraint firstAttribute="trailing" secondItem="ot6-nu-hNo" secondAttribute="trailing" constant="22" id="QGB-YD-zWq"/>
+                                        <constraint firstItem="ot6-nu-hNo" firstAttribute="leading" secondItem="qTd-Tp-IZY" secondAttribute="leading" constant="22" id="o2Y-bH-fhG"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="levelDescription" destination="PFh-vr-yy9" id="dp4-G5-JcG"/>
                                     <outlet property="levelIcon" destination="zHh-GP-DCS" id="6g8-Qx-59K"/>
-                                    <outlet property="levelIconBig" destination="Hl0-ZN-UYt" id="9rx-Hq-RKB"/>
                                     <outlet property="levelLabel" destination="e1E-ve-Mw0" id="DJJ-KW-fr2"/>
-                                    <outlet property="levelView" destination="ot6-nu-hNo" id="oOx-4Z-A42"/>
-                                </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="viewProgressCell" rowHeight="55" id="gJx-Rb-gGV" userLabel="ProgressCell" customClass="ViewProgressCell" customModule="TesteARanha" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="153" width="414" height="55"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJx-Rb-gGV" id="SRE-2c-zF5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYP-jA-oPl">
-                                            <rect key="frame" x="122.5" y="31" width="169" height="24"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProgressIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IBI-V1-7GE">
-                                                    <rect key="frame" x="0.0" y="0.0" width="26" height="24"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VER PROGRESSO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPz-Lb-zQV">
-                                                    <rect key="frame" x="32" y="1.5" width="137" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="IBI-V1-7GE" firstAttribute="top" secondItem="TYP-jA-oPl" secondAttribute="top" id="LEW-Ux-Zvm"/>
-                                                <constraint firstAttribute="bottom" secondItem="IBI-V1-7GE" secondAttribute="bottom" id="fgY-uU-SYa"/>
-                                                <constraint firstAttribute="trailing" secondItem="RPz-Lb-zQV" secondAttribute="trailing" id="luZ-AO-GLj"/>
-                                                <constraint firstItem="RPz-Lb-zQV" firstAttribute="leading" secondItem="IBI-V1-7GE" secondAttribute="trailing" constant="6" id="mak-wI-giH"/>
-                                                <constraint firstItem="RPz-Lb-zQV" firstAttribute="centerY" secondItem="IBI-V1-7GE" secondAttribute="centerY" id="nxx-7V-uNw"/>
-                                                <constraint firstItem="IBI-V1-7GE" firstAttribute="leading" secondItem="TYP-jA-oPl" secondAttribute="leading" id="tgl-uF-Kkh"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="TYP-jA-oPl" secondAttribute="bottom" id="4Uj-vD-2Fi"/>
-                                        <constraint firstItem="TYP-jA-oPl" firstAttribute="top" secondItem="SRE-2c-zF5" secondAttribute="top" constant="31" id="J69-n1-3LA"/>
-                                        <constraint firstItem="TYP-jA-oPl" firstAttribute="centerX" secondItem="SRE-2c-zF5" secondAttribute="centerX" id="Q22-Gf-7dR"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="progressLabel" destination="RPz-Lb-zQV" id="5fH-4k-zdl"/>
-                                    <outlet property="progressView" destination="TYP-jA-oPl" id="OQm-bl-Tb3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -149,7 +84,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="texto" storyboardName="Etapa1ViewController" referencedIdentifier="texto" id="yn6-KJ-H3K" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eks-fz-Oyj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="-204"/>
+            <point key="canvasLocation" x="1684" y="-204"/>
         </scene>
         <!--audio-->
         <scene sceneID="DjJ-Yn-KyN">
@@ -157,7 +92,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="audio" storyboardName="Etapa2ViewController" referencedIdentifier="audio" id="m53-qg-TWV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrQ-jO-K7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288" y="-58"/>
+            <point key="canvasLocation" x="1686" y="-17"/>
         </scene>
         <!--imagens-->
         <scene sceneID="W71-qu-44b">
@@ -165,45 +100,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="imagens" storyboardName="Etapa3ViewController" referencedIdentifier="imagens" id="apt-0Q-BpR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qf4-JW-fJQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301" y="88"/>
-        </scene>
-        <!--Settings Table View Controller-->
-        <scene sceneID="8Bl-AX-KNk">
-            <objects>
-                <tableViewController storyboardIdentifier="settings" id="pwa-K2-aLo" customClass="SettingsTableViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WVi-dg-UX1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="settingsCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingsCell" id="dm3-dJ-5ur">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dm3-dJ-5ur" id="lIy-9R-N26">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="pwa-K2-aLo" id="iQS-rO-M1t"/>
-                            <outlet property="delegate" destination="pwa-K2-aLo" id="DN7-oB-bdm"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O2F-UH-l52" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1843" y="88"/>
-        </scene>
-        <!--progress-->
-        <scene sceneID="agx-0m-1cl">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="progress" storyboardName="ProgressViewController" referencedIdentifier="progress" id="nEt-pz-LaW" userLabel="progress" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="OmW-Br-ZkX"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V4m-P8-qL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1303" y="379"/>
+            <point key="canvasLocation" x="1698" y="161"/>
         </scene>
         <!--AR-->
         <scene sceneID="NMH-Tq-1af">
@@ -211,11 +108,10 @@
                 <viewControllerPlaceholder storyboardIdentifier="AR" storyboardName="Etapa4ViewController" referencedIdentifier="AR" id="L2f-MP-ByB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A7b-2R-L2e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1277" y="230"/>
+            <point key="canvasLocation" x="1674" y="379"/>
         </scene>
     </scenes>
     <resources>
         <image name="Etapa1Icon" width="71" height="45"/>
-        <image name="ProgressIcon" width="26" height="24"/>
     </resources>
 </document>
