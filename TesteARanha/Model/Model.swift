@@ -29,4 +29,9 @@ class Model {
         
     ]
     
+    let audios = [
+        AudioFobia(text: "Audio 1", audio: "CLIQUE AQUI 1"),
+        AudioFobia(text: "Audio 2", audio: "CLIQUE AQUI 2"),
+        AudioFobia(text: "Audio 3", audio: "CLIQUE AQUI 3")
+    ]
 }
