@@ -6,20 +6,43 @@
 //  Copyright © 2019 Pedro Vargas. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
 import UIKit
 
 class Fobia {
     
-    internal init(type: String, backgroundIcon: UIImage, icon: UIImage) {
-        self.type = type
-        self.backgroundIcon = backgroundIcon
-        self.icon = icon
-        
-    }
-    
-    var type: String
+    var audios = [AVAudioPlayer]()
+    var title: [String]
+    var description: String
+    var tipoFobia: TipoFobia
     var backgroundIcon: UIImage
     var icon: UIImage
     
+    internal init(
+        tipoFobia: TipoFobia,
+        backgroundIcon: UIImage,
+        icon: UIImage,
+        title: [String],
+        description: [String],
+        audios: [String]
+    ) {
+        self.tipoFobia = tipoFobia
+        self.backgroundIcon = backgroundIcon
+        self.icon = icon
+        self.title = title
+        self.description = description
+        
+        
+        for audio in audios {
+            self.audios.append(AVAudioPlayer.load(audio))
+        }
+    }
 }
+
+enum TipoFobia: String {
+    case aranha = "Aranhas"
+    case agulha = "Agulhas"
+    case cobra = "Cobras"
+    case sapo = "Sapos"
+}
+

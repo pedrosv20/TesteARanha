@@ -11,27 +11,53 @@ import UIKit
 
 class Model {
     static let shared = Model()
+    var fobiaSelecionada: Int
+    var fobias = [Fobia]()
     
-    private init(){
+    private init() {
         
+        fobias.append(
+            Fobia(
+            tipoFobia: .aranha,
+            backgroundIcon: UIImage(named: "cardSpider")!,
+            icon: UIImage(named: "aranhaIcon")!,
+            title: "Vamos conhecer dados científicos?",
+            description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
+            audios: [
+            ]
+        ))
+        fobias.append(
+            Fobia(
+            tipoFobia: .agulha,
+            backgroundIcon: UIImage(named: "needleCard")!,
+            icon: UIImage(named: "agulhaIcon")!,
+            title: "Vamos conhecer dados científicos?",
+            description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
+            audios: [
+            ]
+        ))
+        fobias.append(
+            Fobia(
+            tipoFobia: .cobra,
+            backgroundIcon: UIImage(named: "snakeCard")!,
+            icon: UIImage(named: "snakeIcon")!,
+            title: "Vamos conhecer dados científicos?",
+            description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
+            audios: [
+            ]
+        ))
+        fobias.append(
+            Fobia(
+                  tipoFobia: .sapo,
+                  backgroundIcon: UIImage(named: "frogCard")!,
+                  icon: UIImage(named: "frogIcon")!,
+                  title: "Vamos conhecer dados científicos?",
+                  description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
+                  audios: [
+                  ]
+              ))
     }
-    
-    let fobias = [
-        Fobia(type: "Aranhas", backgroundIcon: UIImage(named: "cardSpider")!, icon: UIImage(named: "aranhaIcon")!),
-        Fobia(type: "Agulhas", backgroundIcon: UIImage(named: "needleCard")!, icon: UIImage(named: "agulhaIcon")!),
-        Fobia(type: "Cobras", backgroundIcon: UIImage(named: "snakeCard")!, icon: UIImage(named: "snakeIcon")!),
-        Fobia(type: "Sapos", backgroundIcon: UIImage(named: "frogCard")!, icon: UIImage(named: "frogIcon")!)
-    ]
-    
-    let fobiasInfo = [
-        PhobiaInfo(title: "Vamos conhecer dados científicos?", description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas"),
-        PhobiaInfo(title: "Você sabe o que elas fazem?", description: "Fazem coisas de aranha não se meta"),
-        
-    ]
-    
-    let audios = [
-        AudioFobia(text: "Audio 1", audio: "CLIQUE AQUI 1"),
-        AudioFobia(text: "Audio 2", audio: "CLIQUE AQUI 2"),
-        AudioFobia(text: "Audio 3", audio: "CLIQUE AQUI 3")
-    ]
+
 }
+
+
