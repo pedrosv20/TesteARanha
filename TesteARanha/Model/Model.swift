@@ -41,4 +41,9 @@ class Model {
         Etapa3Infos(etapa3Title: "Imagens fotografadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderReal1")!, isBlurred: false)
     ]
     
+    let audios = [
+        AudioFobia(text: "Audio 1", audio: "CLIQUE AQUI 1"),
+        AudioFobia(text: "Audio 2", audio: "CLIQUE AQUI 2"),
+        AudioFobia(text: "Audio 3", audio: "CLIQUE AQUI 3")
+    ]
 }
