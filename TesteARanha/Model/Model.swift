@@ -29,4 +29,16 @@ class Model {
         
     ]
     
+    let cardsEtapaImagem = [
+        Etapa3Infos(etapa3Title: "Imagens estilo cartoon", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderCartoon1")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens estilo cartoon", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderCartoon2")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens estilo cartoon", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderCartoon4")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens desenhadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderDraw1")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens desenhadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderDraw2")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens desenhadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderDraw3")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens fotografadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderReal2")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens fotografadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderReal3")!, isBlurred: false),
+        Etapa3Infos(etapa3Title: "Imagens fotografadas", etapa3SubTitle: "Toque na imagem para vê-la.", etapa3Imagem: UIImage(named: "spiderReal1")!, isBlurred: false)
+    ]
+    
 }
