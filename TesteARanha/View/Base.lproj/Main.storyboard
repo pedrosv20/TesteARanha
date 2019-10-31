@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdh-Sp-2Fu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdh-Sp-2Fu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -124,7 +124,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="woo-La-sov"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Fobias" largeTitleDisplayMode="always" id="Lky-49-qZa"/>
+                    <navigationItem key="navigationItem" title="Fobias" largeTitleDisplayMode="never" id="Lky-49-qZa"/>
                     <connections>
                         <outlet property="phobiasTableView" destination="9YL-eQ-tfx" id="5KJ-6K-PFl"/>
                         <segue destination="RBC-cW-5dU" kind="show" identifier="fobiasToNiveis" id="Yo5-h2-cg5"/>

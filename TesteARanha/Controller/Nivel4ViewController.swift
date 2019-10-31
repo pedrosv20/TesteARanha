@@ -1,26 +1,75 @@
 import UIKit
 import RealityKit
+import ARKit
 
-class Nivel4ViewController: UIViewController, UICollectionViewDelegate {
+class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachingOverlayViewDelegate {
 
     @IBOutlet var arView: ARView!
     var entity : Entity!
     var anchor: AnchorEntity!
     
-    var cellIds = ["aa", "bb", "cc", "dd"]
-    let cellSizes = Array( repeatElement(CGSize(width:414, height:171), count: 4))
+    var cellIds = ["aa", "bb", "cc", "dd", "ee"]
+    let cellSizes = Array( repeatElement(CGSize(width:414, height:171), count: 5))
+    
+    var coachQuantico = ARCoachingOverlayView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        anchor = AnchorEntity(plane: .horizontal)
-        arView.scene.addAnchor(anchor)
-        let url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
-        entity = try? Entity.loadModel(contentsOf: url!)
-        anchor.addChild(entity!)
-        entity.stopAllAnimations()
-
+        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setOverlay(automatically: true, forDetectionType: .horizontalPlane)
+    }
+    
+    func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
+        print("entrou")
+        //1. Link The coachQuantico To Our Current Session
+        self.coachQuantico.session = self.arView.session
+        self.coachQuantico.delegate = self
+        
+        self.arView.addSubview(self.coachQuantico)
+        
+        //2. Set It To Fill Our View
+        NSLayoutConstraint.activate([
+            NSLayoutConstraint(item:  coachQuantico, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item:  coachQuantico, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item:  coachQuantico, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item:  coachQuantico, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0)
+        ])
+        
+        coachQuantico.translatesAutoresizingMaskIntoConstraints = false
+        
+        //3. Enable The Overlay To Activate Automatically Based On User Preference
+        coachQuantico.setActive(true, animated: true)
+        print("goal")
+        //4. Set The Purpose Of The Overlay Based On The User Preference
+        self.coachQuantico.goal = goal
+        coachQuantico.activatesAutomatically = false
+        
+    }
+    
+    
+    public func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingOverlayView) {
+        print("ativou")
+    }
+    
+    //2. Called When The ARCoachingOverlayView Is No Active And No Longer Displayer
+    public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
+                anchor = AnchorEntity(plane: .horizontal)
+                arView.scene.addAnchor(anchor)
+                let url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
+                entity = try? Entity.loadModel(contentsOf: url!)
+                anchor.addChild(entity!)
+                entity.stopAllAnimations()
+    }
+    
+    //3. Called When Tracking Conditions Are Poor Or The Seesion Needs Restarting
+    
+//    public func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoachingOverlayView) {
+//
+//    }
+    
     
     @IBAction func addSpider(_ sender: Any) {
         entity.stopAllAnimations()
@@ -46,6 +95,14 @@ extension Nivel4ViewController: UICollectionViewDelegateFlowLayout {
         return cellSizes[indexPath.item]
     }
 }
+
+
+    
+    
+    
+     
+    
+
 
 
 
