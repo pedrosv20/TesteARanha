@@ -10,10 +10,13 @@ import UIKit
 
 class NiveisViewController: UITableViewController {
     
-    var selectedPhobia: Int!
+    var selectedPhobiaIndex: Int!
     let cellSpacingHeight: CGFloat = 15
+    var selectedPhobia: Fobia {
+        Model.shared.fobias[selectedPhobiaIndex]
+    }
     var nameOfPhobia: String {
-        Model.shared.fobias[selectedPhobia].type.lowercased()
+        selectedPhobia.type.lowercased()
     }
     var stages: [(name: String, icon: UIImage?, description: String)] {
         [
@@ -33,7 +36,7 @@ class NiveisViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        navigationItem.title = Model.shared.fobias[selectedPhobia].type
+        navigationItem.title = selectedPhobia.type
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }

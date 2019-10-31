@@ -6,7 +6,7 @@
 //  Copyright © 2019 Pedro Vargas. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
 
 
 class AudioModel {
@@ -39,4 +39,3 @@ class AudioModel {
     }
 }
 
-}

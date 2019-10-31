@@ -13,13 +13,12 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var audioButton: UIButton!
     
-    var fobia: Fobia
+    var fobia: Fobia!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa 2"
-        fobia = Model.shared
-
+        fobia = Model.shared.
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

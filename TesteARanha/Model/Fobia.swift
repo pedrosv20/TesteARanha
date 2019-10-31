@@ -12,7 +12,7 @@ import UIKit
 class Fobia {
     
     var audios = [AVAudioPlayer]()
-    var title: [String]
+    var title: String
     var description: String
     var tipoFobia: TipoFobia
     var backgroundIcon: UIImage
@@ -22,8 +22,8 @@ class Fobia {
         tipoFobia: TipoFobia,
         backgroundIcon: UIImage,
         icon: UIImage,
-        title: [String],
-        description: [String],
+        title: String,
+        description: String,
         audios: [String]
     ) {
         self.tipoFobia = tipoFobia

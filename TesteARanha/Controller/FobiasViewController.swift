@@ -55,7 +55,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Model.shared.fobiaSelecionada = indexPath.row
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
-            vc.selectedPhobia = indexPath.row
+            vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
