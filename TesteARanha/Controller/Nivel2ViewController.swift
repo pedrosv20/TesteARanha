@@ -19,7 +19,7 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Etapa 2"
+        navigationItem.title = "Etapa Áudio"
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
