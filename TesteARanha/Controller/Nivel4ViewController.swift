@@ -12,10 +12,11 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     var cellSizes = Array( repeatElement(CGSize(width:414, height:171), count: 4))
     
     var coachQuantico = ARCoachingOverlayView()
+    
     var selectedPhobiaIndex: Int!
-      var selectedPhobia: Fobia {
+    var selectedPhobia: Fobia {
           Model.shared.fobias[selectedPhobiaIndex]
-      }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

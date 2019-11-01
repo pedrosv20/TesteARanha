@@ -26,11 +26,11 @@
 		07CAB051235103C800E19AB4 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB048235103C800E19AB4 /* ship.png */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
+		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
 		56277D5F2369CEA9003CE021 /* AudioFobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D5D2369CEA8003CE021 /* AudioFobia.swift */; };
 		56277D602369CEA9003CE021 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D5E2369CEA9003CE021 /* AudioModel.swift */; };
 		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
 		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
-		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
@@ -91,11 +91,11 @@
 		07CAB048235103C800E19AB4 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
+		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
 		56277D5D2369CEA8003CE021 /* AudioFobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFobia.swift; sourceTree = "<group>"; };
 		56277D5E2369CEA9003CE021 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
 		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
-		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
 		56591B6C23588D1F00F3A657 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		56591B6E23588D1F00F3A657 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
@@ -379,9 +379,7 @@
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,
 				07AAEC9E235901FB001F6734 /* SH3.png in Resources */,
 				07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */,
-				07CAB050235103C800E19AB4 /* untitled.dae in Resources */,
 				6C71424B236C5F7300A84B71 /* night-at-the-club.mp3 in Resources */,
-				07CAB052235103C800E19AB4 /* spider.scn in Resources */,
 				56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */,
 				07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */,
 				9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */,
@@ -637,7 +635,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = AMXQN329PY;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -655,7 +653,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = AMXQN329PY;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
