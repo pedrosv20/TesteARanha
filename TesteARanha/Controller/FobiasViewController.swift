@@ -53,7 +53,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        Model.shared.fobiaSelecionada = indexPath.row
+        //Model.shared.fobiaSelecionada = indexPath.row
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
             vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
@@ -63,11 +63,11 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 }
 
-extension Dictionary where Key: ExpressibleByStringLiteral {
-    func getValue<T: RawRepresentable>(forKey key: T) -> Value? where T.RawValue == String {
-        return self[key.rawValue as! Key]
-    }
-    mutating func setValue<T: RawRepresentable>(value: Value, forKey key: T) where T.RawValue == String {
-        self[key.rawValue as! Key] = value
-    }
-}
+//extension Dictionary where Key: ExpressibleByStringLiteral {
+//    func getValue<T: RawRepresentable>(forKey key: T) -> Value? where T.RawValue == String {
+//        return self[key.rawValue as! Key]
+//    }
+//    mutating func setValue<T: RawRepresentable>(value: Value, forKey key: T) where T.RawValue == String {
+//        self[key.rawValue as! Key] = value
+//    }
+//}

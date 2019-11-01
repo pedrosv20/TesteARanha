@@ -4,6 +4,10 @@ import ARKit
 class Nivel4ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
+    var selectedPhobiaIndex: Int!
+      var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+      }
     
     override func viewDidLoad() {
         super.viewDidLoad()

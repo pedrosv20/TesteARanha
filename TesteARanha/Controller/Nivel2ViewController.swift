@@ -10,15 +10,16 @@ import UIKit
 
 class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var audioButton: UIButton!
+    var selectedPhobiaIndex: Int!
+    var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+    }
     
-    var fobia: Fobia!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa 2"
-        fobia = Model.shared.
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -30,21 +31,22 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        let count = Model.shared
+        let count = selectedPhobia.cardsTwo.count
         pageControl.numberOfPages = count
         pageControl.pageIndicatorTintColor = UIColor(red:0.78, green:0.77, blue:0.77, alpha:1.0)
         pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
         pageControl.isHidden = !(count > 1)
-        return
+        
+        return count
     }
 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "audioCell", for: indexPath) as! AudioCell
         
-        cell.audioLbl.text = AudioModel.shared.audios[indexPath.row].audio
+        cell.audioLbl.text = selectedPhobia.cardsTwo[indexPath.row].audioDescription
         
-        cell.textLbl.text = AudioModel.shared.audios[indexPath.row].text
+        cell.textLbl.text = selectedPhobia.cardsTwo[indexPath.row].audioDescription
         
         cell.slider.maximumTrackTintColor = UIColor.white
         cell.slider.minimumTrackTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)

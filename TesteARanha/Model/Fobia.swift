@@ -10,32 +10,27 @@ import AVFoundation
 import UIKit
 
 class Fobia {
-    
-    var audios = [AVAudioPlayer]()
-    var title: String
-    var description: String
     var tipoFobia: TipoFobia
     var backgroundIcon: UIImage
     var icon: UIImage
+    var cardsOne: [StageOne]
+    var cardsTwo: [StageTwo]
+    var cardsThree: [StageThree]
     
     internal init(
         tipoFobia: TipoFobia,
         backgroundIcon: UIImage,
         icon: UIImage,
-        title: String,
-        description: String,
-        audios: [String]
+        stageOne: [StageOne],
+        stageTwo: [StageTwo],
+        stageThree: [StageThree]
     ) {
         self.tipoFobia = tipoFobia
         self.backgroundIcon = backgroundIcon
         self.icon = icon
-        self.title = title
-        self.description = description
-        
-        
-        for audio in audios {
-            self.audios.append(AVAudioPlayer.load(audio))
-        }
+        self.cardsOne = stageOne
+        self.cardsTwo = stageTwo
+        self.cardsThree = stageThree
     }
 }
 

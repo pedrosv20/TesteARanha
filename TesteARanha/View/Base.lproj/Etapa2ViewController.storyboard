@@ -61,11 +61,6 @@
                                                     <rect key="frame" x="18" y="145" width="321" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </slider>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wP0-57-d0C">
-                                                    <rect key="frame" x="155" y="301" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
-                                                </button>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.13725490200000001" green="0.27058823529999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -115,7 +110,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Fa2-c6-3Bk"/>
                     <connections>
-                        <outlet property="audioButton" destination="wP0-57-d0C" id="4FE-mK-Gop"/>
                         <outlet property="pageControl" destination="lKI-1L-6qN" id="jar-sp-uXk"/>
                     </connections>
                 </viewController>

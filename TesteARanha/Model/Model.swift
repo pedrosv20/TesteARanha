@@ -11,51 +11,192 @@ import UIKit
 
 class Model {
     static let shared = Model()
-    var fobiaSelecionada: Int
     var fobias = [Fobia]()
     
     private init() {
-        
-        fobias.append(
-            Fobia(
+        fobias.append(Fobia(
             tipoFobia: .aranha,
             backgroundIcon: UIImage(named: "cardSpider")!,
             icon: UIImage(named: "aranhaIcon")!,
-            title: "Vamos conhecer dados científicos?",
-            description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
-            audios: [
-            ]
-        ))
-        fobias.append(
-            Fobia(
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem")
+            ])
+        )
+        
+        fobias.append(Fobia(
             tipoFobia: .agulha,
-            backgroundIcon: UIImage(named: "needleCard")!,
-            icon: UIImage(named: "agulhaIcon")!,
-            title: "Vamos conhecer dados científicos?",
-            description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
-            audios: [
-            ]
-        ))
-        fobias.append(
-            Fobia(
+            backgroundIcon: UIImage(named: "cardSpider")!,
+            icon: UIImage(named: "aranhaIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "frogIcon.png"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "frogIcon.png"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "frogIcon.png")
+            ])
+        )
+        
+        fobias.append(Fobia(
             tipoFobia: .cobra,
-            backgroundIcon: UIImage(named: "snakeCard")!,
-            icon: UIImage(named: "snakeIcon")!,
-            title: "Vamos conhecer dados científicos?",
-            description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
-            audios: [
-            ]
-        ))
-        fobias.append(
-            Fobia(
-                  tipoFobia: .sapo,
-                  backgroundIcon: UIImage(named: "frogCard")!,
-                  icon: UIImage(named: "frogIcon")!,
-                  title: "Vamos conhecer dados científicos?",
-                  description: "Aranhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas",
-                  audios: [
-                  ]
-              ))
+            backgroundIcon: UIImage(named: "cardSpider")!,
+            icon: UIImage(named: "aranhaIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem")
+            ])
+        )
+        
+        fobias.append(Fobia(
+            tipoFobia: .sapo,
+            backgroundIcon: UIImage(named: "cardSpider")!,
+            icon: UIImage(named: "aranhaIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem")
+            ])
+        )
     }
 
 }

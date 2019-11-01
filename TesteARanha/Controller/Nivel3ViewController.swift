@@ -9,6 +9,11 @@
 import UIKit
 
 class Nivel3ViewController: UIViewController {
+    
+    var selectedPhobiaIndex: Int!
+      var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+      }
 
     override func viewDidLoad() {
         super.viewDidLoad()
