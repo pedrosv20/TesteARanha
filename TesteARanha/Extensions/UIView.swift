@@ -24,4 +24,25 @@ extension UIView {
     func removeDropShadow(scale: Bool = true) {
         layer.shadowOpacity = 0
     }
+    
+    func blur() {
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.addSubview(blurEffectView)
+    }
+
+    func unBlur() {
+        for subview in self.subviews {
+            if subview is UIVisualEffectView {
+                UIView.animate(withDuration: 1.5, animations: {
+                    subview.alpha = 0
+                }) { (Bool) in
+                    subview.removeFromSuperview()
+                }
+            
+            }
+        }
+    }
 }
