@@ -11,22 +11,28 @@ import CoreImage
 import SpriteKit
 
 class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-        
+
+    
+    var selectedPhobiaIndex: Int!
+      var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+      }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = "Etapa Imagem"
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Model.shared.cardsEtapaImagem.count
+        return selectedPhobia.cardsThree.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imagemCell", for: indexPath) as! ImagemCell
 
-        cell.titleLabel.text = Model.shared.cardsEtapaImagem[indexPath.row].etapa3Title
-        cell.subTitleLabel.text = Model.shared.cardsEtapaImagem[indexPath.row].etapa3SubTitle
-        cell.cardImage.image = Model.shared.cardsEtapaImagem[indexPath.row].etapa3Imagem
+        cell.titleLabel.text = selectedPhobia.cardsThree[indexPath.row].title
+        cell.subTitleLabel.text = selectedPhobia.cardsThree[indexPath.row].description
+        cell.cardImage.image = selectedPhobia.cardsThree[indexPath.row].image
         
         cell.cardImage.blur()
         cell.isBlurred = true
@@ -55,29 +61,6 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
 
 
-}
-
-extension UIView {
-    func blur() {
-        let blurEffect = UIBlurEffect(style: .dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = self.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.addSubview(blurEffectView)
-    }
-
-    func unBlur() {
-        for subview in self.subviews {
-            if subview is UIVisualEffectView {
-                UIView.animate(withDuration: 1.5, animations: {
-                    subview.alpha = 0
-                }) { (Bool) in
-                    subview.removeFromSuperview()
-                }
-            
-            }
-        }
-    }
 }
 
 

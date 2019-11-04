@@ -13,6 +13,6 @@ class FobiaCell: UITableViewCell {
     @IBOutlet weak var cardBackground: UIImageView!
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var cardIcon: UIImageView!
-    
+    var tipoFobia: TipoFobia!
     
 }

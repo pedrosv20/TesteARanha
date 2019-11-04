@@ -17,6 +17,11 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     var coachQuantico = ARCoachingOverlayView()
     var running = false
     
+    var selectedPhobiaIndex: Int!
+    var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //TODO: bloquear tela e voltar pra etapa

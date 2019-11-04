@@ -6,17 +6,46 @@
 //  Copyright © 2019 Pedro Vargas. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
 import UIKit
 
-class AudioFobia {
+class Audio: NSObject {
+    private var player: AVAudioPlayer!
+    private var text: String
     
-    internal init(text: String, audio: String) {
-        self.audio = audio
+    init(fileName: String, text: String, audio: String) {
         self.text = text
+        
+        super.init()
+        self.player = load(fileName)
+        
     }
     
-    var text: String
-    var audio: String
+    internal func load(_ fileName: String) -> AVAudioPlayer {
+        let path = Bundle.main.path(forResource: fileName, ofType: nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            let player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+            player.numberOfLoops = -1
+            return player
+        } catch {
+            fatalError("The audio file was not found")
+        }
+    }
+    
+    func play() {
+        if (player.isPlaying) {
+            return
+        }
+        player.play()
+    }
+    
+    func stop() {
+        player.stop()
+        player.currentTime = 0
+    }
+    
 }
 

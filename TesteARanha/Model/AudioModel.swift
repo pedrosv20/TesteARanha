@@ -6,20 +6,36 @@
 //  Copyright © 2019 Pedro Vargas. All rights reserved.
 //
 
-import Foundation
+//import AVFoundation
+//
+//
+//class AudioModel {
+//    static let shared = AudioModel()
+//
+//    var audios = [Audio: AudioFobia]()
+//
+//    private init() {
+//        audios[.phaseOne] =
+//
+//    }
+//
+//    let audios = [
+//
+//    ]
+//
+//    func getAudio(_ audioToPlay: Audio) -> A {
+//
+//    }
+//
+//    func play(_ audioToPlay: Audio) {
+//        for (audio, audioFobia) in audios
+//        {
+//            if audio == audioToPlay {
+//                audioFobia.play()
+//            } else {
+//                audioFobia.stop()
+//            }
+//        }
+//    }
+//}
 
-
-class AudioModel {
-    static let shared = AudioModel()
-    
-    private init() {
-        
-    }
-    
-    let audios = [
-        AudioFobia(text: "OOOOOOSJSKDJKJ", audio: "SDJKSAJDKLSAD"),
-        AudioFobia(text: "SKDJKLSAJDSA", audio: "SLDKL;SAKD;LSAD"),
-        AudioFobia(text: "sdsldkals;kda;slk", audio: "sdl;ksa;ldksal;d")
-    ]
-    
-}
