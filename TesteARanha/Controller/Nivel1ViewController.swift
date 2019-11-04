@@ -15,6 +15,10 @@ class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollec
         Model.shared.fobias[selectedPhobiaIndex]
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        parent?.viewWillAppear(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa Texto"

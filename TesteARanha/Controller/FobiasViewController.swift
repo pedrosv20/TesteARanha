@@ -27,6 +27,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
     }
     
+    func reloadData() {
+        phobiasTableView.reloadData()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -43,10 +47,12 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         cell.cardLabel.text = fobia.tipoFobia.rawValue
         cell.cardIcon.image = fobia.icon
-        cell.cardBackground.image = fobia.backgroundIcon
-        cell.cardBackground.layer.masksToBounds = true
-        cell.cardBackground.layer.cornerRadius = cell.cardBackground.frame.width/19.0
+        cell.cardIconBig.image = fobia.icon
+        cell.cardView.layer.masksToBounds = true
+        cell.cardView.layer.cornerRadius = 15
         cell.tipoFobia = fobia.tipoFobia
+        
+        cell.unselect()
         
         return cell
     }
@@ -58,6 +64,9 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
             vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        let cell = tableView.cellForRow(at: indexPath) as! FobiaCell
+        cell.select()
     }
 
     

@@ -11,7 +11,6 @@ import UIKit
 
 class Fobia {
     var tipoFobia: TipoFobia
-    var backgroundIcon: UIImage
     var icon: UIImage
     var cardsOne: [StageOne]
     var cardsTwo: [StageTwo]
@@ -19,14 +18,12 @@ class Fobia {
     
     internal init(
         tipoFobia: TipoFobia,
-        backgroundIcon: UIImage,
         icon: UIImage,
         stageOne: [StageOne],
         stageTwo: [StageTwo],
         stageThree: [StageThree]
     ) {
         self.tipoFobia = tipoFobia
-        self.backgroundIcon = backgroundIcon
         self.icon = icon
         self.cardsOne = stageOne
         self.cardsTwo = stageTwo
