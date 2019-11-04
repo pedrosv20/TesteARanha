@@ -41,6 +41,16 @@ class NiveisViewController: UITableViewController {
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if let parentController = parent as? FobiasViewController {
+            parentController.reloadData()
+        }
+    }
+    
     @objc func callSettings(sender: UIBarButtonItem) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)
@@ -80,15 +90,20 @@ class NiveisViewController: UITableViewController {
             cell.levelIcon.image = content.icon
             cell.levelIconBig.image = content.icon
             cell.levelDescription.text = content.description
-            cell.levelView.dropShadow()
             cell.levelView.layer.masksToBounds = true
             cell.selectionStyle = .none
+            
+            cell.unselect()
             
             return cell
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row != stages.count {
+            let cell = tableView.cellForRow(at: indexPath) as! EtapaCell
+            cell.select()
+        }
         
         if indexPath.row == 0 {
             if let vc = (storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController) {
@@ -115,13 +130,8 @@ class NiveisViewController: UITableViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
-        
-        if indexPath.row != stages.count {
-            //vc.selectedPhobia = selectedPhobia
-        }
     }
 }
 
 
-// mask with shadow (animated when selecting)
 // view progress only when touched directly onto the label/image

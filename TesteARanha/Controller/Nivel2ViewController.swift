@@ -22,6 +22,10 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
         navigationItem.title = "Etapa Áudio"
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        parent?.viewWillAppear(true)
+    }
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
         let index = scrollView.contentOffset.x / witdh

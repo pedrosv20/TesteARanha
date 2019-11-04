@@ -16,7 +16,6 @@ class Model {
     private init() {
         fobias.append(Fobia(
             tipoFobia: .aranha,
-            backgroundIcon: UIImage(named: "cardSpider")!,
             icon: UIImage(named: "aranhaIcon")!,
             stageOne: [
                 StageOne(
@@ -62,7 +61,6 @@ class Model {
         
         fobias.append(Fobia(
             tipoFobia: .agulha,
-            backgroundIcon: UIImage(named: "needleCard")!,
             icon: UIImage(named: "agulhaIcon")!,
             stageOne: [
                 StageOne(
@@ -108,7 +106,6 @@ class Model {
         
         fobias.append(Fobia(
             tipoFobia: .cobra,
-            backgroundIcon: UIImage(named: "snakeCard")!,
             icon: UIImage(named: "snakeIcon")!,
             stageOne: [
                 StageOne(
@@ -154,7 +151,6 @@ class Model {
         
         fobias.append(Fobia(
             tipoFobia: .sapo,
-            backgroundIcon: UIImage(named: "frogCard")!,
             icon: UIImage(named: "frogIcon")!,
             stageOne: [
                 StageOne(
