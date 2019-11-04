@@ -122,7 +122,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-nu-TDv">
+                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-nu-TDv">
                                                     <rect key="frame" x="75" y="218" width="225" height="32"/>
                                                     <connections>
                                                         <action selector="size:" destination="BV1-FR-VrT" eventType="valueChanged" id="zGP-QY-obJ"/>
@@ -135,17 +135,11 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-HP-yNO">
-                                                    <rect key="frame" x="160" y="248" width="55" height="37"/>
-                                                </pageControl>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Lxb-HP-yNO" firstAttribute="centerX" secondItem="tIr-mz-IF4" secondAttribute="centerX" id="4Fn-Ht-xGo"/>
                                                 <constraint firstItem="iQG-nu-TDv" firstAttribute="centerX" secondItem="tIr-mz-IF4" secondAttribute="centerX" id="LrP-TE-9zG"/>
-                                                <constraint firstItem="Lxb-HP-yNO" firstAttribute="top" secondItem="iQG-nu-TDv" secondAttribute="bottom" constant="-2" id="gNe-OO-bgi"/>
                                                 <constraint firstItem="iQG-nu-TDv" firstAttribute="width" secondItem="tIr-mz-IF4" secondAttribute="width" multiplier="0.6" id="paT-Ma-y0D"/>
                                                 <constraint firstItem="iQG-nu-TDv" firstAttribute="top" secondItem="07N-3k-bfZ" secondAttribute="bottom" constant="5" id="v0k-kK-YIp"/>
-                                                <constraint firstAttribute="bottom" secondItem="Lxb-HP-yNO" secondAttribute="bottom" constant="15" id="xdo-8Q-KtB"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.093123786149999999" green="0.19383513929999999" blue="0.28628587719999998" alpha="0.95257277399999996" colorSpace="custom" customColorSpace="displayP3"/>
@@ -196,15 +190,21 @@
                                     <outlet property="delegate" destination="BV1-FR-VrT" id="akF-fR-Z9f"/>
                                 </connections>
                             </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-HP-yNO">
+                                <rect key="frame" x="0.0" y="859" width="414" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6c0-Im-Iwa" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GVW-i5-stf"/>
                             <constraint firstItem="6c0-Im-Iwa" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="K7e-FE-0ep"/>
+                            <constraint firstItem="Lxb-HP-yNO" firstAttribute="width" secondItem="d14-cS-bwF" secondAttribute="width" id="TKU-rZ-NSX"/>
                             <constraint firstItem="6c0-Im-Iwa" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="ZlV-Gs-rao"/>
                             <constraint firstAttribute="bottom" secondItem="6c0-Im-Iwa" secondAttribute="bottom" id="adx-qo-y3a"/>
                             <constraint firstItem="d14-cS-bwF" firstAttribute="bottom" secondItem="U0K-SW-4ec" secondAttribute="bottom" id="cC1-Hy-f4c"/>
                             <constraint firstItem="d14-cS-bwF" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="iLX-1a-K8m"/>
+                            <constraint firstItem="Lxb-HP-yNO" firstAttribute="centerX" secondItem="d14-cS-bwF" secondAttribute="centerX" id="jY4-mk-arG"/>
+                            <constraint firstItem="Lxb-HP-yNO" firstAttribute="bottom" secondItem="d14-cS-bwF" secondAttribute="bottom" id="qzB-1u-Eye"/>
                             <constraint firstItem="d14-cS-bwF" firstAttribute="centerX" secondItem="6c0-Im-Iwa" secondAttribute="centerX" id="rjp-rF-Lz2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
