@@ -3,19 +3,48 @@
 //  TesteARanha
 //
 //  Created by Maria Fernanda Azolin on 15/10/19.
-//  Copyright © 2019 Pedro Vargas. All rights reserved.
+//  Copyright © 2019 Wonder Woman. All rights reserved.
 //
 
 import UIKit
 
 class NiveisViewController: UITableViewController {
     
-    var selectedPhobia = 0
+    var selectedPhobiaIndex: Int!
+    let cellSpacingHeight: CGFloat = 15
+    var selectedPhobia: Fobia {
+        Model.shared.fobias[selectedPhobiaIndex]
+    }
+    var nameOfPhobia: String {
+        selectedPhobia.tipoFobia.rawValue.lowercased()
+    }
+    var stages: [(name: String, icon: UIImage?, description: String)] {
+        [
+        (name: "Etapa Texto",
+        icon: UIImage(named: "Etapa1Icon"),
+        description: "Você vai acessar dados científicos sobre \(nameOfPhobia) numa abordagem de modo escrito."),
+        (name: "Etapa Áudio",
+        icon: UIImage(named: "Etapa2Icon"),
+        description: "Você irá ouvir sobre \(nameOfPhobia). Será abordada em níveis. Vamos com calma."),
+        (name: "Etapa Imagem",
+        icon: UIImage(named: "Etapa3Icon"),
+        description: "Você vai ver imagens de \(nameOfPhobia) em três níveis: desenho, cartoon e fotografia."),
+        (name: "Etapa Realidade",
+        icon: UIImage(named: "Etapa4Icon"),
+        description: "Você vai usar a câmera para interagir com \(nameOfPhobia) via realidade aumentada.")
+        ]
+    }
     
-    override func viewWillAppear(_ animated: Bool) {
-        loadViewIfNeeded()
-        
-        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    override func viewDidLoad() {
+        navigationItem.title = selectedPhobia.tipoFobia.rawValue
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+    }
+    
+    @objc func callSettings(sender: UIBarButtonItem) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -23,67 +52,76 @@ class NiveisViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return stages.count+1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return cellSpacingHeight
+    }
+
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "etapaCell", for: indexPath) as! EtapaCell
-        
-        switch indexPath.row {
-        case 0:
-            cell.levelLabel.text = "Etapa 1"
-            cell.levelIcon.image = UIImage(named: "Etapa1Icon")
-        case 1:
-            cell.levelLabel.text = "Etapa 2"
-            cell.levelIcon.image = UIImage(named: "Etapa2Icon")
-        case 2:
-            cell.levelLabel.text = "Etapa 3"
-            cell.levelIcon.image = UIImage(named: "Etapa3Icon")
-        case 3:
-            cell.levelLabel.text = "Etapa 4"
-            cell.levelIcon.image = UIImage(named: "Etapa4Icon")
-        default:
-            cell.levelLabel.text = "Etapa 1"
-            cell.levelIcon.image = UIImage(named: "Etapa1Icon")
+        if indexPath.row == stages.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "viewProgressCell", for: indexPath) as! ViewProgressCell
+            
+            cell.selectionStyle = .none
+            
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "etapaCell", for: indexPath) as! EtapaCell
+            
+            let content = stages[indexPath.row]
+            cell.levelLabel.text = content.name
+            cell.levelIcon.image = content.icon
+            cell.levelIconBig.image = content.icon
+            cell.levelDescription.text = content.description
+            cell.levelView.dropShadow()
+            cell.levelView.layer.masksToBounds = true
+            cell.selectionStyle = .none
+            
+            return cell
         }
-    
-        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
-        switch indexPath.row {
-        case 0:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController {
-                //vc.selectedPhobia = indexPath.row
+        if indexPath.row == 0 {
+            if let vc = (storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController) {
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-        case 1:
+        } else if indexPath.row == 1 {
             if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
-                //vc.selectedPhobia = indexPath.row
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-        case 2:
+        } else if indexPath.row == 2 {
             if let vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as? Nivel3ViewController {
-                //vc.selectedPhobia = indexPath.row
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-        case 3:
+        } else if indexPath.row == 3 {
             if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
-                //vc.selectedPhobia = indexPath.row
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-        default:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController {
-                //vc.selectedPhobia = indexPath.row
+        } else if indexPath.row == stages.count {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "progress") as? ProgressViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }
         
-        
-        
+        if indexPath.row != stages.count {
+            //vc.selectedPhobia = selectedPhobia
+        }
     }
-
-    
 }
+
+
+// mask with shadow (animated when selecting)
+// view progress only when touched directly onto the label/image

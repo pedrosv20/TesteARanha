@@ -11,16 +11,194 @@ import UIKit
 
 class Model {
     static let shared = Model()
+    var fobias = [Fobia]()
     
-    private init(){
+    private init() {
+        fobias.append(Fobia(
+            tipoFobia: .aranha,
+            backgroundIcon: UIImage(named: "cardSpider")!,
+            icon: UIImage(named: "aranhaIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem")
+            ])
+        )
         
+        fobias.append(Fobia(
+            tipoFobia: .agulha,
+            backgroundIcon: UIImage(named: "needleCard")!,
+            icon: UIImage(named: "agulhaIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "frogIcon.png"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "frogIcon.png"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "frogIcon.png")
+            ])
+        )
+        
+        fobias.append(Fobia(
+            tipoFobia: .cobra,
+            backgroundIcon: UIImage(named: "snakeCard")!,
+            icon: UIImage(named: "snakeIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem")
+            ])
+        )
+        
+        fobias.append(Fobia(
+            tipoFobia: .sapo,
+            backgroundIcon: UIImage(named: "frogCard")!,
+            icon: UIImage(named: "frogIcon")!,
+            stageOne: [
+                StageOne(
+                    text: "Etapa Texto",
+                    title: "Etapa Texto"
+                ),
+                StageOne(
+                    text: "Etapa texto",
+                    title: "Etapa Texto"
+                )
+            ],
+            stageTwo: [
+                StageTwo(
+                    audioDescription: "Etapa Áudio 1",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 2",
+                    audio: "night-at-the-club.mp3"
+                ),
+                StageTwo(
+                    audioDescription: "Etapa Áudio 3",
+                    audio: "night-at-the-club.mp3"
+                )
+            ],
+            stageThree: [
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem"
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "imagem")
+            ])
+        )
     }
-    
-    let fobias = [
-        Fobia(type: "Aranhas", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!),
-        Fobia(type: "Agulhas", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!),
-        Fobia(type: "Cobras", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!),
-        Fobia(type: "Sapos", backgroundIcon: UIImage(named: "aranhaIcon")!, icon: UIImage(named: "aranhaIcon")!)
-    ]
-    
+
 }
+
+

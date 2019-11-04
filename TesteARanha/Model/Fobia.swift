@@ -6,21 +6,38 @@
 //  Copyright © 2019 Pedro Vargas. All rights reserved.
 //
 
-import Foundation
+import AVFoundation
 import UIKit
 
 class Fobia {
-    
-    internal init(type: String, backgroundIcon: UIImage, icon: UIImage) {
-        self.type = type
-        self.backgroundIcon = backgroundIcon
-        self.icon = icon
-        
-    }
-    
-    var type: String
+    var tipoFobia: TipoFobia
     var backgroundIcon: UIImage
     var icon: UIImage
-
+    var cardsOne: [StageOne]
+    var cardsTwo: [StageTwo]
+    var cardsThree: [StageThree]
     
+    internal init(
+        tipoFobia: TipoFobia,
+        backgroundIcon: UIImage,
+        icon: UIImage,
+        stageOne: [StageOne],
+        stageTwo: [StageTwo],
+        stageThree: [StageThree]
+    ) {
+        self.tipoFobia = tipoFobia
+        self.backgroundIcon = backgroundIcon
+        self.icon = icon
+        self.cardsOne = stageOne
+        self.cardsTwo = stageTwo
+        self.cardsThree = stageThree
+    }
 }
+
+enum TipoFobia: String {
+    case aranha = "Aranhas"
+    case agulha = "Agulhas"
+    case cobra = "Cobras"
+    case sapo = "Sapos"
+}
+

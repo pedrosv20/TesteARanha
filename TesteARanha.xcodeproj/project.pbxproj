@@ -27,13 +27,29 @@
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
 		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
+		56277D5F2369CEA9003CE021 /* AudioFobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D5D2369CEA8003CE021 /* AudioFobia.swift */; };
+		56277D602369CEA9003CE021 /* AudioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D5E2369CEA9003CE021 /* AudioModel.swift */; };
+		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
+		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
+		56E8C5CC23631DD0000F53FD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIView.swift */; };
+		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
+		56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D12363CF81000F53FD /* ProgressViewController.swift */; };
+		56E8C5DA2363D604000F53FD /* ViewProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D92363D604000F53FD /* ViewProgressCell.swift */; };
+		56E8C5DD2363DA47000F53FD /* ProgressViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */; };
+		6C61E040236B163D004F50F3 /* AVAudioPlayer+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C61E03F236B163D004F50F3 /* AVAudioPlayer+extensions.swift */; };
+		6C714244236C399100A84B71 /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C714243236C399100A84B71 /* StageOne.swift */; };
+		6C714246236C490D00A84B71 /* StageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C714245236C490D00A84B71 /* StageTwo.swift */; };
+		6C714248236C4AA900A84B71 /* StageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C714247236C4AA900A84B71 /* StageThree.swift */; };
+		6C71424B236C5F7300A84B71 /* night-at-the-club.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C71424A236C5F7300A84B71 /* night-at-the-club.mp3 */; };
 		9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */; };
 		9D4C55752361D0D400062326 /* Etapa2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */; };
 		9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */; };
 		9D4C557B2361D0F400062326 /* Etapa4ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55792361D0F400062326 /* Etapa4ViewController.storyboard */; };
+		9D576B87236B0BA5009B9246 /* Etapa3Infos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576B86236B0BA5009B9246 /* Etapa3Infos.swift */; };
+		9D576B89236B0BBC009B9246 /* ImagemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D576B88236B0BBC009B9246 /* ImagemCell.swift */; };
 		9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */; };
 		9D67269D2355F31C0030CAE7 /* NiveisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */; };
 		9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */; };
@@ -76,15 +92,30 @@
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
 		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
-		56591B6C23588D1F00F3A657 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		56277D5D2369CEA8003CE021 /* AudioFobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFobia.swift; sourceTree = "<group>"; };
+		56277D5E2369CEA9003CE021 /* AudioModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioModel.swift; sourceTree = "<group>"; };
+		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
+		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
 		56591B6E23588D1F00F3A657 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
 		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
+		56E8C5CB23631DD0000F53FD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		56E8C5D12363CF81000F53FD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		56E8C5D92363D604000F53FD /* ViewProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProgressCell.swift; sourceTree = "<group>"; };
+		56E8C5DC2363DA47000F53FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProgressViewController.storyboard; sourceTree = "<group>"; };
+		6C61E03F236B163D004F50F3 /* AVAudioPlayer+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+extensions.swift"; sourceTree = "<group>"; };
+		6C714243236C399100A84B71 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
+		6C714245236C490D00A84B71 /* StageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTwo.swift; sourceTree = "<group>"; };
+		6C714247236C4AA900A84B71 /* StageThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageThree.swift; sourceTree = "<group>"; };
+		6C71424A236C5F7300A84B71 /* night-at-the-club.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "night-at-the-club.mp3"; sourceTree = "<group>"; };
 		9D4C55712361D0C200062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa1ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55742361D0D400062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa2ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55772361D0E100062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa3ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C557A2361D0F400062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa4ViewController.storyboard; sourceTree = "<group>"; };
+		9D576B86236B0BA5009B9246 /* Etapa3Infos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Etapa3Infos.swift; sourceTree = "<group>"; };
+		9D576B88236B0BBC009B9246 /* ImagemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagemCell.swift; sourceTree = "<group>"; };
 		9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FobiasViewController.swift; sourceTree = "<group>"; };
 		9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiveisViewController.swift; sourceTree = "<group>"; };
 		9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel3ViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				56591B6E23588D1F00F3A657 /* Fobia.swift */,
-				56591B6C23588D1F00F3A657 /* Model.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -141,6 +171,8 @@
 		07C5C41F2350BB3400AB67C9 /* TesteARanha */ = {
 			isa = PBXGroup;
 			children = (
+				6C714249236C5F6600A84B71 /* Audios */,
+				56E8C5CA23631DB5000F53FD /* Extensions */,
 				07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */,
 				07CAB042235103B100E19AB4 /* 3D Objects */,
 				07C5C4202350BB3400AB67C9 /* AppDelegate.swift */,
@@ -180,6 +212,23 @@
 			path = "3D Objects";
 			sourceTree = "<group>";
 		};
+		56E8C5CA23631DB5000F53FD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56E8C5CB23631DD0000F53FD /* UIView.swift */,
+				6C61E03F236B163D004F50F3 /* AVAudioPlayer+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C714249236C5F6600A84B71 /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				6C71424A236C5F7300A84B71 /* night-at-the-club.mp3 */,
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
 		9D6726A42355F9700030CAE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +238,8 @@
 				9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */,
 				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
+				56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */,
+				56E8C5D12363CF81000F53FD /* ProgressViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,8 +247,14 @@
 		9D6726A52355F9840030CAE7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56277D5D2369CEA8003CE021 /* AudioFobia.swift */,
+				56277D5E2369CEA9003CE021 /* AudioModel.swift */,
+				9D576B86236B0BA5009B9246 /* Etapa3Infos.swift */,
 				07009F332357ADEE0070FD28 /* Fobia.swift */,
 				07009F322357ADEE0070FD28 /* Model.swift */,
+				6C714243236C399100A84B71 /* StageOne.swift */,
+				6C714245236C490D00A84B71 /* StageTwo.swift */,
+				6C714247236C4AA900A84B71 /* StageThree.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,14 +263,19 @@
 			isa = PBXGroup;
 			children = (
 				56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */,
-				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
 				56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */,
+				9D576B88236B0BBC009B9246 /* ImagemCell.swift */,
+				56526EEC236618F000A3C641 /* TextoCell.swift */,
+				56277D612369CF01003CE021 /* AudioCell.swift */,
+				56E8C5D92363D604000F53FD /* ViewProgressCell.swift */,
+				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
+				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
 				9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */,
 				9D4C55792361D0F400062326 /* Etapa4ViewController.storyboard */,
-				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
 				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
+				56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +364,7 @@
 				07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */,
 				9D4C557B2361D0F400062326 /* Etapa4ViewController.storyboard in Resources */,
 				07CAB051235103C800E19AB4 /* ship.png in Resources */,
+				56E8C5DD2363DA47000F53FD /* ProgressViewController.storyboard in Resources */,
 				07CAB04D235103C800E19AB4 /* spider2_color.jpg in Resources */,
 				07AAEC9F235901FB001F6734 /* Spinnen_Bein_tex.jpg in Resources */,
 				9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */,
@@ -314,6 +377,7 @@
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,
 				07AAEC9E235901FB001F6734 /* SH3.png in Resources */,
 				07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */,
+				6C71424B236C5F7300A84B71 /* night-at-the-club.mp3 in Resources */,
 				56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */,
 				07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */,
 				9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */,
@@ -337,16 +401,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */,
+				56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */,
 				07009F352357ADEE0070FD28 /* Model.swift in Sources */,
+				56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */,
+				56277D622369CF01003CE021 /* AudioCell.swift in Sources */,
+				56277D5F2369CEA9003CE021 /* AudioFobia.swift in Sources */,
+				9D576B87236B0BA5009B9246 /* Etapa3Infos.swift in Sources */,
 				07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */,
+				56277D602369CEA9003CE021 /* AudioModel.swift in Sources */,
 				9D67269B2355E7A20030CAE7 /* FobiasViewController.swift in Sources */,
 				9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */,
 				9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */,
+				6C61E040236B163D004F50F3 /* AVAudioPlayer+extensions.swift in Sources */,
 				9D67269D2355F31C0030CAE7 /* NiveisViewController.swift in Sources */,
+				6C714244236C399100A84B71 /* StageOne.swift in Sources */,
 				07009F362357ADEE0070FD28 /* Fobia.swift in Sources */,
+				56E8C5CC23631DD0000F53FD /* UIView.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
+				9D576B89236B0BBC009B9246 /* ImagemCell.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
+				6C714248236C4AA900A84B71 /* StageThree.swift in Sources */,
 				56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */,
+				56526EED236618F000A3C641 /* TextoCell.swift in Sources */,
+				56E8C5DA2363D604000F53FD /* ViewProgressCell.swift in Sources */,
+				6C714246236C490D00A84B71 /* StageTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +469,14 @@
 				56A5DAAB23609D7E00BCC0F9 /* Base */,
 			);
 			name = NiveisViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56E8C5DC2363DA47000F53FD /* Base */,
+			);
+			name = ProgressViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */ = {

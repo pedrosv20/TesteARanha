@@ -29,9 +29,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="153"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-WP-8qj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardSpider" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-WP-8qj">
                                                     <rect key="frame" x="20.5" y="23" width="373" height="107"/>
-                                                    <color key="backgroundColor" red="0.93333333333333335" green="0.9137254901960784" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="kBO-WU-F93"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aranhas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-ck-hch">
                                                     <rect key="frame" x="120" y="49.5" width="70" height="54"/>
@@ -167,5 +170,6 @@
     <resources>
         <image name="Oval-1" width="263" height="263"/>
         <image name="aranhaIcon" width="53" height="47"/>
+        <image name="cardSpider" width="344" height="80"/>
     </resources>
 </document>
