@@ -11,8 +11,8 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     var entity : Entity!
     var anchor: AnchorEntity!
     
-    var cellIds = ["aa", "bb", "cc", "dd"]
-    var cellSizes = Array( repeatElement(CGSize(width:414, height:300), count: 4))
+    var cellIds = ["text1cell", "text2cell", "settingsCell", "animationCell"]
+    
     
     var coachQuantico = ARCoachingOverlayView()
     var running = false
@@ -24,6 +24,9 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        pageControl.pageIndicatorTintColor = UIColor(red:0.78, green:0.77, blue:0.77, alpha:1.0)
+        pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
         //TODO: bloquear tela e voltar pra etapa
     }
     
@@ -31,6 +34,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         createSpider()
         //TODO: chamar set overlay quando der swipe pra terceira collection
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         togglePeopleOcclusion()
     }
@@ -67,8 +71,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
   
     }
 
-    
-    
     @IBAction func showEntity(_ sender: Any) {
         if entity.isActive {
         entity.isEnabled = false
@@ -82,6 +84,8 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             entity.stopAllAnimations()
             running = false
         } else {
+        print(anchor.orientation.angle)
+            
             entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             running = true
         }
@@ -99,10 +103,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
 //        } else {
 //            let url = Bundle.main.url(forResource: "agoraVai.usdz", withExtension: nil)
 //            entity = try? Entity.loadModel(contentsOf: url!)}
-    }
-    
-    public func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingOverlayView) {
-        
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
@@ -130,10 +130,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         
     }
     
-    public func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoachingOverlayView) {
-        
-    }
-    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
            let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
            let index = scrollView.contentOffset.x / witdh
@@ -151,25 +147,23 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
 }
 
-extension Nivel4ViewController: UICollectionViewDataSource {
+extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView( _ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        pageControl.pageIndicatorTintColor = UIColor(red:0.78, green:0.77, blue:0.77, alpha:1.0)
-               pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
-        return cellSizes.count
+        
+        return cellIds.count
     }
+    
     func collectionView( _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width:self.arView.frame.width, height:300)
+        
+    }
 }
 
-extension Nivel4ViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
-        return cellSizes[indexPath.item]
-        
-    }
-    }
+
     
 extension UIColor {
     open class var transparentLightBlue: UIColor {
