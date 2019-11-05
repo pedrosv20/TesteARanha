@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07009F352357ADEE0070FD28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F322357ADEE0070FD28 /* Model.swift */; };
 		07009F362357ADEE0070FD28 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F332357ADEE0070FD28 /* Fobia.swift */; };
+		0769A01923719DCB00EABEF5 /* oi.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0769A01823719DCB00EABEF5 /* oi.usdz */; };
 		07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */; };
 		07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */; };
 		07AAEC9E235901FB001F6734 /* SH3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC98235901FA001F6734 /* SH3.png */; };
@@ -70,6 +71,7 @@
 /* Begin PBXFileReference section */
 		07009F322357ADEE0070FD28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
+		0769A01823719DCB00EABEF5 /* oi.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = oi.usdz; sourceTree = "<group>"; };
 		07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex_2.jpg; sourceTree = "<group>"; };
 		07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinnen_Bein_tex_COLOR_.png; sourceTree = "<group>"; };
 		07AAEC98235901FA001F6734 /* SH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SH3.png; sourceTree = "<group>"; };
@@ -171,9 +173,10 @@
 		07C5C41F2350BB3400AB67C9 /* TesteARanha */ = {
 			isa = PBXGroup;
 			children = (
+				0769A01823719DCB00EABEF5 /* oi.usdz */,
+				07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */,
 				6C714249236C5F6600A84B71 /* Audios */,
 				56E8C5CA23631DB5000F53FD /* Extensions */,
-				07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */,
 				07CAB042235103B100E19AB4 /* 3D Objects */,
 				07C5C4202350BB3400AB67C9 /* AppDelegate.swift */,
 				9D6726A52355F9840030CAE7 /* Model */,
@@ -372,6 +375,7 @@
 				07CAB04F235103C800E19AB4 /* spider5_color.jpg in Resources */,
 				07C5C42D2350BB3700AB67C9 /* LaunchScreen.storyboard in Resources */,
 				07CAB04E235103C800E19AB4 /* spider3_color.jpg in Resources */,
+				0769A01923719DCB00EABEF5 /* oi.usdz in Resources */,
 				07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */,
 				07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */,
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,
