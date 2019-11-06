@@ -44,14 +44,10 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         togglePeopleOcclusion()
     }
     
-    func createSpider() {
-        setOverlay(automatically: true, forDetectionType: .horizontalPlane)
-        
-        self.anchor = AnchorEntity(plane: .horizontal)
-        self.arView.scene.addAnchor(self.anchor)
-        let url = Bundle.main.url(forResource: "oi.usdz", withExtension: nil)
-        self.entity = try? Entity.loadModel(contentsOf: url!)
-        self.entity.stopAllAnimations()
+    override func viewDidDisappear(_ animated: Bool) {
+        arView?.session.pause()
+        arView?.removeFromSuperview()
+        arView = nil
         
     }
     
@@ -76,6 +72,17 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         
     }
     
+    func createSpider() {
+        setOverlay(automatically: true, forDetectionType: .horizontalPlane)
+        
+        self.anchor = AnchorEntity(plane: .horizontal)
+        self.arView.scene.addAnchor(self.anchor)
+        let url = Bundle.main.url(forResource: "oi.usdz", withExtension: nil)
+        self.entity = try? Entity.loadModel(contentsOf: url!)
+        self.entity.stopAllAnimations()
+        
+    }
+    
     @IBAction func showEntity(_ sender: Any) {
         if entity.isActive {
             entity.isEnabled = false
@@ -88,10 +95,9 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         if running {
             entity.stopAllAnimations()
             running = false
-            //            entity.setOrientation(simd_quatf(angle: -180, axis: SIMD3<Float>(0, 1, 0)), relativeTo: entity)
+
             
         } else {
-            print(entity.orientation.angle)
              entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             let quaternion = simd_quatf(angle: degreesToRadians(180),
                                         axis: simd_float3(x: 0,
@@ -100,7 +106,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             
             var vector = simd_float3(x: 0, y: 0, z: 0.1)
             vector = quaternion.act(vector)
-            
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
                 self.moveSpider()
             }
@@ -108,22 +113,12 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             if !animation {
                 animation = true
                 entity.setOrientation(quaternion, relativeTo: entity)
-                print(entity.orientation(relativeTo: entity))
-
             }
             running = true
         }
     }
     
-    func moveSpider() {
-        let quaternion = simd_quatf(angle: degreesToRadians(180),
-        axis: simd_float3(x: 0,
-                          y: 1,
-                          z: 0))
-        var vector = simd_float3(x: 0, y: 0, z: 0.005)
-        vector = quaternion.act(vector)
-        entity.position += vector
-    }
+    
     
     @IBAction func size(_ sender: UIStepper) {
         if sender.value > oldValue {
@@ -146,11 +141,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         
         
     }
-    func degreesToRadians(_ degrees: Float) -> Float {
-        return degrees * .pi / 180
-    }
-    
-    
     
     
     
@@ -161,16 +151,53 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         } else {
              url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
         }
+        
         self.entity.removeFromParent()
         self.entity = try? Entity.loadModel(contentsOf: url!)
         self.anchor.addChild(entity)
-        //        if fidelitySegmented.selectedSegmentIndex == 1 {
-        //            let url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
-        //            entity = try? Entity.loadModel(contentsOf: url!)
-        //            //textura foda
-        //        } else {
-        //            let url = Bundle.main.url(forResource: "agoraVai.usdz", withExtension: nil)
-        //            entity = try? Entity.loadModel(contentsOf: url!)}
+        if running {
+            let quaternion = simd_quatf(angle: degreesToRadians(180),
+                                        axis: simd_float3(x: 0,
+                                                          y: 1,
+                                                          z: 0))
+            
+            
+            var vector = simd_float3(x: 0, y: 0, z: 0.1)
+            vector = quaternion.act(vector)
+            entity.setOrientation(quaternion, relativeTo: entity)
+            moveSpider()
+            entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
+            
+        }
+    }
+    
+    func moveSpider() {
+        if running {
+            let quaternion = simd_quatf(angle: degreesToRadians(180),
+            axis: simd_float3(x: 0,
+                              y: 1,
+                              z: 0))
+            var vector = simd_float3(x: 0, y: 0, z: 0.002)
+            vector = quaternion.act(vector)
+            entity.position += vector
+        }
+    }
+    
+    func degreesToRadians(_ degrees: Float) -> Float {
+        return degrees * .pi / 180
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+        let index = scrollView.contentOffset.x / witdh
+        let roundedIndex = round(index)
+        print(roundedIndex)
+        if roundedIndex == 2 && running == false {
+            //                createSpider()
+            
+        }
+        
+        self.pageControl?.currentPage = Int(roundedIndex)
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
@@ -191,19 +218,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         
         
         
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-        let index = scrollView.contentOffset.x / witdh
-        let roundedIndex = round(index)
-        print(roundedIndex)
-        if roundedIndex == 2 && running == false {
-            //                createSpider()
-            
-        }
-        
-        self.pageControl?.currentPage = Int(roundedIndex)
     }
     
     fileprivate func togglePeopleOcclusion() {
