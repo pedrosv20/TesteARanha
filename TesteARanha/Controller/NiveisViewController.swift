@@ -103,29 +103,12 @@ class NiveisViewController: UITableViewController {
         if indexPath.row != stages.count {
             let cell = tableView.cellForRow(at: indexPath) as! EtapaCell
             cell.select()
-        }
-        
-        if indexPath.row == 0 {
-            if let vc = (storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController) {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "startPhase") as? StartPhaseViewController {
+                vc.selectedPhase = indexPath.row
                 vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-        } else if indexPath.row == 1 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
-                vc.selectedPhobiaIndex = selectedPhobiaIndex
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        } else if indexPath.row == 2 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as? Nivel3ViewController {
-                vc.selectedPhobiaIndex = selectedPhobiaIndex
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        } else if indexPath.row == 3 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
-                vc.selectedPhobiaIndex = selectedPhobiaIndex
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-        } else if indexPath.row == stages.count {
+        } else {
             if let vc = storyboard?.instantiateViewController(withIdentifier: "progress") as? ProgressViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
