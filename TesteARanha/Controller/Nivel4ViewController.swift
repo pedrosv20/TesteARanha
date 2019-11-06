@@ -92,18 +92,11 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             
         } else {
             print(entity.orientation.angle)
-            
-            
-            
-            
-            
-            
-            entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
+             entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             let quaternion = simd_quatf(angle: degreesToRadians(180),
                                         axis: simd_float3(x: 0,
                                                           y: 1,
                                                           z: 0))
-            
             
             var vector = simd_float3(x: 0, y: 0, z: 0.1)
             vector = quaternion.act(vector)
@@ -111,19 +104,13 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
                 self.moveSpider()
             }
-            
-            
-            
+
             if !animation {
                 animation = true
                 entity.setOrientation(quaternion, relativeTo: entity)
                 print(entity.orientation(relativeTo: entity))
-                
-                
+
             }
-            
-            
-            
             running = true
         }
     }
@@ -167,7 +154,16 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     
     
     
-    @IBAction func changeTexture(_ sender: Any) {
+    @IBAction func changeTexture(_ sender: UISegmentedControl) {
+        let url: URL!
+        if sender.selectedSegmentIndex == 0 {
+            url = Bundle.main.url(forResource: "oi.usdz", withExtension: nil)
+        } else {
+             url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
+        }
+        self.entity.removeFromParent()
+        self.entity = try? Entity.loadModel(contentsOf: url!)
+        self.anchor.addChild(entity)
         //        if fidelitySegmented.selectedSegmentIndex == 1 {
         //            let url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
         //            entity = try? Entity.loadModel(contentsOf: url!)
