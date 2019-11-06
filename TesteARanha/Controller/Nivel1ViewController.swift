@@ -10,21 +10,29 @@ import UIKit
 
 class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    var selectedPhobiaIndex: Int!
+    var selectedPhobia: Fobia {
+        Model.shared.fobias[selectedPhobiaIndex]
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        parent?.viewWillAppear(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        navigationItem.title = "Etapa Texto"
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Model.shared.fobiasInfo.count
+        return selectedPhobia.cardsOne.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "textoCell", for: indexPath) as! TextoCell
         
-        cell.infoTitle.text = Model.shared.fobiasInfo[indexPath.row].title
-        cell.infoDescription.text = Model.shared.fobiasInfo[indexPath.row].description
+        cell.infoTitle.text = selectedPhobia.cardsOne[indexPath.row].text
+        cell.infoDescription.text = selectedPhobia.cardsOne[indexPath.row].title
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = cell.frame.width/17.0
         

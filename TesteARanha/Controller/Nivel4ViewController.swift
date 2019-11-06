@@ -1,141 +1,185 @@
 import UIKit
+import RealityKit
 import ARKit
 
-class Nivel4ViewController: UIViewController {
+class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachingOverlayViewDelegate {
     
-    @IBOutlet weak var sceneView: ARSCNView!
+    
+//    @IBOutlet weak var fidelitySegmented: UISegmentedControl!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet var arView: ARView!
+    var entity : Entity!
+    var anchor: AnchorEntity!
+    
+    var cellIds = ["aa", "bb", "cc", "dd"]
+    var cellSizes = Array( repeatElement(CGSize(width:414, height:300), count: 4))
+    
+    var coachQuantico = ARCoachingOverlayView()
+    var running = false
+    
+    var selectedPhobiaIndex: Int!
+    var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        addTapGestureToSceneView()
-        
-        configureLighting()
-        
+        //TODO: bloquear tela e voltar pra etapa
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        parent?.viewWillAppear(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setUpSceneView()
-        self.navigationController?.navigationBar.isHidden = true
+        createSpider()
+        //TODO: chamar set overlay quando der swipe pra terceira collection
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        togglePeopleOcclusion()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        sceneView.session.pause()
+    func createSpider() {
+        setOverlay(automatically: true, forDetectionType: .horizontalPlane)
+        anchor = AnchorEntity(plane: .horizontal)
+        arView.scene.addAnchor(anchor)
+        let url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
+        entity = try? Entity.loadModel(contentsOf: url!)
+        entity.stopAllAnimations()
     }
     
-    func setUpSceneView() {
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
+    func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
+        print("entrou")
+        //1. Link The coachQuantico To Our Current Session
         
-        sceneView.session.run(configuration)
+        self.coachQuantico.session = self.arView.session
+        self.coachQuantico.delegate = self
+        self.arView.addSubview(self.coachQuantico)
+         NSLayoutConstraint.activate([
+                   NSLayoutConstraint(item:  coachQuantico, attribute: .top, relatedBy: .equal, toItem: self.view, attribute: .top, multiplier: 1, constant: 0),
+                   NSLayoutConstraint(item:  coachQuantico, attribute: .bottom, relatedBy: .equal, toItem: self.view, attribute: .bottom, multiplier: 1, constant: 0),
+                   NSLayoutConstraint(item:  coachQuantico, attribute: .leading, relatedBy: .equal, toItem: self.view, attribute: .leading, multiplier: 1, constant: 0),
+                   NSLayoutConstraint(item:  coachQuantico, attribute: .trailing, relatedBy: .equal, toItem: self.view, attribute: .trailing, multiplier: 1, constant: 0)
+               ])
+               
+        self.coachQuantico.translatesAutoresizingMaskIntoConstraints = false
+
+        self.coachQuantico.goal = goal
+        coachQuantico.setActive(true, animated: false)
+        coachQuantico.activatesAutomatically = true
         
-        sceneView.delegate = self as ARSCNViewDelegate
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+  
+    }
+
+    
+    
+    @IBAction func showEntity(_ sender: Any) {
+        if entity.isActive {
+        entity.isEnabled = false
+        } else {
+            entity.isEnabled = true
+        }
     }
     
-    func configureLighting() {
-        sceneView.autoenablesDefaultLighting = true
-        sceneView.automaticallyUpdatesLighting = true
+    @IBAction func animate(_ sender: Any) {
+        if running {
+            entity.stopAllAnimations()
+            running = false
+        } else {
+            entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
+            running = true
+        }
     }
     
-    @objc func addShipToSceneView(withGestureRecognizer recognizer: UIGestureRecognizer) {
-        let tapLocation = recognizer.location(in: sceneView)
-        let hitTestResults = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
-        
-        guard let hitTestResult = hitTestResults.first else { return }
-        let translation = hitTestResult.worldTransform.translation
-        let x = translation.x
-        let y = translation.y
-        let z = translation.z
-        
-        guard let shipScene = SCNScene(named: "spider.dae"),
-            
-            let shipNode = shipScene.rootNode.childNode(withName: "spider", recursively: false)
-            
-            
-            else { return }
-        shipNode.name = "spider"
-        
-        shipNode.position = SCNVector3(x,y,z)
-        shipNode.scale = SCNVector3(0.005, 0.005, 0.005)
-        sceneView.scene.rootNode.addChildNode(shipNode)
+    @IBAction func size(_ sender: UIStepper) {
+        entity.scale = SIMD3<Float>(repeating: Float(sender.value))
     }
     
+    @IBAction func changeTexture(_ sender: Any) {
+//        if fidelitySegmented.selectedSegmentIndex == 1 {
+//            let url = Bundle.main.url(forResource: "spiderAnimated.usdz", withExtension: nil)
+//            entity = try? Entity.loadModel(contentsOf: url!)
+//            //textura foda
+//        } else {
+//            let url = Bundle.main.url(forResource: "agoraVai.usdz", withExtension: nil)
+//            entity = try? Entity.loadModel(contentsOf: url!)}
+    }
     
+    public func coachingOverlayViewWillActivate(_ coachingOverlayView: ARCoachingOverlayView) {
+        
+    }
     
-    func addTapGestureToSceneView() {
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Nivel4ViewController.addShipToSceneView(withGestureRecognizer:)))
-        sceneView.addGestureRecognizer(tapGestureRecognizer)
+    public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
+        if anchor.isAnchored == false {
+            print("nao deu bom")
+            createSpider()
+        } else {
+            print("deu bom")
+            anchor.addChild(entity!)
+            coachQuantico.activatesAutomatically = false
+        }
+        //        anchor = AnchorEntity(plane: .horizontal)
+        //        if anchor.isAnchored == false {
+        //            setOverlay(automatically: true, forDetectionType: .horizontalPlane)
+        //        } else {
+        //            coachQuantico.activatesAutomatically = false
+        //            createSpider()
+        //            anchor.addChild(entity!)
+        //        }
+        
+        
+        
+        
+        
+        
+    }
+    
+    public func coachingOverlayViewDidRequestSessionReset(_ coachingOverlayView: ARCoachingOverlayView) {
+        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+           let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+           let index = scrollView.contentOffset.x / witdh
+           let roundedIndex = round(index)
+           self.pageControl?.currentPage = Int(roundedIndex)
+       }
+    
+    fileprivate func togglePeopleOcclusion() {
+        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentation) else {
+                fatalError("People occlusion is not supported on this device.")
+        }
+        config.frameSemantics.insert(.personSegmentation)
+
+        arView.session.run(config)
     }
 }
 
-extension float4x4 {
-    var translation: SIMD3<Float> {
-        let translation = self.columns.3
-        return SIMD3<Float>(translation.x, translation.y, translation.z)
+extension Nivel4ViewController: UICollectionViewDataSource {
+    func collectionView( _ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        pageControl.pageIndicatorTintColor = UIColor(red:0.78, green:0.77, blue:0.77, alpha:1.0)
+               pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
+        return cellSizes.count
+    }
+    func collectionView( _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
     }
 }
 
+extension Nivel4ViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        
+        return cellSizes[indexPath.item]
+        
+    }
+    }
+    
 extension UIColor {
     open class var transparentLightBlue: UIColor {
         return UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.50)
     }
 }
 
-extension Nivel4ViewController: ARSCNViewDelegate {
-    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        // 1
-        guard let planeAnchor = anchor as? ARPlaneAnchor else { return }
-        
-        // 2
-        let width = CGFloat(planeAnchor.extent.x)
-        let height = CGFloat(planeAnchor.extent.z)
-        let plane = SCNPlane(width: width, height: height)
-        
-        // 3
-        plane.materials.first?.diffuse.contents = UIColor.transparentLightBlue
-        
-        // 4
-        let planeNode = SCNNode(geometry: plane)
-        
-        // 5
-        let x = CGFloat(planeAnchor.center.x)
-        let y = CGFloat(planeAnchor.center.y)
-        let z = CGFloat(planeAnchor.center.z)
-        planeNode.position = SCNVector3(x,y,z)
-        planeNode.eulerAngles.x = -.pi / 2
-        
-        // 6
-        node.addChildNode(planeNode)
-    }
-    
-    func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-        // 1
-        guard let planeAnchor = anchor as?  ARPlaneAnchor,
-            let planeNode = node.childNodes.first,
-            let plane = planeNode.geometry as? SCNPlane
-            else { return }
-        
-        // 2
-        let width = CGFloat(planeAnchor.extent.x)
-        let height = CGFloat(planeAnchor.extent.z)
-        plane.width = width
-        plane.height = height
-        
-        // 3
-        let x = CGFloat(planeAnchor.center.x)
-        let y = CGFloat(planeAnchor.center.y)
-        let z = CGFloat(planeAnchor.center.z)
-        planeNode.position = SCNVector3(x, y, z)
-    }
-    
-    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        if let spider = sceneView.scene.rootNode.childNode(withName: "spider", recursively: false) {
-            print(spider.position.x)
-//            spider.position.x += 0.005
-        }
-        
-    }
-}
+
+

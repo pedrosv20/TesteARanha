@@ -10,10 +10,13 @@ import UIKit
 
 class NiveisViewController: UITableViewController {
     
-    var selectedPhobia: Int!
+    var selectedPhobiaIndex: Int!
     let cellSpacingHeight: CGFloat = 15
+    var selectedPhobia: Fobia {
+        Model.shared.fobias[selectedPhobiaIndex]
+    }
     var nameOfPhobia: String {
-        Model.shared.fobias[selectedPhobia].type.lowercased()
+        selectedPhobia.tipoFobia.rawValue.lowercased()
     }
     var stages: [(name: String, icon: UIImage?, description: String)] {
         [
@@ -33,9 +36,19 @@ class NiveisViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        navigationItem.title = Model.shared.fobias[selectedPhobia].type
+        navigationItem.title = selectedPhobia.tipoFobia.rawValue
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        if let parentController = parent as? FobiasViewController {
+            parentController.reloadData()
+        }
     }
     
     @objc func callSettings(sender: UIBarButtonItem) {
@@ -77,36 +90,48 @@ class NiveisViewController: UITableViewController {
             cell.levelIcon.image = content.icon
             cell.levelIconBig.image = content.icon
             cell.levelDescription.text = content.description
-            cell.levelView.dropShadow()
             cell.levelView.layer.masksToBounds = true
             cell.selectionStyle = .none
+            
+            cell.unselect()
             
             return cell
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        var vc = UIViewController()
-        if indexPath.row == 0 {
-            vc = (storyboard?.instantiateViewController(withIdentifier: "texto") as! Nivel1ViewController)
-        } else if indexPath.row == 1 {
-            vc = storyboard?.instantiateViewController(withIdentifier: "audio") as! Nivel2ViewController
-        } else if indexPath.row == 2 {
-            vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as! Nivel3ViewController
-        } else if indexPath.row == 3 {
-            vc = storyboard?.instantiateViewController(withIdentifier: "AR") as! Nivel4ViewController
-        } else if indexPath.row == stages.count {
-            vc = storyboard?.instantiateViewController(withIdentifier: "progress") as! ProgressViewController
-        }
-        
         if indexPath.row != stages.count {
-            //vc.selectedPhobia = selectedPhobia
+            let cell = tableView.cellForRow(at: indexPath) as! EtapaCell
+            cell.select()
         }
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        if indexPath.row == 0 {
+            if let vc = (storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController) {
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        } else if indexPath.row == 1 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        } else if indexPath.row == 2 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as? Nivel3ViewController {
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        } else if indexPath.row == 3 {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
+                vc.selectedPhobiaIndex = selectedPhobiaIndex
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        } else if indexPath.row == stages.count {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "progress") as? ProgressViewController {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
 }
 
 
-// mask with shadow (animated when selecting)
 // view progress only when touched directly onto the label/image
