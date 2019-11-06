@@ -46,18 +46,59 @@ class Model {
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem"
+                    image: "spiderCartoon1",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem"
+                    image: "spiderCartoon2",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem")
-            ])
+                    image: "spiderCartoon3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal3",
+                    isBlurred: true
+                )
+            ]
+            )
         )
         
         fobias.append(Fobia(
@@ -92,18 +133,59 @@ class Model {
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "frogIcon.png"
+                    image: "spiderCartoon1",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "frogIcon.png"
+                    image: "spiderCartoon2",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "frogIcon.png")
-            ])
+                    image: "spiderCartoon3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal3",
+                    isBlurred: true
+                )
+            ]
+            )
         )
         
         fobias.append(Fobia(
@@ -138,18 +220,59 @@ class Model {
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem"
+                    image: "spiderCartoon1",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem"
+                    image: "spiderCartoon2",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem")
-            ])
+                    image: "spiderCartoon3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal3",
+                    isBlurred: true
+                )
+            ]
+            )
         )
         
         fobias.append(Fobia(
@@ -184,18 +307,59 @@ class Model {
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem"
+                    image: "spiderCartoon1",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem"
+                    image: "spiderCartoon2",
+                    isBlurred: true
                 ),
                 StageThree(
                     title: "Etapa Imagem",
                     description: "Etapa Imagem",
-                    image: "imagem")
-            ])
+                    image: "spiderCartoon3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderDraw3",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal1",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal2",
+                    isBlurred: true
+                ),
+                StageThree(
+                    title: "Etapa Imagem",
+                    description: "Etapa Imagem",
+                    image: "spiderReal3",
+                    isBlurred: true
+                )
+            ]
+            )
         )
     }
 

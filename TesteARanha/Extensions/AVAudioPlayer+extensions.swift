@@ -15,7 +15,7 @@ extension AVAudioPlayer {
         do {
             let player = try AVAudioPlayer(contentsOf: url)
             player.prepareToPlay()
-            player.numberOfLoops = -1
+            player.numberOfLoops = 0
             return player
         } catch {
             fatalError("The audio file was not found")

@@ -16,7 +16,6 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     @IBOutlet weak var pageControl: UIPageControl!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa Áudio"
@@ -44,10 +43,13 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "audioCell", for: indexPath) as! AudioCell
         
-        cell.audioLbl.text = selectedPhobia.cardsTwo[indexPath.row].audioDescription
+        let fobia = selectedPhobia.cardsTwo[indexPath.row]
         
-        cell.textLbl.text = selectedPhobia.cardsTwo[indexPath.row].audioDescription
+        cell.audioLbl.text = fobia.audioDescription
         
+        cell.textLbl.text = fobia.audioDescription
+        
+        cell.setAudioName(audio: fobia.audio)
         cell.slider.maximumTrackTintColor = UIColor.white
         cell.slider.minimumTrackTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
         cell.slider.thumbTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
