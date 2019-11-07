@@ -10,9 +10,9 @@ import UIKit
 
 class StageFourCardCell: UICollectionViewCell {
     
-    @IBOutlet weak var fidelitySegmented: UISegmentedControl!
-    
+    @IBOutlet weak var fidelitySegmented: UISegmentedControl!  
     @IBOutlet weak var sizeStepper: UIStepper!
-    
+    @IBOutlet weak var showLabel: UILabel!
+    @IBOutlet weak var eyeImage: UIButton!
     
 }
