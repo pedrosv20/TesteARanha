@@ -10,6 +10,7 @@ import UIKit
 
 class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var nameLabel: UILabel! // input em cima do teclado
     @IBOutlet weak var phobiasTableView: UITableView!
     
     override func viewDidLoad() {
@@ -57,7 +58,6 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Model.shared.fobiaSelecionada = indexPath.row
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
@@ -68,8 +68,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.cellForRow(at: indexPath) as! FobiaCell
         cell.select()
     }
-
     
+    @IBAction func editButtonTapped(_ sender: Any) {
+        
+    }
 }
 
 //extension Dictionary where Key: ExpressibleByStringLiteral {

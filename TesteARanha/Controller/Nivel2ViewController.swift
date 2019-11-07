@@ -19,10 +19,18 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa Áudio"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "voiceSettings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         parent?.viewWillAppear(true)
+    }
+    
+    @objc func callSettings(sender: UIBarButtonItem) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

@@ -37,8 +37,8 @@ class NiveisViewController: UITableViewController {
     
     override func viewDidLoad() {
         navigationItem.title = selectedPhobia.tipoFobia.rawValue
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
+//        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
