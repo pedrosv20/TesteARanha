@@ -41,6 +41,11 @@ class NiveisViewController: UITableViewController {
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+
+    }
+    
     @objc func callSettings(sender: UIBarButtonItem) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)

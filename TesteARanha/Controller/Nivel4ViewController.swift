@@ -9,15 +9,14 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet var arView: ARView!
     @IBOutlet weak var collectionView: UICollectionView!
-
-    
-    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var backButton: UIButton!
     
     var cell : StageFourCardCell!
+    var animationCell : PlayAnimationCardCell!
     var entity : Entity!
     var anchor: AnchorEntity!
     
-    var cellIds = ["text1Cell", "text2Cell", "settingsCell", "animationCell"]
+    var cellIds = ["text1Cell", "text2Cell", "ARcardCell", "animationCell"]
     
     var changed = false
     
@@ -43,6 +42,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         createSpider()
     }
     
@@ -55,6 +55,11 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         arView?.removeFromSuperview()
         arView = nil
         
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    @IBAction func didPressBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
@@ -123,10 +128,14 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBAction func showEntity(_ sender: Any) {
         
         if entity.isActive {
+            cell.eyeImage.setImage(UIImage(named: "olhoBranco")!, for: .normal)
+            cell.showLabel.text = "Mostrar"
             entity.isEnabled = false
             running = false
             entity.stopAllAnimations()
         } else {
+            cell.eyeImage.setImage(UIImage(named: "olhoCortadoBranco")!, for: .normal)
+            cell.showLabel.text = "Esconder"
             entity.isEnabled = true
         }
     }
@@ -137,8 +146,13 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             running = false
             
             print("parou")
-            
+        
+            animationCell.playButton.setImage(UIImage(named: "playAnimation")!, for: .normal)
+            animationCell.moveLabel.text = "Mover"
         } else {
+            animationCell.playButton.setImage(UIImage(named: "pauseAnimation")!, for: .normal)
+            animationCell.moveLabel.text = "Parar"
+            
             print("começa animacao")
              entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             let quaternion = simd_quatf(angle: degreesToRadians(180),
@@ -240,11 +254,15 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
             
             self.cell = cell
             return cell
-        } else {
-            return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
+        } else if indexPath.item == 3 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "animationCell", for: indexPath) as! PlayAnimationCardCell
+
+            self.animationCell = cell
+            return cell
             
         }
         
+        return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
