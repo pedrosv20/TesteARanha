@@ -106,7 +106,7 @@
                                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="750" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" minimumValue="-10" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="iQG-nu-TDv">
                                                             <rect key="frame" x="140.5" y="218" width="94" height="32"/>
                                                             <connections>
-                                                                <action selector="size:" destination="BV1-FR-VrT" eventType="valueChanged" id="UXm-cs-edM"/>
+                                                                <action selector="size:" destination="BV1-FR-VrT" eventType="valueChanged" id="F0p-6g-SSD"/>
                                                             </connections>
                                                         </stepper>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgv-2e-DrW">
@@ -236,6 +236,7 @@
                         <outlet property="arView" destination="6c0-Im-Iwa" id="EP7-RW-MpF"/>
                         <outlet property="collectionView" destination="d14-cS-bwF" id="e6X-Cv-DC5"/>
                         <outlet property="pageControl" destination="Lxb-HP-yNO" id="Fyd-Rf-J56"/>
+                        <outlet property="stepper" destination="iQG-nu-TDv" id="u8g-Qu-eRE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

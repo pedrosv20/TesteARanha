@@ -10,11 +10,13 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBOutlet var arView: ARView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var stepper: UIStepper!
     var entity : Entity!
     var anchor: AnchorEntity!
     
     var cellIds = ["text1Cell", "text2Cell", "settingsCell", "animationCell"]
     
+    var changed = false
     
     var coachOverlay = ARCoachingOverlayView()
     var running = false
@@ -92,7 +94,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
                               z: 0))
             var vector = simd_float3(x: 0, y: 0, z: 0.002)
             vector = quaternion.act(vector)
-            print("girou o bixo")
             entity.position += vector
             print("ta andando")
         }
@@ -118,6 +119,8 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBAction func showEntity(_ sender: Any) {
         if entity.isActive {
             entity.isEnabled = false
+            running = false
+            entity.stopAllAnimations()
         } else {
             entity.isEnabled = true
         }
@@ -127,9 +130,11 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         if running {
             entity.stopAllAnimations()
             running = false
-
+            
+            print("parou")
             
         } else {
+            print("começa animacao")
              entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             let quaternion = simd_quatf(angle: degreesToRadians(180),
                                         axis: simd_float3(x: 0,
@@ -138,22 +143,33 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             
             var vector = simd_float3(x: 0, y: 0, z: 0.1)
             vector = quaternion.act(vector)
+            
+            if !animation {
+                animation = true
+                entity.setOrientation(quaternion, relativeTo: entity)
+                print("gira o bixo")
+            }
+            
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
                 self.moveSpider()
             }
 
-            if !animation {
-                animation = true
-                entity.setOrientation(quaternion, relativeTo: entity)
-            }
+            
             running = true
         }
     }
     
     @IBAction func size(_ sender: UIStepper) {
+        if changed {
+            print("")
+            sender.value = 0.3
+            changed = false
+        }
+        print(sender.value)
         sender.minimumValue = 0.2
-        sender.maximumValue = 10
+        sender.maximumValue = 40
         sender.stepValue = 0.5
+        
         entity.scale = SIMD3<Float>(repeating: Float(sender.value / 10 ))
     }
     
@@ -168,44 +184,36 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         self.entity.removeFromParent()
         self.entity = try? Entity.loadModel(contentsOf: url!)
         self.anchor.addChild(entity)
+        animation = false
+        
         if running {
-            let quaternion = simd_quatf(angle: degreesToRadians(180),
-                                        axis: simd_float3(x: 0,
-                                                          y: 1,
-                                                          z: 0))
             
+            let quaternion = simd_quatf(angle: degreesToRadians(180),axis: simd_float3(x: 0, y: 1, z: 0))
             var vector = simd_float3(x: 0, y: 0, z: 0.1)
             vector = quaternion.act(vector)
             entity.setOrientation(quaternion, relativeTo: entity)
             moveSpider()
             entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
+        } else {
+            entity.scale = SIMD3<Float>(repeating: Float(0.3))
         }
-        entity.scale = SIMD3<Float>(repeating: Float(0.5 / 10 ))
+        changed = true
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
         
         if anchor.isAnchored == false {
-            //            arView.scene.anchors.remove(anchor)
-            print("nao deu bom")
             createSpider()
         } else {
-            
-            print("deu bom")
             self.collectionView.isHidden = false
             anchor.addChild(entity!)
             entity.scale = SIMD3<Float>(repeating: Float(0.3))
             
         }
-        
-        
-        
-        
     }
     
     fileprivate func togglePeopleOcclusion() {
         guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
-            print("deu ruim return")
             return
         }
         config.frameSemantics.insert(.personSegmentationWithDepth)
