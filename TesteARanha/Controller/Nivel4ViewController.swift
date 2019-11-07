@@ -235,6 +235,9 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ARcardCell", for: indexPath) as! StageFourCardCell
                     
             cell.fidelitySegmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
+            cell.sizeStepper.setDecrementImage(cell.sizeStepper.decrementImage(for: .normal), for: .normal)
+            cell.sizeStepper.setIncrementImage(cell.sizeStepper.incrementImage(for: .normal), for: .normal)
+            [
             self.cell = cell
             return cell
         } else {
