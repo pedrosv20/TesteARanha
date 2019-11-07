@@ -238,6 +238,9 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
                     
             cell.fidelitySegmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
             
+            cell.sizeStepper.setDecrementImage(cell.sizeStepper.decrementImage(for: .normal), for: .normal)
+            cell.sizeStepper.setIncrementImage(cell.sizeStepper.incrementImage(for: .normal), for: .normal)
+            
             return cell
         } else {
             return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
