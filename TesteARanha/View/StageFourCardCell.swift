@@ -9,6 +9,7 @@
 import UIKit
 
 class StageFourCardCell: UICollectionViewCell {
+    
     @IBOutlet weak var fidelitySegmented: UISegmentedControl!
     
     @IBOutlet weak var sizeStepper: UIStepper!
