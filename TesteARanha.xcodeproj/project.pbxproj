@@ -34,7 +34,6 @@
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
-		56C47AF22371A2A200A395BD /* StartPhaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C47AF12371A2A200A395BD /* StartPhaseViewController.swift */; };
 		56E8C5CC23631DD0000F53FD /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIView.swift */; };
 		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
 		56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D12363CF81000F53FD /* ProgressViewController.swift */; };
@@ -100,7 +99,6 @@
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
 		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
-		56C47AF12371A2A200A395BD /* StartPhaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPhaseViewController.swift; sourceTree = "<group>"; };
 		56E8C5CB23631DD0000F53FD /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		56E8C5D12363CF81000F53FD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
@@ -232,7 +230,6 @@
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
 				56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */,
 				56E8C5D12363CF81000F53FD /* ProgressViewController.swift */,
-				56C47AF12371A2A200A395BD /* StartPhaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -396,7 +393,6 @@
 				56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */,
 				56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */,
 				07009F352357ADEE0070FD28 /* Model.swift in Sources */,
-				56C47AF22371A2A200A395BD /* StartPhaseViewController.swift in Sources */,
 				56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */,
 				56277D622369CF01003CE021 /* AudioCell.swift in Sources */,
 				56277D5F2369CEA9003CE021 /* AudioFobia.swift in Sources */,

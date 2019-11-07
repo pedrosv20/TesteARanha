@@ -17,10 +17,6 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     var selectedPhobia: Fobia {
         Model.shared.fobias[selectedPhobiaIndex]
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        parent?.viewWillAppear(true)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +25,10 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return selectedPhobia.cardsThree.count
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        parent?.viewWillAppear(true)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

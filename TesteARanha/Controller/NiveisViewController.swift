@@ -37,8 +37,8 @@ class NiveisViewController: UITableViewController {
     
     override func viewDidLoad() {
         navigationItem.title = selectedPhobia.tipoFobia.rawValue
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
+//        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -103,10 +103,26 @@ class NiveisViewController: UITableViewController {
         if indexPath.row != stages.count {
             let cell = tableView.cellForRow(at: indexPath) as! EtapaCell
             cell.select()
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "startPhase") as? StartPhaseViewController {
-                vc.selectedPhase = indexPath.row
-                vc.selectedPhobiaIndex = selectedPhobiaIndex
-                self.navigationController?.pushViewController(vc, animated: true)
+            if indexPath.row == 0 {
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "texto") as? Nivel1ViewController {
+                    vc.selectedPhobiaIndex = selectedPhobiaIndex
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else if indexPath.row == 1 {
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
+                    vc.selectedPhobiaIndex = selectedPhobiaIndex
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else if indexPath.row == 2 {
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "imagens") as? Nivel3ViewController {
+                    vc.selectedPhobiaIndex = selectedPhobiaIndex
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else if indexPath.row == 3 {
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
+                    vc.selectedPhobiaIndex = selectedPhobiaIndex
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
         } else {
             if let vc = storyboard?.instantiateViewController(withIdentifier: "progress") as? ProgressViewController {
