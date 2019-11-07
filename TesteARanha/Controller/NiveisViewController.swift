@@ -106,7 +106,7 @@ class NiveisViewController: UITableViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         } else if indexPath.row == 3 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? ArTextViewController {
                 vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }

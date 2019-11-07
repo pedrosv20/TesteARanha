@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G1z-25-AFf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--Nivel4 View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController storyboardIdentifier="AR" id="BV1-FR-VrT" customClass="Nivel4ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="Nivel4ViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -285,6 +285,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1414.4927536231885" y="812.94642857142856"/>
+        </scene>
+        <!--Etapa Realidade-->
+        <scene sceneID="a22-ds-OFF">
+            <objects>
+                <viewController storyboardIdentifier="AR" id="G1z-25-AFf" customClass="ArTextViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyp-Iy-Xup">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-JG-1IX">
+                                <rect key="frame" x="26" y="174" width="362" height="558"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0w-nA-UYi">
+                                        <rect key="frame" x="15" y="41" width="332" height="298.5"/>
+                                        <string key="text">Agora a aranha aparecerá na tela, em tamanho reduzido.
+
+As instruções aparecerão na tela e logo depois os comandos estarão disponíveis para você configurar. Você ajustará o nível de fidelidade da aranha e o tamanho em que ela vai aparecer.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.093123786149999999" green="0.19383513929999999" blue="0.28628587719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="X0w-nA-UYi" secondAttribute="trailing" constant="15" id="H9W-b0-CRO"/>
+                                    <constraint firstItem="X0w-nA-UYi" firstAttribute="leading" secondItem="IQ4-JG-1IX" secondAttribute="leading" constant="15" id="VSn-FW-qTn"/>
+                                    <constraint firstAttribute="width" secondItem="IQ4-JG-1IX" secondAttribute="height" multiplier="181:279" id="fMD-eY-efi"/>
+                                    <constraint firstItem="X0w-nA-UYi" firstAttribute="top" secondItem="IQ4-JG-1IX" secondAttribute="top" constant="41" id="hqV-f2-Ugp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IQ4-JG-1IX" firstAttribute="centerX" secondItem="wbA-NV-QXk" secondAttribute="centerX" id="6og-5m-Bfv"/>
+                            <constraint firstItem="IQ4-JG-1IX" firstAttribute="centerY" secondItem="wbA-NV-QXk" secondAttribute="centerY" id="YYm-1f-bFi"/>
+                            <constraint firstItem="IQ4-JG-1IX" firstAttribute="leading" secondItem="wbA-NV-QXk" secondAttribute="leading" constant="26" id="d3A-s5-bGO"/>
+                            <constraint firstItem="wbA-NV-QXk" firstAttribute="trailing" secondItem="IQ4-JG-1IX" secondAttribute="trailing" constant="26" id="nDh-XS-P1F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wbA-NV-QXk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Etapa Realidade" id="ULC-se-ulP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpW-FH-9ZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="812.94642857142856"/>
         </scene>
     </scenes>
     <resources>

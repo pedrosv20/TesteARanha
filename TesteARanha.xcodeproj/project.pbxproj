@@ -11,6 +11,7 @@
 		07009F362357ADEE0070FD28 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F332357ADEE0070FD28 /* Fobia.swift */; };
 		0706E64523744AE900F65C09 /* StageFourCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0706E64423744AE800F65C09 /* StageFourCardCell.swift */; };
 		0769A01923719DCB00EABEF5 /* oi.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0769A01823719DCB00EABEF5 /* oi.usdz */; };
+		076EDA1923745DF000FFE2A7 /* ArTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076EDA1823745DF000FFE2A7 /* ArTextViewController.swift */; };
 		07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */; };
 		07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */; };
 		07AAEC9E235901FB001F6734 /* SH3.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC98235901FA001F6734 /* SH3.png */; };
@@ -74,6 +75,7 @@
 		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
 		0706E64423744AE800F65C09 /* StageFourCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageFourCardCell.swift; sourceTree = "<group>"; };
 		0769A01823719DCB00EABEF5 /* oi.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = oi.usdz; sourceTree = "<group>"; };
+		076EDA1823745DF000FFE2A7 /* ArTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArTextViewController.swift; sourceTree = "<group>"; };
 		07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex_2.jpg; sourceTree = "<group>"; };
 		07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinnen_Bein_tex_COLOR_.png; sourceTree = "<group>"; };
 		07AAEC98235901FA001F6734 /* SH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SH3.png; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
 				56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */,
 				56E8C5D12363CF81000F53FD /* ProgressViewController.swift */,
+				076EDA1823745DF000FFE2A7 /* ArTextViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				07009F362357ADEE0070FD28 /* Fobia.swift in Sources */,
 				56E8C5CC23631DD0000F53FD /* UIView.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
+				076EDA1923745DF000FFE2A7 /* ArTextViewController.swift in Sources */,
 				0706E64523744AE900F65C09 /* StageFourCardCell.swift in Sources */,
 				9D576B89236B0BBC009B9246 /* ImagemCell.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
