@@ -80,7 +80,39 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         let url = Bundle.main.url(forResource: "oi.usdz", withExtension: nil)
         self.entity = try? Entity.loadModel(contentsOf: url!)
         self.entity.stopAllAnimations()
+        entity.scale = SIMD3<Float>(repeating: Float(0.5 / 10 ))
         
+    }
+    
+    func moveSpider() {
+        if running {
+            let quaternion = simd_quatf(angle: degreesToRadians(180),
+            axis: simd_float3(x: 0,
+                              y: 1,
+                              z: 0))
+            var vector = simd_float3(x: 0, y: 0, z: 0.002)
+            vector = quaternion.act(vector)
+            print("girou o bixo")
+            entity.position += vector
+            print("ta andando")
+        }
+    }
+    
+    func degreesToRadians(_ degrees: Float) -> Float {
+        return degrees * .pi / 180
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+        let index = scrollView.contentOffset.x / witdh
+        let roundedIndex = round(index)
+        print(roundedIndex)
+        if roundedIndex == 2 && running == false {
+            //                createSpider()
+            
+        }
+        
+        self.pageControl?.currentPage = Int(roundedIndex)
     }
     
     @IBAction func showEntity(_ sender: Any) {
@@ -118,31 +150,12 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         }
     }
     
-    
-    
     @IBAction func size(_ sender: UIStepper) {
-        if sender.value > oldValue {
-            print("scale", entity.scale, sender.value)
-            entity.scale += SIMD3<Float>(repeating: Float(sender.value / 10 ))
-        } else {
-            print("scale -", entity.scale, sender.value)
-            
-            if sender.value <= 0 {
-                entity.scale += SIMD3<Float>(repeating: Float(sender.value / 10))
-                entity.scale = abs(entity.scale)
-            }
-            else {
-                entity.scale -= SIMD3<Float>(repeating: Float(sender.value / 10))
-                entity.scale = abs(entity.scale)
-                
-            }
-        }
-        oldValue = sender.value
-        
-        
+        sender.minimumValue = 0.2
+        sender.maximumValue = 10
+        sender.stepValue = 0.5
+        entity.scale = SIMD3<Float>(repeating: Float(sender.value / 10 ))
     }
-    
-    
     
     @IBAction func changeTexture(_ sender: UISegmentedControl) {
         let url: URL!
@@ -161,43 +174,13 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
                                                           y: 1,
                                                           z: 0))
             
-            
             var vector = simd_float3(x: 0, y: 0, z: 0.1)
             vector = quaternion.act(vector)
             entity.setOrientation(quaternion, relativeTo: entity)
             moveSpider()
             entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
-            
         }
-    }
-    
-    func moveSpider() {
-        if running {
-            let quaternion = simd_quatf(angle: degreesToRadians(180),
-            axis: simd_float3(x: 0,
-                              y: 1,
-                              z: 0))
-            var vector = simd_float3(x: 0, y: 0, z: 0.002)
-            vector = quaternion.act(vector)
-            entity.position += vector
-        }
-    }
-    
-    func degreesToRadians(_ degrees: Float) -> Float {
-        return degrees * .pi / 180
-    }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-        let index = scrollView.contentOffset.x / witdh
-        let roundedIndex = round(index)
-        print(roundedIndex)
-        if roundedIndex == 2 && running == false {
-            //                createSpider()
-            
-        }
-        
-        self.pageControl?.currentPage = Int(roundedIndex)
+        entity.scale = SIMD3<Float>(repeating: Float(0.5 / 10 ))
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
@@ -222,6 +205,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     
     fileprivate func togglePeopleOcclusion() {
         guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
+            print("deu ruim return")
             return
         }
         config.frameSemantics.insert(.personSegmentationWithDepth)
