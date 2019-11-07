@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07009F352357ADEE0070FD28 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F322357ADEE0070FD28 /* Model.swift */; };
 		07009F362357ADEE0070FD28 /* Fobia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07009F332357ADEE0070FD28 /* Fobia.swift */; };
+		0706E64523744AE900F65C09 /* StageFourCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0706E64423744AE800F65C09 /* StageFourCardCell.swift */; };
 		0769A01923719DCB00EABEF5 /* oi.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 0769A01823719DCB00EABEF5 /* oi.usdz */; };
 		07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */; };
 		07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */; };
@@ -71,6 +72,7 @@
 /* Begin PBXFileReference section */
 		07009F322357ADEE0070FD28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
+		0706E64423744AE800F65C09 /* StageFourCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageFourCardCell.swift; sourceTree = "<group>"; };
 		0769A01823719DCB00EABEF5 /* oi.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = oi.usdz; sourceTree = "<group>"; };
 		07AAEC96235901FA001F6734 /* Spinnen_Bein_tex_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex_2.jpg; sourceTree = "<group>"; };
 		07AAEC97235901FA001F6734 /* Spinnen_Bein_tex_COLOR_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spinnen_Bein_tex_COLOR_.png; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 				56526EEC236618F000A3C641 /* TextoCell.swift */,
 				56277D612369CF01003CE021 /* AudioCell.swift */,
 				56E8C5D92363D604000F53FD /* ViewProgressCell.swift */,
+				0706E64423744AE800F65C09 /* StageFourCardCell.swift */,
 				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
 				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
 				9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */,
@@ -422,6 +425,7 @@
 				07009F362357ADEE0070FD28 /* Fobia.swift in Sources */,
 				56E8C5CC23631DD0000F53FD /* UIView.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
+				0706E64523744AE900F65C09 /* StageFourCardCell.swift in Sources */,
 				9D576B89236B0BBC009B9246 /* ImagemCell.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
 				6C714248236C4AA900A84B71 /* StageThree.swift in Sources */,

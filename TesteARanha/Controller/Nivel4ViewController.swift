@@ -12,6 +12,8 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
 
     
     @IBOutlet weak var stepper: UIStepper!
+    
+    var cell : StageFourCardCell!
     var entity : Entity!
     var anchor: AnchorEntity!
     
@@ -119,6 +121,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     @IBAction func showEntity(_ sender: Any) {
+        
         if entity.isActive {
             entity.isEnabled = false
             running = false
@@ -162,12 +165,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     @IBAction func size(_ sender: UIStepper) {
-        if changed {
-            print("")
-            sender.value = 0.3
-            changed = false
-        }
-        print(sender.value)
+        
         sender.minimumValue = 0.2
         sender.maximumValue = 40
         sender.stepValue = 0.5
@@ -199,7 +197,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         } else {
             entity.scale = SIMD3<Float>(repeating: Float(0.3))
         }
-        changed = true
+        cell.sizeStepper.value = 0.3
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
@@ -237,7 +235,7 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ARcardCell", for: indexPath) as! StageFourCardCell
                     
             cell.fidelitySegmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
-            
+            self.cell = cell
             return cell
         } else {
             return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
