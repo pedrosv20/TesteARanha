@@ -9,6 +9,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet var arView: ARView!
     @IBOutlet weak var collectionView: UICollectionView!
+
     
     var entity : Entity!
     var anchor: AnchorEntity!
@@ -34,6 +35,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         pageControl.pageIndicatorTintColor = UIColor(red:0.78, green:0.77, blue:0.77, alpha:1.0)
         pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
         //TODO: bloquear tela e voltar pra etapa
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -222,7 +224,18 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
     }
     
     func collectionView( _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
+        
+        if indexPath.item == 2 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ARcardCell", for: indexPath) as! StageFourCardCell
+                    
+            cell.fidelitySegmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
+            
+            return cell
+        } else {
+            return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
+            
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
