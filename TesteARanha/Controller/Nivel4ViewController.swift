@@ -9,16 +9,14 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet var arView: ARView!
     @IBOutlet weak var collectionView: UICollectionView!
-
-    
-    @IBOutlet weak var stepper: UIStepper!
+    @IBOutlet weak var backButton: UIButton!
     
     var cell : StageFourCardCell!
     var animationCell : PlayAnimationCardCell!
     var entity : Entity!
     var anchor: AnchorEntity!
     
-    var cellIds = ["text1Cell", "text2Cell", "settingsCell", "animationCell"]
+    var cellIds = ["text1Cell", "text2Cell", "ARcardCell", "animationCell"]
     
     var changed = false
     
@@ -44,6 +42,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
         createSpider()
     }
     
@@ -56,6 +55,11 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         arView?.removeFromSuperview()
         arView = nil
         
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    @IBAction func didPressBackButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
