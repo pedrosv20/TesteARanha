@@ -22,27 +22,27 @@
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="110" id="0JS-oL-nRR" customClass="FobiaCell" customModule="TesteARanha" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="125" id="0JS-oL-nRR" customClass="FobiaCell" customModule="TesteARanha" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0JS-oL-nRR" id="SHh-Av-re7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZ4-RF-Rrh">
-                                                    <rect key="frame" x="18" y="12" width="378" height="86"/>
+                                                    <rect key="frame" x="18" y="12" width="378" height="101"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aranhas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-ck-hch">
-                                                            <rect key="frame" x="85" y="32" width="164" height="22"/>
+                                                            <rect key="frame" x="85" y="40" width="70" height="21.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aranhaIcon" translatesAutoresizingMaskIntoConstraints="NO" id="SH9-IM-XWU">
-                                                            <rect key="frame" x="17" y="19" width="53" height="48"/>
+                                                            <rect key="frame" x="17" y="27" width="53" height="47"/>
                                                         </imageView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aranhaIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ezC-NH-ren" userLabel="Card con Big">
-                                                            <rect key="frame" x="249" y="-4" width="157" height="154"/>
+                                                            <rect key="frame" x="249" y="-1.5" width="157" height="154"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="157" id="Iyx-io-ufd"/>
                                                                 <constraint firstAttribute="height" constant="154" id="pxk-7m-CIa"/>
@@ -51,16 +51,13 @@
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.93833941219999994" green="0.91723388429999997" blue="0.67418849469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="86" id="5bd-Kq-3ht"/>
-                                                        <constraint firstItem="ezC-NH-ren" firstAttribute="leading" secondItem="A2D-ck-hch" secondAttribute="trailing" id="D8B-Pv-e4B"/>
-                                                        <constraint firstItem="SH9-IM-XWU" firstAttribute="top" secondItem="yZ4-RF-Rrh" secondAttribute="top" constant="19" id="Fn9-k1-7W0"/>
+                                                        <constraint firstItem="SH9-IM-XWU" firstAttribute="top" secondItem="yZ4-RF-Rrh" secondAttribute="top" constant="27" id="Fn9-k1-7W0"/>
                                                         <constraint firstItem="A2D-ck-hch" firstAttribute="leading" secondItem="SH9-IM-XWU" secondAttribute="trailing" constant="15" id="GsI-mr-LnB"/>
-                                                        <constraint firstAttribute="bottom" secondItem="SH9-IM-XWU" secondAttribute="bottom" constant="19" id="Pst-jr-fbY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="SH9-IM-XWU" secondAttribute="bottom" constant="27" id="Pst-jr-fbY"/>
                                                         <constraint firstItem="SH9-IM-XWU" firstAttribute="leading" secondItem="yZ4-RF-Rrh" secondAttribute="leading" constant="17" id="UQJ-H9-mOD"/>
-                                                        <constraint firstItem="A2D-ck-hch" firstAttribute="leading" secondItem="yZ4-RF-Rrh" secondAttribute="leading" constant="85" id="cIc-eX-gcI"/>
                                                         <constraint firstAttribute="trailing" secondItem="ezC-NH-ren" secondAttribute="trailing" constant="-28" id="cM5-Ga-xnr"/>
                                                         <constraint firstItem="A2D-ck-hch" firstAttribute="centerY" secondItem="yZ4-RF-Rrh" secondAttribute="centerY" id="et6-0b-dQD"/>
-                                                        <constraint firstItem="ezC-NH-ren" firstAttribute="centerY" secondItem="yZ4-RF-Rrh" secondAttribute="centerY" constant="30" id="hZg-l0-jwh"/>
+                                                        <constraint firstItem="ezC-NH-ren" firstAttribute="centerY" secondItem="yZ4-RF-Rrh" secondAttribute="centerY" constant="25" id="hZg-l0-jwh"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -98,8 +95,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos lá?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iM-HR-P8T">
-                                        <rect key="frame" x="25" y="146.5" width="113" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vamos lá?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iM-HR-P8T">
+                                        <rect key="frame" x="25" y="147" width="157" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
