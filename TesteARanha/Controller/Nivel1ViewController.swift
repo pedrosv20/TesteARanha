@@ -10,6 +10,8 @@ import UIKit
 
 class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     var selectedPhobiaIndex: Int!
     var selectedPhobia: Fobia {
         Model.shared.fobias[selectedPhobiaIndex]
@@ -19,20 +21,35 @@ class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollec
         parent?.viewWillAppear(true)
     }
     
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+        let index = scrollView.contentOffset.x / witdh
+        let roundedIndex = round(index)
+        self.pageControl?.currentPage = Int(roundedIndex)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa Texto"
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return selectedPhobia.cardsOne.count
+        let count = selectedPhobia.cardsOne.count
+        pageControl.numberOfPages = count
+        pageControl.pageIndicatorTintColor = UIColor(red:0.14, green:0.27, blue:0.40, alpha:1.0)
+        pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
+        pageControl.isHidden = !(count > 1)
+        
+        return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "textoCell", for: indexPath) as! TextoCell
         
-        cell.infoTitle.text = selectedPhobia.cardsOne[indexPath.row].text
-        cell.infoDescription.text = selectedPhobia.cardsOne[indexPath.row].title
+        let fobia = selectedPhobia.cardsOne[indexPath.row]
+        
+        cell.infoTitle.text = fobia.text
+        cell.infoDescription.text = fobia.title
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = cell.frame.width/17.0
         

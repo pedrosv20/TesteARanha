@@ -38,8 +38,8 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         let count = selectedPhobia.cardsThree.count
         pageControl.numberOfPages = count
-        pageControl.pageIndicatorTintColor = UIColor(red: 0.78, green: 0.77, blue: 0.77, alpha: 1.0)
-        pageControl.currentPageIndicatorTintColor = UIColor(red: 0.82, green: 0.45, blue: 0.52, alpha: 1.0)
+        pageControl.pageIndicatorTintColor = UIColor(red:0.14, green:0.27, blue:0.40, alpha:1.0)
+        pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
         pageControl.isHidden = !(count > 1)
         
         return count
