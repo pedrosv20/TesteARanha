@@ -37,6 +37,17 @@
 		07D889FD2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */; };
 		07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */; };
 		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
+		560CD3E1237614470040AE99 /* phobitchesWATCHOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 560CD3E0237614470040AE99 /* phobitchesWATCHOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		560CD3E8237614470040AE99 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3E7237614470040AE99 /* ExtensionDelegate.swift */; };
+		560CD3EA237614470040AE99 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3E9237614470040AE99 /* NotificationController.swift */; };
+		560CD3F1237614480040AE99 /* phobitchesWATCHOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 560CD3D4237614430040AE99 /* phobitchesWATCHOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		560CD401237614870040AE99 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 560CD3FA237614820040AE99 /* Supporting Files */; };
+		560CD402237614870040AE99 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FB237614830040AE99 /* WorkoutSession.swift */; };
+		560CD403237614870040AE99 /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FC237614840040AE99 /* WorkoutRow.swift */; };
+		560CD404237614870040AE99 /* WorkoutSessionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FD237614850040AE99 /* WorkoutSessionContext.swift */; };
+		560CD405237614870040AE99 /* WorkoutStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FE237614870040AE99 /* WorkoutStartView.swift */; };
+		560CD408237614F10040AE99 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560CD407237614F10040AE99 /* Interface.storyboard */; };
+		560CD40A237614F80040AE99 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 560CD409237614F80040AE99 /* Supporting Files */; };
 		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
 		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
 		565582FC2374521B00632B3E /* ChooseVoiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */; };
@@ -87,15 +98,41 @@
 			remoteGlobalIDString = 07C5C41C2350BB3400AB67C9;
 			remoteInfo = TesteARanha;
 		};
+		560CD3E2237614470040AE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C5C4152350BB3300AB67C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 560CD3DF237614470040AE99;
+			remoteInfo = "phobitchesWATCHOS Extension";
+		};
+		560CD3EF237614480040AE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C5C4152350BB3300AB67C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 560CD3D3237614430040AE99;
+			remoteInfo = phobitchesWATCHOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		560CD3F4237614480040AE99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				560CD3E1237614470040AE99 /* phobitchesWATCHOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C2B1224237439CC00B95953 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				560CD3F1237614480040AE99 /* phobitchesWATCHOS.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +174,17 @@
 		07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding4CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ChooseVoiceViewController 2.storyboard"; sourceTree = "<group>"; };
 		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
+		560CD3D4237614430040AE99 /* phobitchesWATCHOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phobitchesWATCHOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		560CD3E0237614470040AE99 /* phobitchesWATCHOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "phobitchesWATCHOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560CD3E7237614470040AE99 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		560CD3E9237614470040AE99 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		560CD3FA237614820040AE99 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
+		560CD3FB237614830040AE99 /* WorkoutSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		560CD3FC237614840040AE99 /* WorkoutRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
+		560CD3FD237614850040AE99 /* WorkoutSessionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSessionContext.swift; sourceTree = "<group>"; };
+		560CD3FE237614870040AE99 /* WorkoutStartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutStartView.swift; sourceTree = "<group>"; };
+		560CD407237614F10040AE99 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		560CD409237614F80040AE99 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
 		565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseVoiceViewController.storyboard; sourceTree = "<group>"; };
@@ -195,6 +243,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		560CD3DD237614470040AE99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -203,6 +258,8 @@
 			children = (
 				07C5C41F2350BB3400AB67C9 /* TesteARanha */,
 				07C5C4362350BB3700AB67C9 /* TesteARanhaTests */,
+				560CD3D5237614430040AE99 /* phobitchesWATCHOS */,
+				560CD3E4237614470040AE99 /* phobitchesWATCHOS Extension */,
 				07C5C41E2350BB3400AB67C9 /* Products */,
 				6C2B122623743CC200B95953 /* Frameworks */,
 			);
@@ -213,6 +270,8 @@
 			children = (
 				07C5C41D2350BB3400AB67C9 /* Phobit.app */,
 				07C5C4332350BB3700AB67C9 /* TesteARanhaTests.xctest */,
+				560CD3D4237614430040AE99 /* phobitchesWATCHOS.app */,
+				560CD3E0237614470040AE99 /* phobitchesWATCHOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,6 +321,29 @@
 			path = "3D Objects";
 			sourceTree = "<group>";
 		};
+		560CD3D5237614430040AE99 /* phobitchesWATCHOS */ = {
+			isa = PBXGroup;
+			children = (
+				560CD407237614F10040AE99 /* Interface.storyboard */,
+				560CD409237614F80040AE99 /* Supporting Files */,
+			);
+			path = phobitchesWATCHOS;
+			sourceTree = "<group>";
+		};
+		560CD3E4237614470040AE99 /* phobitchesWATCHOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				560CD3FA237614820040AE99 /* Supporting Files */,
+				560CD3FC237614840040AE99 /* WorkoutRow.swift */,
+				560CD3FB237614830040AE99 /* WorkoutSession.swift */,
+				560CD3FD237614850040AE99 /* WorkoutSessionContext.swift */,
+				560CD3FE237614870040AE99 /* WorkoutStartView.swift */,
+				560CD3E7237614470040AE99 /* ExtensionDelegate.swift */,
+				560CD3E9237614470040AE99 /* NotificationController.swift */,
+			);
+			path = "phobitchesWATCHOS Extension";
+			sourceTree = "<group>";
+		};
 		56E8C5CA23631DB5000F53FD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -301,11 +383,11 @@
 		9D6726A42355F9700030CAE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */,
 				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 				9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */,
 				9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */,
 				565582FD2374534300632B3E /* ChooseVoiceViewController.swift */,
-				D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */,
 				9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */,
 				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
@@ -374,6 +456,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				560CD3F0237614480040AE99 /* PBXTargetDependency */,
 			);
 			name = TesteARanha;
 			productName = TesteARanha;
@@ -398,13 +481,47 @@
 			productReference = 07C5C4332350BB3700AB67C9 /* TesteARanhaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		560CD3D3237614430040AE99 /* phobitchesWATCHOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560CD3F8237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS" */;
+			buildPhases = (
+				560CD3D2237614430040AE99 /* Resources */,
+				560CD3F4237614480040AE99 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560CD3E3237614470040AE99 /* PBXTargetDependency */,
+			);
+			name = phobitchesWATCHOS;
+			productName = phobitchesWATCHOS;
+			productReference = 560CD3D4237614430040AE99 /* phobitchesWATCHOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		560CD3DF237614470040AE99 /* phobitchesWATCHOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560CD3F7237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS Extension" */;
+			buildPhases = (
+				560CD3DC237614470040AE99 /* Sources */,
+				560CD3DD237614470040AE99 /* Frameworks */,
+				560CD3DE237614470040AE99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "phobitchesWATCHOS Extension";
+			productName = "phobitchesWATCHOS Extension";
+			productReference = 560CD3E0237614470040AE99 /* phobitchesWATCHOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		07C5C4152350BB3300AB67C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Pedro Vargas";
 				TargetAttributes = {
@@ -414,6 +531,12 @@
 					07C5C4322350BB3700AB67C9 = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 07C5C41C2350BB3400AB67C9;
+					};
+					560CD3D3237614430040AE99 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					560CD3DF237614470040AE99 = {
+						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
@@ -432,6 +555,8 @@
 			targets = (
 				07C5C41C2350BB3400AB67C9 /* TesteARanha */,
 				07C5C4322350BB3700AB67C9 /* TesteARanhaTests */,
+				560CD3D3237614430040AE99 /* phobitchesWATCHOS */,
+				560CD3DF237614470040AE99 /* phobitchesWATCHOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -488,6 +613,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		560CD3D2237614430040AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CD40A237614F80040AE99 /* Supporting Files in Resources */,
+				560CD408237614F10040AE99 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560CD3DE237614470040AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CD401237614870040AE99 /* Supporting Files in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -538,6 +680,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		560CD3DC237614470040AE99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CD404237614870040AE99 /* WorkoutSessionContext.swift in Sources */,
+				560CD3EA237614470040AE99 /* NotificationController.swift in Sources */,
+				560CD402237614870040AE99 /* WorkoutSession.swift in Sources */,
+				560CD3E8237614470040AE99 /* ExtensionDelegate.swift in Sources */,
+				560CD405237614870040AE99 /* WorkoutStartView.swift in Sources */,
+				560CD403237614870040AE99 /* WorkoutRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -545,6 +700,16 @@
 			isa = PBXTargetDependency;
 			target = 07C5C41C2350BB3400AB67C9 /* TesteARanha */;
 			targetProxy = 07C5C4342350BB3700AB67C9 /* PBXContainerItemProxy */;
+		};
+		560CD3E3237614470040AE99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 560CD3DF237614470040AE99 /* phobitchesWATCHOS Extension */;
+			targetProxy = 560CD3E2237614470040AE99 /* PBXContainerItemProxy */;
+		};
+		560CD3F0237614480040AE99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 560CD3D3237614430040AE99 /* phobitchesWATCHOS */;
+			targetProxy = 560CD3EF237614480040AE99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -810,6 +975,88 @@
 			};
 			name = Release;
 		};
+		560CD3F2237614480040AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				IBSC_MODULE = phobitchesWATCHOS_Extension;
+				INFOPLIST_FILE = phobitchesWATCHOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		560CD3F3237614480040AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				IBSC_MODULE = phobitchesWATCHOS_Extension;
+				INFOPLIST_FILE = phobitchesWATCHOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		560CD3F5237614480040AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		560CD3F6237614480040AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -836,6 +1083,24 @@
 			buildConfigurations = (
 				07C5C4402350BB3700AB67C9 /* Debug */,
 				07C5C4412350BB3700AB67C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560CD3F7237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560CD3F5237614480040AE99 /* Debug */,
+				560CD3F6237614480040AE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560CD3F8237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560CD3F2237614480040AE99 /* Debug */,
+				560CD3F3237614480040AE99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
