@@ -45,4 +45,14 @@ extension UIView {
             }
         }
     }
+    func hideKeyboardWhenTappedAround() {
+            let tapGesture = UITapGestureRecognizer(target: self,
+                                                    action: #selector(hideKeyboard))
+            self.addGestureRecognizer(tapGesture)
+        }
+        
+        @objc func hideKeyboard() {
+            self.endEditing(true)
+        }
+    
 }
