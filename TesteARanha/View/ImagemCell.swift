@@ -17,3 +17,4 @@ class ImagemCell: UICollectionViewCell {
     
     var isBlurred = false
 }
+

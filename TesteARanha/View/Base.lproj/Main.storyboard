@@ -20,7 +20,7 @@
         <!--Fobias-->
         <scene sceneID="Oes-ij-5IG">
             <objects>
-                <viewController id="WX4-hm-g10" customClass="FobiasViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WX4-hm-g10" customClass="FobiasViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Daq-XR-x1h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="110" id="cbg-bH-ei3" customClass="FobiaCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="110" id="cbg-bH-ei3" customClass="FobiaCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbg-bH-ei3" id="pAB-J6-RSG">
@@ -121,62 +121,52 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval-1" translatesAutoresizingMaskIntoConstraints="NO" id="agH-Q9-c1R">
                                         <rect key="frame" x="215.5" y="-50" width="248.5" height="232"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-EB-DS2">
-                                        <rect key="frame" x="25" y="91" width="78" height="50"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos lá?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCF-5r-mdT">
-                                        <rect key="frame" x="25" y="146" width="364" height="30"/>
+                                        <rect key="frame" x="25" y="148" width="364" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione uma fobia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74v-XC-kPs">
-                                        <rect key="frame" x="25" y="181" width="364" height="21"/>
+                                        <rect key="frame" x="25" y="183" width="364" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Olá, Hillary" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omG-Kc-9cb">
+                                        <rect key="frame" x="25" y="91" width="364" height="52"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-Ik-5pm">
-                                        <rect key="frame" x="246" y="101" width="33" height="30"/>
+                                        <rect key="frame" x="25" y="71" width="25" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="BL2-Ik-5pm" secondAttribute="height" multiplier="12:11" id="ImF-Xk-OVr"/>
+                                            <constraint firstAttribute="width" constant="25" id="gVE-fk-vRa"/>
                                         </constraints>
                                         <state key="normal" image="editingPencil"/>
                                         <connections>
                                             <action selector="editButtonTapped:" destination="WX4-hm-g10" eventType="touchUpInside" id="b1Y-aW-gYF"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Hillary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-Ms-9eo">
-                                        <rect key="frame" x="111" y="91" width="125" height="50.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="74v-XC-kPs" firstAttribute="leading" secondItem="ams-am-H9d" secondAttribute="leading" constant="25" id="2f4-hs-qB7"/>
+                                    <constraint firstAttribute="trailing" secondItem="omG-Kc-9cb" secondAttribute="trailing" constant="25" id="8kh-mN-BmE"/>
                                     <constraint firstItem="agH-Q9-c1R" firstAttribute="height" secondItem="ams-am-H9d" secondAttribute="height" id="975-8q-gNd"/>
-                                    <constraint firstItem="fnM-Ms-9eo" firstAttribute="centerY" secondItem="a4A-EB-DS2" secondAttribute="centerY" id="I24-qc-aS6"/>
-                                    <constraint firstItem="BL2-Ik-5pm" firstAttribute="top" secondItem="a4A-EB-DS2" secondAttribute="top" constant="10" id="PnU-nH-Zhq"/>
+                                    <constraint firstItem="omG-Kc-9cb" firstAttribute="top" secondItem="ams-am-H9d" secondAttribute="top" constant="91" id="Aph-Rj-Yel"/>
+                                    <constraint firstItem="omG-Kc-9cb" firstAttribute="top" secondItem="BL2-Ik-5pm" secondAttribute="bottom" constant="-3" id="Qlj-hb-YQx"/>
                                     <constraint firstItem="agH-Q9-c1R" firstAttribute="top" secondItem="ams-am-H9d" secondAttribute="top" constant="-50" id="RHB-Wy-XLV"/>
                                     <constraint firstItem="agH-Q9-c1R" firstAttribute="width" secondItem="ams-am-H9d" secondAttribute="width" multiplier="0.6" id="SbE-7M-0SQ"/>
                                     <constraint firstItem="aCF-5r-mdT" firstAttribute="leading" secondItem="ams-am-H9d" secondAttribute="leading" constant="25" id="UCi-TB-dhl"/>
                                     <constraint firstAttribute="trailing" secondItem="agH-Q9-c1R" secondAttribute="trailing" constant="-50" id="UL7-1k-fW2"/>
-                                    <constraint firstItem="fnM-Ms-9eo" firstAttribute="leading" secondItem="a4A-EB-DS2" secondAttribute="trailing" constant="8" id="WhF-en-Vdu"/>
                                     <constraint firstItem="74v-XC-kPs" firstAttribute="top" secondItem="aCF-5r-mdT" secondAttribute="bottom" constant="5" id="d1g-DC-z9V"/>
-                                    <constraint firstItem="a4A-EB-DS2" firstAttribute="centerY" secondItem="ams-am-H9d" secondAttribute="centerY" id="ewQ-8O-xg1"/>
+                                    <constraint firstItem="omG-Kc-9cb" firstAttribute="leading" secondItem="ams-am-H9d" secondAttribute="leading" constant="25" id="eX1-9t-9i7"/>
                                     <constraint firstItem="aCF-5r-mdT" firstAttribute="trailing" secondItem="74v-XC-kPs" secondAttribute="trailing" id="hvj-89-Ax3"/>
-                                    <constraint firstItem="BL2-Ik-5pm" firstAttribute="bottom" secondItem="a4A-EB-DS2" secondAttribute="bottom" constant="-10" id="kTJ-vN-M9J"/>
-                                    <constraint firstItem="a4A-EB-DS2" firstAttribute="leading" secondItem="ams-am-H9d" secondAttribute="leading" constant="25" id="lLh-p0-cE7"/>
-                                    <constraint firstItem="a4A-EB-DS2" firstAttribute="top" secondItem="ams-am-H9d" secondAttribute="top" constant="91" id="qAN-pf-9Yi"/>
+                                    <constraint firstItem="aCF-5r-mdT" firstAttribute="top" secondItem="omG-Kc-9cb" secondAttribute="bottom" constant="5" id="kqU-Y8-RQK"/>
+                                    <constraint firstItem="BL2-Ik-5pm" firstAttribute="leading" secondItem="ams-am-H9d" secondAttribute="leading" constant="25" id="qPn-1I-0yI"/>
                                     <constraint firstAttribute="trailing" secondItem="74v-XC-kPs" secondAttribute="trailing" constant="25" id="qf8-Jd-ghn"/>
-                                    <constraint firstItem="BL2-Ik-5pm" firstAttribute="centerY" secondItem="a4A-EB-DS2" secondAttribute="centerY" id="vqz-9A-OaD"/>
-                                    <constraint firstItem="BL2-Ik-5pm" firstAttribute="leading" secondItem="fnM-Ms-9eo" secondAttribute="trailing" constant="10" id="wTf-2I-dNl"/>
-                                    <constraint firstItem="aCF-5r-mdT" firstAttribute="top" secondItem="a4A-EB-DS2" secondAttribute="bottom" constant="5" id="xXS-zf-O6V"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -195,9 +185,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Fobias" largeTitleDisplayMode="always" id="wuF-tq-DJU"/>
                     <connections>
-                        <outlet property="nameLabel" destination="fnM-Ms-9eo" id="jCd-rD-AzE"/>
+                        <outlet property="nameTextField" destination="omG-Kc-9cb" id="Cor-4e-s0c"/>
                         <outlet property="phobiasTableView" destination="zeq-9J-Zbs" id="d6Q-Ws-McU"/>
-                        <outlet property="welcomeLabel" destination="a4A-EB-DS2" id="7cI-Bu-vfQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dY-Mo-fOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

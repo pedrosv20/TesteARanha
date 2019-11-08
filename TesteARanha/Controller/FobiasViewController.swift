@@ -8,14 +8,17 @@
 
 import UIKit
 
-class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel! // fazer input em cima do teclado
     @IBOutlet weak var phobiasTableView: UITableView!
+    @IBOutlet weak var nameTextField: UITextField!
     
     override func viewDidLoad() {
         navigationController?.navigationBar.prefersLargeTitles = true
+        nameTextField.delegate = self
+        
+        updateText("Hillary")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,6 +84,20 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBAction func editButtonTapped(_ sender: Any) {
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextField.endEditing(true)
+        return false
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateText(textField.text!)
+    }
+    
+    func updateText(_ text: String) {
+        nameTextField.text = "Olá, " + text
     }
 }
 
