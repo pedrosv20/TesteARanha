@@ -32,57 +32,8 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="text1Cell" id="zbn-aZ-fQs">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7mD-KG-QrD">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JonasBrothersFilhaDaPuta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtH-XI-Qh5">
-                                                    <rect key="frame" x="106" y="75" width="203" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.093123786149999999" green="0.19383513929999999" blue="0.28628587719999998" alpha="0.95257277399999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="375" height="300"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="35"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="text2Cell" id="Wtf-1r-fby">
-                                        <rect key="frame" x="375" y="0.0" width="375" height="300"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XqX-zg-0tU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JonasBrothersFilhaDaPuta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOq-ih-wo8">
-                                                    <rect key="frame" x="173" y="75" width="203" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.093123786149999999" green="0.19383513929999999" blue="0.28628587719999998" alpha="0.95257277399999996" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="375" height="300"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="35"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ARcardCell" id="EFk-fs-oeK" customClass="StageFourCardCell" customModule="TesteARanha" customModuleProvider="target">
-                                        <rect key="frame" x="750" y="0.0" width="375" height="300"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tIr-mz-IF4">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
@@ -218,7 +169,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="animationCell" id="nyL-Zj-weW" customClass="PlayAnimationCardCell" customModule="TesteARanha" customModuleProvider="target">
-                                        <rect key="frame" x="1125" y="0.0" width="375" height="300"/>
+                                        <rect key="frame" x="375" y="0.0" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="u8Q-tc-D6l">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
@@ -269,7 +220,7 @@
                                     <outlet property="delegate" destination="BV1-FR-VrT" id="akF-fR-Z9f"/>
                                 </connections>
                             </collectionView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-HP-yNO">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Lxb-HP-yNO">
                                 <rect key="frame" x="0.0" y="859" width="414" height="37"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjH-rx-MEK">
@@ -321,23 +272,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-JG-1IX">
                                 <rect key="frame" x="26" y="174" width="362" height="558"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0w-nA-UYi">
-                                        <rect key="frame" x="15" y="41" width="332" height="298.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0w-nA-UYi">
+                                        <rect key="frame" x="15" y="137" width="332" height="172"/>
                                         <string key="text">Agora a aranha aparecerá na tela, em tamanho reduzido.
 
 As instruções aparecerão na tela e logo depois os comandos estarão disponíveis para você configurar. Você ajustará o nível de fidelidade da aranha e o tamanho em que ela vai aparecer.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iha-ei-Is2">
+                                        <rect key="frame" x="78" y="456" width="195" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="VAMOS LÁ!">
+                                            <color key="titleColor" red="0.91764705879999997" green="0.51372549020000002" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" id="BzJ-Qi-j33"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.093123786149999999" green="0.19383513929999999" blue="0.28628587719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="X0w-nA-UYi" secondAttribute="trailing" constant="15" id="H9W-b0-CRO"/>
                                     <constraint firstItem="X0w-nA-UYi" firstAttribute="leading" secondItem="IQ4-JG-1IX" secondAttribute="leading" constant="15" id="VSn-FW-qTn"/>
                                     <constraint firstAttribute="width" secondItem="IQ4-JG-1IX" secondAttribute="height" multiplier="181:279" id="fMD-eY-efi"/>
-                                    <constraint firstItem="X0w-nA-UYi" firstAttribute="top" secondItem="IQ4-JG-1IX" secondAttribute="top" constant="41" id="hqV-f2-Ugp"/>
+                                    <constraint firstItem="X0w-nA-UYi" firstAttribute="centerY" secondItem="IQ4-JG-1IX" secondAttribute="centerY" multiplier="0.8" id="lm5-3r-Adj"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

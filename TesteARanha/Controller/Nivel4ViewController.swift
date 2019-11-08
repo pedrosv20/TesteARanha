@@ -16,7 +16,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     var entity : Entity!
     var anchor: AnchorEntity!
     
-    var cellIds = ["text1Cell", "text2Cell", "ARcardCell", "animationCell"]
+    var cellIds = ["ARcardCell", "animationCell"]
     
     var changed = false
     
@@ -58,9 +58,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    @IBAction func didPressBackButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
+   
     
     func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
         print("entrou")
@@ -125,6 +123,10 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         self.pageControl?.currentPage = Int(roundedIndex)
     }
     
+    @IBAction func didPressBackButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+       }
+    
     @IBAction func showEntity(_ sender: Any) {
         
         if entity.isActive {
@@ -182,9 +184,9 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         
         sender.minimumValue = 0.2
         sender.maximumValue = 40
-        sender.stepValue = 0.5
+        sender.stepValue = 0.2
         
-        entity.scale = SIMD3<Float>(repeating: Float(sender.value / 10 ))
+        entity.scale = SIMD3<Float>(repeating: Float(sender.value))
     }
     
     @IBAction func changeTexture(_ sender: UISegmentedControl) {
@@ -209,9 +211,9 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             moveSpider()
             entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
         } else {
-            entity.scale = SIMD3<Float>(repeating: Float(0.3))
+            entity.scale = SIMD3<Float>(repeating: Float(0.5))
         }
-        cell.sizeStepper.value = 0.3
+        cell.sizeStepper.value = 0.5
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
@@ -221,7 +223,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         } else {
             self.collectionView.isHidden = false
             anchor.addChild(entity!)
-            entity.scale = SIMD3<Float>(repeating: Float(0.3))
+            entity.scale = SIMD3<Float>(repeating: Float(0.5))
             
         }
     }
@@ -245,7 +247,7 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
     
     func collectionView( _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if indexPath.item == 2 {
+        if indexPath.item == 0{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ARcardCell", for: indexPath) as! StageFourCardCell
                     
             cell.fidelitySegmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
@@ -254,15 +256,15 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
             
             self.cell = cell
             return cell
-        } else if indexPath.item == 3 {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "animationCell", for: indexPath) as! PlayAnimationCardCell
-
-            self.animationCell = cell
-            return cell
-            
         }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "animationCell", for: indexPath) as! PlayAnimationCardCell
+
+        self.animationCell = cell
+        return cell
+            
         
-        return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
+        
+       
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

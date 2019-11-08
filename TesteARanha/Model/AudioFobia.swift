@@ -23,10 +23,10 @@ class Audio: NSObject {
     
     internal func load(_ fileName: String) -> AVAudioPlayer {
         let path = Bundle.main.path(forResource: fileName, ofType: nil)!
-        let url = URL(fileURLWithPath: path)
+        let url = URL(fileURLWithPath: path);
         
         do {
-            let player = try AVAudioPlayer(contentsOf: url)
+            let player = try AVAudioPlayer(contentsOf: url);
             player.prepareToPlay()
             player.numberOfLoops = -1
             return player
