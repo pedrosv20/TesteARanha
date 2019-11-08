@@ -12,6 +12,12 @@ import UIKit
 class Model {
     static let shared = Model()
     var fobias = [Fobia]()
+    var nomePessoa: String!
+    
+    func saveNome(_ nome: String) {
+        nomePessoa = nome
+        UserDefaults.standard.set(nome, forKey: "nome")
+    }
     
     private init() {
         fobias.append(Fobia(

@@ -13,6 +13,7 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     
     var cellIds = ["Onboarding1", "Onboarding2", "Onboarding3", "Onboarding4", "Onboarding5"]
     
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     let healthStore = HKHealthStore()
