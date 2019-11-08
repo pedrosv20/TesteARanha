@@ -78,6 +78,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6C2B1224237439CC00B95953 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07009F322357ADEE0070FD28 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		07009F332357ADEE0070FD28 /* Fobia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fobia.swift; sourceTree = "<group>"; };
@@ -128,6 +141,7 @@
 		56E8C5D12363CF81000F53FD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		56E8C5D92363D604000F53FD /* ViewProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProgressCell.swift; sourceTree = "<group>"; };
 		56E8C5DC2363DA47000F53FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProgressViewController.storyboard; sourceTree = "<group>"; };
+		6C2B122723743CC200B95953 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		6C61E03F236B163D004F50F3 /* AVAudioPlayer+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPlayer+extensions.swift"; sourceTree = "<group>"; };
 		6C714243236C399100A84B71 /* StageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
 		6C714245236C490D00A84B71 /* StageTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageTwo.swift; sourceTree = "<group>"; };
@@ -168,6 +182,7 @@
 				07C5C41F2350BB3400AB67C9 /* TesteARanha */,
 				07C5C4362350BB3700AB67C9 /* TesteARanhaTests */,
 				07C5C41E2350BB3400AB67C9 /* Products */,
+				6C2B122623743CC200B95953 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +246,14 @@
 				6C61E03F236B163D004F50F3 /* AVAudioPlayer+extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C2B122623743CC200B95953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C2B122723743CC200B95953 /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6C714249236C5F6600A84B71 /* Audios */ = {
@@ -313,6 +336,7 @@
 				07C5C4192350BB3400AB67C9 /* Sources */,
 				07C5C41A2350BB3400AB67C9 /* Frameworks */,
 				07C5C41B2350BB3400AB67C9 /* Resources */,
+				6C2B1224237439CC00B95953 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -347,7 +371,7 @@
 		07C5C4152350BB3300AB67C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Pedro Vargas";
 				TargetAttributes = {
@@ -667,7 +691,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = AMXQN329PY;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,7 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = AMXQN329PY;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
