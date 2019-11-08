@@ -53,21 +53,11 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-    @objc func startApp(_ notification: Notification) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(nextView), name: NSNotification.Name("nextTouched"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(backView), name: NSNotification.Name("backTouched"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(startApp), name: NSNotification.Name("start"), object: nil)
-        
     }
     
 

@@ -8,30 +8,13 @@
 
 import UIKit
 
-class TelaOnboarding5CollectionViewCell: UICollectionViewCell, UITextFieldDelegate {
+class TelaOnboarding5CollectionViewCell: UICollectionViewCell {
     
     var index = 4
     
-    @IBOutlet weak var nameTextField: UITextField!
-    
-    override func awakeFromNib() {
-        self.nameTextField.delegate = self
-        self.hideKeyboardWhenTappedAround()
-    }
-    
     @IBAction func backTouched(_ sender: Any) {
+        print("prox")
         NotificationCenter.default.post(name: NSNotification.Name("nextTouched"), object: nil, userInfo: ["tela" : index - 1])
-    }
-    
-    @IBAction func startApp(_ sender: Any) {
-        if nameTextField.text != "" {
-            print("olá pessoa")
-        }
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -40,5 +23,5 @@ class TelaOnboarding5CollectionViewCell: UICollectionViewCell, UITextFieldDelega
         let roundedIndex = round(index)
         print(roundedIndex)
         }
-}
+    }
 

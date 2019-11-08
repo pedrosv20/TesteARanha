@@ -46,7 +46,7 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-3a-q5A">
                                                     <rect key="frame" x="510.5" y="785" width="68" height="30"/>
-                                                    <state key="normal" title="PROXIMO"/>
+                                                    <state key="normal" title="PRÓXIMO"/>
                                                     <connections>
                                                         <action selector="Touch:" destination="GXw-3l-sL2" eventType="touchUpInside" id="qkh-OE-z5i"/>
                                                     </connections>
@@ -108,7 +108,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-dP-2Xx">
                                                     <rect key="frame" x="421" y="747" width="39" height="30"/>
-                                                    <state key="normal" title="PROXIMO"/>
+                                                    <state key="normal" title="PRÓXIMO"/>
                                                     <connections>
                                                         <action selector="touched:" destination="ODA-cK-fYl" eventType="touchUpInside" id="qtJ-bA-5nQ"/>
                                                     </connections>
@@ -140,39 +140,39 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding3" translatesAutoresizingMaskIntoConstraints="NO" id="s88-Qa-3IZ" customClass="TelaOnboarding3CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding3" translatesAutoresizingMaskIntoConstraints="NO" id="s88-Qa-3IZ" customClass="TelaOnboarding3CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
                                         <rect key="frame" x="820" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-I5-HWa">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="855"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="tela3Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-lb-W4i">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela3Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-lb-W4i">
                                                     <rect key="frame" x="0.0" y="0.0" width="578.5" height="812"/>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="On_board_3sinalero" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-V1-sDP">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On_board_3sinalero" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-V1-sDP">
                                                     <rect key="frame" x="0.0" y="358" width="578.5" height="258"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nada vai ser surpresa! Você vai estar no controle de toda navegação" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-EL-QzV">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nada vai ser surpresa! Você vai estar no controle de toda navegação" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygG-EL-QzV">
                                                     <rect key="frame" x="26" y="116.5" width="522.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fld-na-s4x">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fld-na-s4x">
                                                     <rect key="frame" x="490.5" y="742" width="68" height="30"/>
-                                                    <state key="normal" title="PROXIMO"/>
+                                                    <state key="normal" title="PRÓXIMO"/>
                                                     <connections>
                                                         <action selector="touched:" destination="s88-Qa-3IZ" eventType="touchUpInside" id="D7i-bb-qxu"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-NX-VfH">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-NX-VfH">
                                                     <rect key="frame" x="20" y="742" width="56" height="30"/>
                                                     <state key="normal" title="VOLTAR"/>
                                                     <connections>
                                                         <action selector="backTouched:" destination="s88-Qa-3IZ" eventType="touchUpInside" id="vTO-7e-IG8"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Controle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20e-wU-ims">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Controle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20e-wU-ims">
                                                     <rect key="frame" x="26" y="88" width="71" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -238,7 +238,7 @@
                                                         <constraint firstAttribute="width" constant="90" id="p4X-n5-B95"/>
                                                     </constraints>
                                                     <inset key="titleEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
-                                                    <state key="normal" title="PROXIMO"/>
+                                                    <state key="normal" title="PRÓXIMO"/>
                                                     <connections>
                                                         <action selector="touched:" destination="AQ8-Iy-o4p" eventType="touchUpInside" id="eQL-ZS-PU6"/>
                                                     </connections>
@@ -266,41 +266,44 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding5" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-uW-iaM" customClass="TelaOnboarding5CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding5" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-uW-iaM" customClass="TelaOnboarding5CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
                                         <rect key="frame" x="1640" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LKG-CU-eCD">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="LKG-CU-eCD">
                                             <rect key="frame" x="0.0" y="0.0" width="410" height="855"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela5Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="DTq-iM-1e6">
                                                     <rect key="frame" x="0.0" y="0.0" width="410" height="855"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos começar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF2-3i-uOz">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Vamos começar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF2-3i-uOz">
                                                     <rect key="frame" x="26" y="88" width="140" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guri" translatesAutoresizingMaskIntoConstraints="NO" id="keU-24-GSo">
-                                                    <rect key="frame" x="0.0" y="299.5" width="410" height="256.5"/>
+                                                    <rect key="frame" x="0.0" y="171" width="410" height="256.5"/>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf6-uQ-Fqe">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tf6-uQ-Fqe">
                                                     <rect key="frame" x="316" y="785" width="74" height="30"/>
                                                     <state key="normal" title="COMEÇAR"/>
+                                                    <connections>
+                                                        <action selector="startApp:" destination="Mqq-uW-iaM" eventType="touchUpInside" id="vBz-cM-HKi"/>
+                                                    </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Como você se chama?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIP-hA-mze">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Como você se chama?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIP-hA-mze">
                                                     <rect key="frame" x="26" y="117" width="410" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pGV-23-e8F">
-                                                    <rect key="frame" x="82" y="624" width="246" height="34"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu nome" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pGV-23-e8F">
+                                                    <rect key="frame" x="82" y="457.5" width="246" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="name"/>
                                                 </textField>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-o5-N60">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-o5-N60">
                                                     <rect key="frame" x="20" y="785" width="56" height="30"/>
                                                     <state key="normal" title="VOLTAR"/>
                                                     <connections>
@@ -310,7 +313,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DTq-iM-1e6" firstAttribute="width" secondItem="LKG-CU-eCD" secondAttribute="width" id="1EL-NP-VkO"/>
-                                                <constraint firstItem="pGV-23-e8F" firstAttribute="top" secondItem="keU-24-GSo" secondAttribute="bottom" constant="68" id="3XY-ot-b74"/>
+                                                <constraint firstItem="pGV-23-e8F" firstAttribute="top" secondItem="keU-24-GSo" secondAttribute="bottom" constant="30" id="3XY-ot-b74"/>
                                                 <constraint firstAttribute="width" constant="410" placeholder="YES" id="3le-45-XU2"/>
                                                 <constraint firstItem="pIP-hA-mze" firstAttribute="top" secondItem="YF2-3i-uOz" secondAttribute="bottom" constant="8" id="7tx-bG-JdT"/>
                                                 <constraint firstAttribute="bottom" secondItem="uN8-o5-N60" secondAttribute="bottom" constant="40" id="9NM-9A-tP6"/>
@@ -321,7 +324,7 @@
                                                 <constraint firstItem="DTq-iM-1e6" firstAttribute="centerX" secondItem="LKG-CU-eCD" secondAttribute="centerX" id="XG6-Tl-tuo"/>
                                                 <constraint firstAttribute="trailing" secondItem="pIP-hA-mze" secondAttribute="trailing" constant="-26" id="bT8-5m-Dvz"/>
                                                 <constraint firstItem="DTq-iM-1e6" firstAttribute="centerY" secondItem="LKG-CU-eCD" secondAttribute="centerY" id="i4A-8f-2lB"/>
-                                                <constraint firstItem="keU-24-GSo" firstAttribute="centerY" secondItem="DTq-iM-1e6" secondAttribute="centerY" id="idO-gh-v0j"/>
+                                                <constraint firstItem="keU-24-GSo" firstAttribute="centerY" secondItem="DTq-iM-1e6" secondAttribute="centerY" multiplier="0.7" id="idO-gh-v0j"/>
                                                 <constraint firstItem="DTq-iM-1e6" firstAttribute="height" secondItem="LKG-CU-eCD" secondAttribute="height" id="itd-Gr-FLc"/>
                                                 <constraint firstAttribute="bottom" secondItem="tf6-uQ-Fqe" secondAttribute="bottom" constant="40" id="kZ2-Ud-PL5"/>
                                                 <constraint firstItem="uN8-o5-N60" firstAttribute="leading" secondItem="LKG-CU-eCD" secondAttribute="leading" constant="20" id="m2P-ca-XDl"/>
@@ -333,6 +336,9 @@
                                                 <constraint firstAttribute="height" constant="855" placeholder="YES" id="z66-KY-GOx"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameTextField" destination="pGV-23-e8F" id="CP6-Ye-83A"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -352,7 +358,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="B3C-PA-ulf" id="HZZ-Vc-1kj"/>
-                        <segue destination="f6H-jz-Pfo" kind="presentation" id="v0u-Hk-frc"/>
+                        <segue destination="f6H-jz-Pfo" kind="presentation" identifier="goToApp" id="v0u-Hk-frc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNo-Xe-sa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
