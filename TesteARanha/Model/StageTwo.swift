@@ -24,6 +24,7 @@ class StageTwo {
         audio: String
     ) {
         self.audioDescription = audioDescription
+        print(audio)
         self.audio = (AVAudioPlayer.load(audio))
     }
     

@@ -123,15 +123,15 @@ class Model {
             stageTwo: [
                 StageTwo(
                     audioDescription: "Etapa Áudio 1",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 2",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 3",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 )
             ],
             stageThree: [
@@ -209,15 +209,15 @@ class Model {
             stageTwo: [
                 StageTwo(
                     audioDescription: "Etapa Áudio 1",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 2",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 3",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 )
             ],
             stageThree: [
@@ -295,15 +295,15 @@ class Model {
             stageTwo: [
                 StageTwo(
                     audioDescription: "Etapa Áudio 1",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 2",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 3",
-                    audio: "night-at-the-club.mp3"
+                    audio: "audio_F_EN 3.wav"
                 )
             ],
             stageThree: [
