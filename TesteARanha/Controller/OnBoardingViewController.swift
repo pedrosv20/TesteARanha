@@ -18,7 +18,7 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return cellIds.count
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -28,16 +28,11 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//
-//        return cell
-//    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
