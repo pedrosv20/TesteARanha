@@ -19,13 +19,20 @@ class Model {
             icon: UIImage(named: "aranhaIcon")!,
             stageOne: [
                 StageOne(
-                    text: "Etapa Texto",
-                    title: "Etapa Texto"
+                    text: "Como é o corpo das aranhas?",
+                    title: "As aranhas possuem pequenas estruturas chamadas de fiandeiras, que, em contato com o ar, produzem fios de teia. Seu corpo é composto de cefalotórax e abdome. É chamado de cefalotórax pois a cabeça é fundida ao tórax. É no cefalotórax também que se encontram as quelíceras, capazes de injetar veneno."
                 ),
                 StageOne(
-                    text: "Etapa texto",
-                    title: "Etapa Texto"
-                )
+                    text: "O que elas fazem?",
+                    title: "Elas utilizam as teias para fazer seu casulo e para servir de armadilha aos animais que usa de alimento, como moscas. Existem aproximadamente 40 mil espécies de aranhas no mundo mas podemos citar 4 delas como responsáveis por colocar medo e estigmatizar as aranhas de um modo assustador."
+                ),
+                StageOne(
+                    text: "Quem são elas?",
+                    title: "Aranha armadeira, aranha marrom, tarântula e viúva-negra."
+                ),
+                StageOne(text: "Por que isso aconteceu?", title: "Porque essas aranhas foram as que mais estiveram envolvidas em acidentes com humanos. Sua aparência não é convidativa, as formas pouco arredondadas e flexíveis, ao contrário de um cachorrinho, não nos fazem gostar assim, à primeira vista."
+                ),
+                StageOne(text: "Então por que atacam?", title: "Devemos lembrar que as aranhas se alimentam de insetos e possuem veneno para sua proteção. Quando se sentem ameaçadas, picam.")
             ],
             stageTwo: [
                 StageTwo(

@@ -11,6 +11,6 @@ import UIKit
 class TextoCell: UICollectionViewCell {
     
     @IBOutlet weak var infoTitle: UILabel!
-    @IBOutlet weak var infoDescription: UILabel!
+    @IBOutlet weak var infoText: UITextView!
     
 }

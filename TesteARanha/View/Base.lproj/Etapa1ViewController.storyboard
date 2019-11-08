@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,73 +16,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4z-KD-yOl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="179"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etapa texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKc-Qx-5Qr">
-                                        <rect key="frame" x="45" y="64" width="178.5" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nessa etapa vamos ler sobre aranhas, o conteúdo será mais científico" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn2-5G-Ilt">
-                                        <rect key="frame" x="45" y="116" width="359" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="kKc-Qx-5Qr" firstAttribute="leading" secondItem="G4z-KD-yOl" secondAttribute="leading" constant="45" id="DMW-S8-mB6"/>
-                                    <constraint firstAttribute="trailing" secondItem="fn2-5G-Ilt" secondAttribute="trailing" constant="10" id="Ec4-ey-38y"/>
-                                    <constraint firstItem="fn2-5G-Ilt" firstAttribute="top" secondItem="kKc-Qx-5Qr" secondAttribute="bottom" constant="10" id="kgV-Tx-m9p"/>
-                                    <constraint firstItem="fn2-5G-Ilt" firstAttribute="leading" secondItem="G4z-KD-yOl" secondAttribute="leading" constant="45" id="sqx-NL-R8g"/>
-                                </constraints>
-                            </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Ed-oh-zxC">
-                                <rect key="frame" x="0.0" y="204" width="414" height="627.5"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6Ed-oh-zxC">
+                                <rect key="frame" x="0.0" y="120" width="414" height="662"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vTX-nu-uRf">
-                                    <size key="itemSize" width="331" height="509"/>
+                                    <size key="itemSize" width="357" height="561"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="textoCell" id="Skg-SY-5Mq" customClass="TextoCell" customModule="TesteARanha" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="59.5" width="331" height="509"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="textoCell" translatesAutoresizingMaskIntoConstraints="NO" id="Skg-SY-5Mq" customClass="TextoCell" customModule="TesteARanha" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="8" width="357" height="646"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="331" height="509"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTS-2p-sDK">
+                                            <rect key="frame" x="0.0" y="0.0" width="357" height="646"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos conhecer dados científicos?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-jv-Ruw">
-                                                    <rect key="frame" x="20" y="137" width="291" height="45.5"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vamos conhecer dados científicos?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lng-jv-Ruw">
+                                                    <rect key="frame" x="25" y="14" width="306" height="76"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arnhas são top elas são legais, vamos falar sobre aranhinhas lalala hihihi hohoh aranhas aracnofobicas" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ7-ui-dDY">
-                                                    <rect key="frame" x="20" y="222.5" width="291" height="64.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oyw-xg-21c">
+                                                    <rect key="frame" x="25" y="98" width="321.5" height="534"/>
+                                                    <color key="backgroundColor" red="0.13725490200000001" green="0.27058823529999998" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
-                                        </view>
+                                            <constraints>
+                                                <constraint firstItem="Lng-jv-Ruw" firstAttribute="top" secondItem="nTS-2p-sDK" secondAttribute="top" constant="30" id="3BQ-qA-0Sn"/>
+                                                <constraint firstItem="Oyw-xg-21c" firstAttribute="leading" secondItem="nTS-2p-sDK" secondAttribute="leading" constant="25" id="996-cp-1hI"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lng-jv-Ruw" secondAttribute="trailing" constant="26" id="FUY-ZO-bR6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Oyw-xg-21c" secondAttribute="trailing" constant="19" id="HXH-fL-JYF"/>
+                                                <constraint firstAttribute="bottom" secondItem="Oyw-xg-21c" secondAttribute="bottom" constant="14" id="MTt-AU-MzE"/>
+                                                <constraint firstItem="Lng-jv-Ruw" firstAttribute="leading" secondItem="nTS-2p-sDK" secondAttribute="leading" constant="25" id="OIN-yB-xB6"/>
+                                                <constraint firstItem="Oyw-xg-21c" firstAttribute="top" secondItem="Lng-jv-Ruw" secondAttribute="bottom" constant="20" id="ely-go-M0A"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.13725490196078433" green="0.27058823529411763" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstItem="wZ7-ui-dDY" firstAttribute="centerY" secondItem="Skg-SY-5Mq" secondAttribute="centerY" id="8Od-PF-Efc"/>
-                                            <constraint firstItem="wZ7-ui-dDY" firstAttribute="top" secondItem="Lng-jv-Ruw" secondAttribute="bottom" constant="40" id="AyZ-OO-eEk"/>
-                                            <constraint firstAttribute="trailing" secondItem="wZ7-ui-dDY" secondAttribute="trailing" constant="20" id="CaT-DX-usD"/>
-                                            <constraint firstItem="wZ7-ui-dDY" firstAttribute="leading" secondItem="Skg-SY-5Mq" secondAttribute="leading" constant="20" id="I8O-Uf-VsJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="Lng-jv-Ruw" secondAttribute="trailing" constant="20" id="Mg6-RL-iH0"/>
-                                            <constraint firstItem="Lng-jv-Ruw" firstAttribute="centerX" secondItem="Skg-SY-5Mq" secondAttribute="centerX" id="W2u-zk-ARS"/>
-                                            <constraint firstItem="Lng-jv-Ruw" firstAttribute="leading" secondItem="Skg-SY-5Mq" secondAttribute="leading" constant="20" id="qoi-JJ-bpM"/>
-                                        </constraints>
                                         <connections>
-                                            <outlet property="infoDescription" destination="wZ7-ui-dDY" id="I90-Qw-RLl"/>
+                                            <outlet property="infoText" destination="Oyw-xg-21c" id="GqW-OK-iSK"/>
                                             <outlet property="infoTitle" destination="Lng-jv-Ruw" id="2UY-P3-dWP"/>
                                         </connections>
                                     </collectionViewCell>
@@ -91,22 +69,34 @@
                                     <outlet property="delegate" destination="Ecc-JI-Be0" id="vco-fK-pUX"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nessa etapa vamos ler sobre aranhas, o conteúdo será mais científico" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn2-5G-Ilt">
+                                <rect key="frame" x="28" y="59" width="358" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Zb7-Hg-huB">
+                                <rect key="frame" x="187.5" y="798" width="39" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Ed-oh-zxC" firstAttribute="height" secondItem="fRW-lZ-kJM" secondAttribute="height" multiplier="0.7" id="6WF-P4-t2M"/>
-                            <constraint firstItem="G4z-KD-yOl" firstAttribute="height" secondItem="fRW-lZ-kJM" secondAttribute="height" multiplier="0.2" id="7yh-fy-6nu"/>
-                            <constraint firstItem="6Ed-oh-zxC" firstAttribute="trailing" secondItem="PFx-yb-ltN" secondAttribute="trailing" id="Fh3-Vs-Rga"/>
-                            <constraint firstItem="kKc-Qx-5Qr" firstAttribute="top" secondItem="PFx-yb-ltN" secondAttribute="top" constant="20" id="N0F-uu-O1O"/>
-                            <constraint firstItem="6Ed-oh-zxC" firstAttribute="top" secondItem="G4z-KD-yOl" secondAttribute="bottom" constant="25" id="kyl-HN-GHl"/>
-                            <constraint firstItem="G4z-KD-yOl" firstAttribute="leading" secondItem="PFx-yb-ltN" secondAttribute="leading" id="pqm-9N-9e1"/>
-                            <constraint firstItem="G4z-KD-yOl" firstAttribute="trailing" secondItem="PFx-yb-ltN" secondAttribute="trailing" id="qKZ-7b-q1H"/>
-                            <constraint firstItem="6Ed-oh-zxC" firstAttribute="leading" secondItem="PFx-yb-ltN" secondAttribute="leading" id="v6f-rd-Fp7"/>
-                            <constraint firstItem="G4z-KD-yOl" firstAttribute="top" secondItem="fRW-lZ-kJM" secondAttribute="top" id="yVW-Nm-hue"/>
+                            <constraint firstItem="PFx-yb-ltN" firstAttribute="trailing" secondItem="6Ed-oh-zxC" secondAttribute="trailing" id="RzK-DJ-Tqg"/>
+                            <constraint firstItem="6Ed-oh-zxC" firstAttribute="leading" secondItem="PFx-yb-ltN" secondAttribute="leading" id="UIQ-ed-CxB"/>
+                            <constraint firstItem="Zb7-Hg-huB" firstAttribute="top" secondItem="6Ed-oh-zxC" secondAttribute="bottom" constant="16" id="al1-z6-Omk"/>
+                            <constraint firstItem="6Ed-oh-zxC" firstAttribute="top" secondItem="fn2-5G-Ilt" secondAttribute="bottom" constant="20" id="ce7-rb-a1d"/>
+                            <constraint firstItem="Zb7-Hg-huB" firstAttribute="centerX" secondItem="PFx-yb-ltN" secondAttribute="centerX" id="e6R-Zh-aRf"/>
+                            <constraint firstItem="PFx-yb-ltN" firstAttribute="bottom" secondItem="6Ed-oh-zxC" secondAttribute="bottom" constant="80" id="pTS-ef-EwQ"/>
+                            <constraint firstItem="fn2-5G-Ilt" firstAttribute="top" secondItem="PFx-yb-ltN" secondAttribute="top" constant="15" id="tAM-rB-E1w"/>
+                            <constraint firstItem="fn2-5G-Ilt" firstAttribute="trailing" secondItem="PFx-yb-ltN" secondAttribute="trailing" constant="-28" id="tMY-j1-h0F"/>
+                            <constraint firstItem="fn2-5G-Ilt" firstAttribute="leading" secondItem="PFx-yb-ltN" secondAttribute="leading" constant="28" id="vUv-ao-dp4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PFx-yb-ltN"/>
                     </view>
                     <navigationItem key="navigationItem" id="FXQ-8r-511"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Zb7-Hg-huB" id="g8F-xj-PU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHG-3A-4Fc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
