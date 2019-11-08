@@ -9,6 +9,13 @@
 import UIKit
 
 class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    var cellIds = ["Onboarding1", "Onboarding2", "Onboarding3", "Onboarding4", "Onboarding5"]
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return collectionView.dequeueReusableCell( withReuseIdentifier: cellIds[indexPath.item], for: indexPath)
+    }
+    
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5

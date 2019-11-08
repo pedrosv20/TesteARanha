@@ -55,6 +55,8 @@
 		9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */; };
 		9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */; };
 		9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */; };
+		D98F0B392372F1CB0074D305 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */; };
+		D98F0B3B2372F1FF0074D305 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel3ViewController.swift; sourceTree = "<group>"; };
 		9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel2ViewController.swift; sourceTree = "<group>"; };
 		9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel1ViewController.swift; sourceTree = "<group>"; };
+		D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +229,7 @@
 				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 				9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */,
 				9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */,
+				D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */,
 				9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */,
 				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
@@ -261,6 +266,7 @@
 				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
 				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
 				9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */,
+				D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */,
 				9D4C55792361D0F400062326 /* Etapa4ViewController.storyboard */,
 				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
@@ -366,6 +372,7 @@
 				07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */,
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,
 				07AAEC9E235901FB001F6734 /* SH3.png in Resources */,
+				D98F0B3B2372F1FF0074D305 /* Onboarding.storyboard in Resources */,
 				07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */,
 				6C71424B236C5F7300A84B71 /* night-at-the-club.mp3 in Resources */,
 				56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */,
@@ -409,6 +416,7 @@
 				56E8C5CC23631DD0000F53FD /* UIView.swift in Sources */,
 				07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */,
 				9D576B89236B0BBC009B9246 /* ImagemCell.swift in Sources */,
+				D98F0B392372F1CB0074D305 /* OnBoardingViewController.swift in Sources */,
 				9D67269F2355F4EB0030CAE7 /* Nivel3ViewController.swift in Sources */,
 				6C714248236C4AA900A84B71 /* StageThree.swift in Sources */,
 				56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */,
@@ -623,7 +631,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = QV9772R5PW;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -641,7 +649,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = QV9772R5PW;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

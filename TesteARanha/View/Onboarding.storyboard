@@ -19,21 +19,21 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="B3C-PA-ulf">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5ac-FM-gi5">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5ac-FM-gi5">
                                     <size key="itemSize" width="410" height="855"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GXw-3l-sL2">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Onboarding1" id="GXw-3l-sL2">
                                         <rect key="frame" x="0.0" y="0.5" width="422" height="817"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hs8-yV-Ecp">
                                             <rect key="frame" x="0.0" y="0.0" width="422" height="817"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela1Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-vy-0je">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela1Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="ldl-vy-0je">
                                                     <rect key="frame" x="0.0" y="0.0" width="422" height="817"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo ao Pho-bits!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFN-tz-ng5">
@@ -43,7 +43,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On_board_1 bandeirinha" translatesAutoresizingMaskIntoConstraints="NO" id="PaS-I4-lDP">
-                                                    <rect key="frame" x="-844" y="319.5" width="2110" height="286"/>
+                                                    <rect key="frame" x="0.0" y="319.5" width="422" height="286"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-3a-q5A">
                                                     <rect key="frame" x="346" y="751.5" width="39" height="30"/>
@@ -67,7 +67,7 @@
                                                 <constraint firstItem="dFN-tz-ng5" firstAttribute="leading" secondItem="hs8-yV-Ecp" secondAttribute="leading" constant="26" id="MmN-MP-cnC"/>
                                                 <constraint firstAttribute="trailing" secondItem="ldl-vy-0je" secondAttribute="trailing" id="U5W-7h-VSh"/>
                                                 <constraint firstItem="ldl-vy-0je" firstAttribute="centerX" secondItem="hs8-yV-Ecp" secondAttribute="centerX" id="WZl-is-EHX"/>
-                                                <constraint firstItem="PaS-I4-lDP" firstAttribute="width" secondItem="ldl-vy-0je" secondAttribute="width" multiplier="5" id="bng-4R-hHX"/>
+                                                <constraint firstItem="PaS-I4-lDP" firstAttribute="width" secondItem="ldl-vy-0je" secondAttribute="width" id="bng-4R-hHX"/>
                                                 <constraint firstItem="PaS-I4-lDP" firstAttribute="height" secondItem="ldl-vy-0je" secondAttribute="height" multiplier="0.35" id="eYk-tb-bML"/>
                                                 <constraint firstItem="PaS-I4-lDP" firstAttribute="centerX" secondItem="ldl-vy-0je" secondAttribute="centerX" id="gxq-Ml-TTe"/>
                                                 <constraint firstItem="R2t-Lp-Psg" firstAttribute="leading" secondItem="dFN-tz-ng5" secondAttribute="leading" id="i2u-ME-s3m"/>
@@ -76,14 +76,14 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="422" height="817"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ODA-cK-fYl">
-                                        <rect key="frame" x="432" y="2.5" width="379" height="813"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding2" id="ODA-cK-fYl">
+                                        <rect key="frame" x="422" y="2.5" width="379" height="813"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AaX-Ca-3AA">
                                             <rect key="frame" x="0.0" y="0.0" width="379" height="813"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela2Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="IiS-Hg-mqV">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela2Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="IiS-Hg-mqV">
                                                     <rect key="frame" x="0.0" y="0.0" width="379" height="813"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Etapas?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrl-Or-4gq">
@@ -132,14 +132,14 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="379" height="813"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="s88-Qa-3IZ">
-                                        <rect key="frame" x="821" y="3" width="397" height="812"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding3" id="s88-Qa-3IZ">
+                                        <rect key="frame" x="801" y="3" width="397" height="812"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KpO-I5-HWa">
                                             <rect key="frame" x="0.0" y="0.0" width="397" height="812"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela3Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-lb-W4i">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela3Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-lb-W4i">
                                                     <rect key="frame" x="0.0" y="0.0" width="397" height="812"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On_board_3sinalero" translatesAutoresizingMaskIntoConstraints="NO" id="gZ8-V1-sDP">
@@ -188,14 +188,14 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="397" height="812"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AQ8-Iy-o4p">
-                                        <rect key="frame" x="1228" y="3" width="417" height="812"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding4" id="AQ8-Iy-o4p">
+                                        <rect key="frame" x="1198" y="3" width="417" height="812"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b0r-JW-6GG">
                                             <rect key="frame" x="0.0" y="0.0" width="417" height="812"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela4Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-6s-fw3">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela4Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="9gL-6s-fw3">
                                                     <rect key="frame" x="0.0" y="0.0" width="417" height="812"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="On_board_4_appleWatche" translatesAutoresizingMaskIntoConstraints="NO" id="Kkq-je-41f">
@@ -243,14 +243,14 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="417" height="812"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mqq-uW-iaM">
-                                        <rect key="frame" x="1655" y="0.0" width="398" height="818"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding5" id="Mqq-uW-iaM">
+                                        <rect key="frame" x="1615" y="0.0" width="398" height="818"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LKG-CU-eCD">
                                             <rect key="frame" x="0.0" y="0.0" width="398" height="818"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela5Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="DTq-iM-1e6">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tela5Onboard" translatesAutoresizingMaskIntoConstraints="NO" id="DTq-iM-1e6">
                                                     <rect key="frame" x="0.0" y="0.0" width="398" height="818"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos começar?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF2-3i-uOz">
@@ -323,16 +323,27 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="B3C-PA-ulf" secondAttribute="trailing" id="Vw3-Xt-XCR"/>
-                            <constraint firstItem="B3C-PA-ulf" firstAttribute="top" secondItem="RYs-ii-fAM" secondAttribute="top" id="rmT-sz-cEV"/>
-                            <constraint firstItem="RYs-ii-fAM" firstAttribute="bottom" secondItem="B3C-PA-ulf" secondAttribute="bottom" id="sLz-5W-YhF"/>
+                            <constraint firstItem="B3C-PA-ulf" firstAttribute="top" secondItem="5IW-nJ-ZoS" secondAttribute="top" constant="44" id="rmT-sz-cEV"/>
+                            <constraint firstAttribute="bottom" secondItem="B3C-PA-ulf" secondAttribute="bottom" constant="34" id="sLz-5W-YhF"/>
                             <constraint firstItem="B3C-PA-ulf" firstAttribute="leading" secondItem="5IW-nJ-ZoS" secondAttribute="leading" id="t46-Kx-qNy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RYs-ii-fAM"/>
                     </view>
+                    <connections>
+                        <segue destination="f6H-jz-Pfo" kind="presentation" id="v0u-Hk-frc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNo-Xe-sa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="688.40579710144937" y="-2.0089285714285712"/>
+        </scene>
+        <!--main-->
+        <scene sceneID="2Kv-2N-t8y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="main" id="f6H-jz-Pfo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cGu-gx-2u7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1239" y="-2"/>
         </scene>
     </scenes>
     <resources>
