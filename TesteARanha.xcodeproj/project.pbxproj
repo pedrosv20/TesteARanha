@@ -37,6 +37,17 @@
 		07D889FB2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */; };
 		07D889FD2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */; };
 		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
+		560CD3E1237614470040AE99 /* Phobit WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 560CD3E0237614470040AE99 /* Phobit WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		560CD3E8237614470040AE99 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3E7237614470040AE99 /* ExtensionDelegate.swift */; };
+		560CD3EA237614470040AE99 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3E9237614470040AE99 /* NotificationController.swift */; };
+		560CD3F1237614480040AE99 /* Phobit Watchkit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 560CD3D4237614430040AE99 /* Phobit Watchkit.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		560CD401237614870040AE99 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 560CD3FA237614820040AE99 /* Supporting Files */; };
+		560CD402237614870040AE99 /* WorkoutSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FB237614830040AE99 /* WorkoutSession.swift */; };
+		560CD403237614870040AE99 /* WorkoutRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FC237614840040AE99 /* WorkoutRow.swift */; };
+		560CD404237614870040AE99 /* WorkoutSessionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FD237614850040AE99 /* WorkoutSessionContext.swift */; };
+		560CD405237614870040AE99 /* WorkoutStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3FE237614870040AE99 /* WorkoutStartView.swift */; };
+		560CD408237614F10040AE99 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 560CD407237614F10040AE99 /* Interface.storyboard */; };
+		560CD40A237614F80040AE99 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 560CD409237614F80040AE99 /* Supporting Files */; };
 		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
 		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
 		565582FC2374521B00632B3E /* ChooseVoiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */; };
@@ -56,6 +67,7 @@
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
+		56D3564A2376163200B2565B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D356492376163200B2565B /* HealthKit.framework */; };
 		56E8C5CC23631DD0000F53FD /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIView+extensions.swift */; };
 		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
 		56E8C5D22363CF81000F53FD /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5D12363CF81000F53FD /* ProgressViewController.swift */; };
@@ -87,15 +99,41 @@
 			remoteGlobalIDString = 07C5C41C2350BB3400AB67C9;
 			remoteInfo = TesteARanha;
 		};
+		560CD3E2237614470040AE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C5C4152350BB3300AB67C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 560CD3DF237614470040AE99;
+			remoteInfo = "phobitchesWATCHOS Extension";
+		};
+		560CD3EF237614480040AE99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C5C4152350BB3300AB67C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 560CD3D3237614430040AE99;
+			remoteInfo = phobitchesWATCHOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		560CD3F4237614480040AE99 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				560CD3E1237614470040AE99 /* Phobit WatchKit App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C2B1224237439CC00B95953 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				560CD3F1237614480040AE99 /* Phobit Watchkit.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +175,17 @@
 		07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding3CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding4CollectionViewCell.swift; sourceTree = "<group>"; };
 		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
+		560CD3D4237614430040AE99 /* Phobit Watchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phobit Watchkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560CD3E0237614470040AE99 /* Phobit WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Phobit WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		560CD3E7237614470040AE99 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		560CD3E9237614470040AE99 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		560CD3FA237614820040AE99 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
+		560CD3FB237614830040AE99 /* WorkoutSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSession.swift; sourceTree = "<group>"; };
+		560CD3FC237614840040AE99 /* WorkoutRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutRow.swift; sourceTree = "<group>"; };
+		560CD3FD237614850040AE99 /* WorkoutSessionContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSessionContext.swift; sourceTree = "<group>"; };
+		560CD3FE237614870040AE99 /* WorkoutStartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutStartView.swift; sourceTree = "<group>"; };
+		560CD407237614F10040AE99 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		560CD409237614F80040AE99 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
 		565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseVoiceViewController.storyboard; sourceTree = "<group>"; };
@@ -156,6 +205,10 @@
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
 		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
+		56D356482376163200B2565B /* Phobit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phobit.entitlements; sourceTree = "<group>"; };
+		56D356492376163200B2565B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		56D3564B2376168100B2565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D3564C2376168300B2565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56E8C5CB23631DD0000F53FD /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 		56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		56E8C5D12363CF81000F53FD /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
@@ -185,10 +238,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D3564A2376163200B2565B /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		07C5C4302350BB3700AB67C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560CD3DD237614470040AE99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,6 +264,8 @@
 			children = (
 				07C5C41F2350BB3400AB67C9 /* TesteARanha */,
 				07C5C4362350BB3700AB67C9 /* TesteARanhaTests */,
+				560CD3D5237614430040AE99 /* phobitchesWATCHOS */,
+				560CD3E4237614470040AE99 /* phobitchesWATCHOS Extension */,
 				07C5C41E2350BB3400AB67C9 /* Products */,
 				6C2B122623743CC200B95953 /* Frameworks */,
 			);
@@ -213,6 +276,8 @@
 			children = (
 				07C5C41D2350BB3400AB67C9 /* Phobit.app */,
 				07C5C4332350BB3700AB67C9 /* TesteARanhaTests.xctest */,
+				560CD3D4237614430040AE99 /* Phobit Watchkit.app */,
+				560CD3E0237614470040AE99 /* Phobit WatchKit App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +285,7 @@
 		07C5C41F2350BB3400AB67C9 /* TesteARanha */ = {
 			isa = PBXGroup;
 			children = (
+				56D356482376163200B2565B /* Phobit.entitlements */,
 				0769A01823719DCB00EABEF5 /* oi.usdz */,
 				07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */,
 				6C714249236C5F6600A84B71 /* Audios */,
@@ -262,6 +328,31 @@
 			path = "3D Objects";
 			sourceTree = "<group>";
 		};
+		560CD3D5237614430040AE99 /* phobitchesWATCHOS */ = {
+			isa = PBXGroup;
+			children = (
+				56D3564C2376168300B2565B /* Info.plist */,
+				560CD407237614F10040AE99 /* Interface.storyboard */,
+				560CD409237614F80040AE99 /* Supporting Files */,
+			);
+			path = phobitchesWATCHOS;
+			sourceTree = "<group>";
+		};
+		560CD3E4237614470040AE99 /* phobitchesWATCHOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				56D3564B2376168100B2565B /* Info.plist */,
+				560CD3FA237614820040AE99 /* Supporting Files */,
+				560CD3FC237614840040AE99 /* WorkoutRow.swift */,
+				560CD3FB237614830040AE99 /* WorkoutSession.swift */,
+				560CD3FD237614850040AE99 /* WorkoutSessionContext.swift */,
+				560CD3FE237614870040AE99 /* WorkoutStartView.swift */,
+				560CD3E7237614470040AE99 /* ExtensionDelegate.swift */,
+				560CD3E9237614470040AE99 /* NotificationController.swift */,
+			);
+			path = "phobitchesWATCHOS Extension";
+			sourceTree = "<group>";
+		};
 		56E8C5CA23631DB5000F53FD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +365,7 @@
 		6C2B122623743CC200B95953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56D356492376163200B2565B /* HealthKit.framework */,
 				6C2B122723743CC200B95953 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -301,11 +393,11 @@
 		9D6726A42355F9700030CAE7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */,
 				9D67269A2355E7A20030CAE7 /* FobiasViewController.swift */,
 				9D67269C2355F31C0030CAE7 /* NiveisViewController.swift */,
 				9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */,
 				565582FD2374534300632B3E /* ChooseVoiceViewController.swift */,
-				D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */,
 				9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */,
 				9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */,
 				07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */,
@@ -349,7 +441,6 @@
 				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
 				56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */,
 				565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */,
-				07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */,
 				07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */,
 				07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */,
 				07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */,
@@ -374,6 +465,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				560CD3F0237614480040AE99 /* PBXTargetDependency */,
 			);
 			name = TesteARanha;
 			productName = TesteARanha;
@@ -398,13 +490,47 @@
 			productReference = 07C5C4332350BB3700AB67C9 /* TesteARanhaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		560CD3D3237614430040AE99 /* phobitchesWATCHOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560CD3F8237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS" */;
+			buildPhases = (
+				560CD3D2237614430040AE99 /* Resources */,
+				560CD3F4237614480040AE99 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560CD3E3237614470040AE99 /* PBXTargetDependency */,
+			);
+			name = phobitchesWATCHOS;
+			productName = phobitchesWATCHOS;
+			productReference = 560CD3D4237614430040AE99 /* Phobit Watchkit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		560CD3DF237614470040AE99 /* phobitchesWATCHOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560CD3F7237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS Extension" */;
+			buildPhases = (
+				560CD3DC237614470040AE99 /* Sources */,
+				560CD3DD237614470040AE99 /* Frameworks */,
+				560CD3DE237614470040AE99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "phobitchesWATCHOS Extension";
+			productName = "phobitchesWATCHOS Extension";
+			productReference = 560CD3E0237614470040AE99 /* Phobit WatchKit App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		07C5C4152350BB3300AB67C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Pedro Vargas";
 				TargetAttributes = {
@@ -414,6 +540,12 @@
 					07C5C4322350BB3700AB67C9 = {
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = 07C5C41C2350BB3400AB67C9;
+					};
+					560CD3D3237614430040AE99 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					560CD3DF237614470040AE99 = {
+						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
@@ -432,6 +564,8 @@
 			targets = (
 				07C5C41C2350BB3400AB67C9 /* TesteARanha */,
 				07C5C4322350BB3700AB67C9 /* TesteARanhaTests */,
+				560CD3D3237614430040AE99 /* phobitchesWATCHOS */,
+				560CD3DF237614470040AE99 /* phobitchesWATCHOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -450,7 +584,6 @@
 				07CAB04D235103C800E19AB4 /* spider2_color.jpg in Resources */,
 				07AAEC9F235901FB001F6734 /* Spinnen_Bein_tex.jpg in Resources */,
 				9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */,
-				07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */,
 				569C3E98237589E100CD73C0 /* audio_F_EN.wav in Resources */,
 				569C3E91237589E100CD73C0 /* audio_M_BR 2.wav in Resources */,
 				9D4C55752361D0D400062326 /* Etapa2ViewController.storyboard in Resources */,
@@ -485,6 +618,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560CD3D2237614430040AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CD40A237614F80040AE99 /* Supporting Files in Resources */,
+				560CD408237614F10040AE99 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560CD3DE237614470040AE99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CD401237614870040AE99 /* Supporting Files in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +688,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		560CD3DC237614470040AE99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560CD404237614870040AE99 /* WorkoutSessionContext.swift in Sources */,
+				560CD3EA237614470040AE99 /* NotificationController.swift in Sources */,
+				560CD402237614870040AE99 /* WorkoutSession.swift in Sources */,
+				560CD3E8237614470040AE99 /* ExtensionDelegate.swift in Sources */,
+				560CD405237614870040AE99 /* WorkoutStartView.swift in Sources */,
+				560CD403237614870040AE99 /* WorkoutRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -545,6 +708,16 @@
 			isa = PBXTargetDependency;
 			target = 07C5C41C2350BB3400AB67C9 /* TesteARanha */;
 			targetProxy = 07C5C4342350BB3700AB67C9 /* PBXContainerItemProxy */;
+		};
+		560CD3E3237614470040AE99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 560CD3DF237614470040AE99 /* phobitchesWATCHOS Extension */;
+			targetProxy = 560CD3E2237614470040AE99 /* PBXContainerItemProxy */;
+		};
+		560CD3F0237614480040AE99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 560CD3D3237614430040AE99 /* phobitchesWATCHOS */;
+			targetProxy = 560CD3EF237614480040AE99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -734,6 +907,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TesteARanha/Phobit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
@@ -741,7 +915,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias;
 				PRODUCT_NAME = Phobit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,6 +926,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TesteARanha/Phobit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZSLUMCNRNL;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
@@ -759,7 +934,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias;
 				PRODUCT_NAME = Phobit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -810,6 +985,88 @@
 			};
 			name = Release;
 		};
+		560CD3F2237614480040AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				IBSC_MODULE = phobitchesWATCHOS_Extension;
+				INFOPLIST_FILE = phobitchesWATCHOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp;
+				PRODUCT_NAME = "Phobit Watchkit";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		560CD3F3237614480040AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				IBSC_MODULE = phobitchesWATCHOS_Extension;
+				INFOPLIST_FILE = phobitchesWATCHOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp;
+				PRODUCT_NAME = "Phobit Watchkit";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		560CD3F5237614480040AE99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Phobit WatchKit App Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		560CD3F6237614480040AE99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
+				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "Phobit WatchKit App Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -836,6 +1093,24 @@
 			buildConfigurations = (
 				07C5C4402350BB3700AB67C9 /* Debug */,
 				07C5C4412350BB3700AB67C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560CD3F7237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560CD3F5237614480040AE99 /* Debug */,
+				560CD3F6237614480040AE99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560CD3F8237614480040AE99 /* Build configuration list for PBXNativeTarget "phobitchesWATCHOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560CD3F2237614480040AE99 /* Debug */,
+				560CD3F3237614480040AE99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

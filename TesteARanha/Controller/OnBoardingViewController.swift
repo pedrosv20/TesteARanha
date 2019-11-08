@@ -7,12 +7,41 @@
 //
 
 import UIKit
+import HealthKit
 
 class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var cellIds = ["Onboarding1", "Onboarding2", "Onboarding3", "Onboarding4", "Onboarding5"]
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    let healthStore = HKHealthStore()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(nextView), name: NSNotification.Name("nextTouched"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(backView), name: NSNotification.Name("backTouched"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(startApp), name: NSNotification.Name("start"), object: nil)
+        
+        
+        title = "Phobits"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+//        let typesToShare: Set = [
+//            HKQuantityType.workoutType()
+//        ]
+        
+        let typesToRead: Set = [
+            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
+            //HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            //HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+        ]
+        
+        healthStore.requestAuthorization(toShare: nil/*typesToShare*/, read: typesToRead) { (success, error) in
+            // Handle error
+            
+        }
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -30,18 +59,17 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-        let index = scrollView.contentOffset.x / witdh
-        let roundedIndex = round(index)
-        print(roundedIndex)
-        
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+//        let index = scrollView.contentOffset.x / witdh
+//        let roundedIndex = round(index)
+//        print(roundedIndex)
+//
+//    }
     
     @objc func nextView(_ notification: Notification) {
         if let page = notification.userInfo?["tela"] as? Int {
-            
-            self.collectionView.scrollToItem(at: IndexPath(row: page, section: 0), at: .centeredHorizontally, animated: true)
+            collectionView.scrollToItem(at: IndexPath(row: page, section: 0), at: .centeredHorizontally, animated: true)
         }
     }
     
@@ -58,18 +86,4 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
-    
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        NotificationCenter.default.addObserver(self, selector: #selector(nextView), name: NSNotification.Name("nextTouched"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(backView), name: NSNotification.Name("backTouched"), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(startApp), name: NSNotification.Name("start"), object: nil)
-        
-    }
-    
-
-
 }
