@@ -20,19 +20,19 @@
         <!--Fobias-->
         <scene sceneID="Oes-ij-5IG">
             <objects>
-                <viewController storyboardIdentifier="cu" id="TiS-5i-uPy" customClass="FobiasViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cu" id="TiS-5i-uPy" customClass="FobiasViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1i-jj-nCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zeq-9J-Zbs">
-                                <rect key="frame" x="0.0" y="324.5" width="414" height="537.5"/>
+                                <rect key="frame" x="0.0" y="289.5" width="414" height="572.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="110" id="cbg-bH-ei3" customClass="FobiaCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="fobiaCell" rowHeight="110" id="cbg-bH-ei3" customClass="FobiaCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbg-bH-ei3" id="pAB-J6-RSG">
@@ -111,46 +111,43 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="WX4-hm-g10" id="TJg-HG-AQa"/>
-                                    <outlet property="delegate" destination="WX4-hm-g10" id="IYe-8K-dB9"/>
+                                    <outlet property="dataSource" destination="TiS-5i-uPy" id="SVL-Dn-KBo"/>
+                                    <outlet property="delegate" destination="TiS-5i-uPy" id="FMa-Ix-1Ag"/>
                                 </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ams-am-H9d">
-                                <rect key="frame" x="0.0" y="88" width="414" height="232"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="245.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval-1" translatesAutoresizingMaskIntoConstraints="NO" id="agH-Q9-c1R">
-                                        <rect key="frame" x="215.5" y="-50" width="248.5" height="232"/>
+                                        <rect key="frame" x="215.5" y="-50" width="248.5" height="245.5"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Olá," textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4A-EB-DS2">
-                                        <rect key="frame" x="25" y="91" width="78" height="50"/>
+                                        <rect key="frame" x="25" y="91" width="78" height="63.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos lá?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCF-5r-mdT">
-                                        <rect key="frame" x="25" y="146" width="364" height="30"/>
+                                        <rect key="frame" x="25" y="159.5" width="364" height="30"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione uma fobia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74v-XC-kPs">
-                                        <rect key="frame" x="25" y="181" width="364" height="21"/>
+                                        <rect key="frame" x="25" y="194.5" width="364" height="21"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-Ik-5pm">
-                                        <rect key="frame" x="246" y="101" width="33" height="30"/>
+                                        <rect key="frame" x="246" y="101" width="47.5" height="43.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="BL2-Ik-5pm" secondAttribute="height" multiplier="12:11" id="ImF-Xk-OVr"/>
                                         </constraints>
                                         <state key="normal" image="editingPencil"/>
-                                        <connections>
-                                            <action selector="editButtonTapped:" destination="WX4-hm-g10" eventType="touchUpInside" id="b1Y-aW-gYF"/>
-                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Hillary" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-Ms-9eo">
-                                        <rect key="frame" x="111" y="91" width="125" height="50.5"/>
+                                        <rect key="frame" x="111" y="97.5" width="125" height="50.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -188,7 +185,7 @@
                             <constraint firstItem="TOw-ga-uth" firstAttribute="trailing" secondItem="zeq-9J-Zbs" secondAttribute="trailing" id="M7H-8U-Gx7"/>
                             <constraint firstItem="ams-am-H9d" firstAttribute="leading" secondItem="TOw-ga-uth" secondAttribute="leading" id="Otg-R1-0cI"/>
                             <constraint firstItem="TOw-ga-uth" firstAttribute="bottom" secondItem="zeq-9J-Zbs" secondAttribute="bottom" id="Sfn-Fk-wPx"/>
-                            <constraint firstItem="zeq-9J-Zbs" firstAttribute="height" secondItem="Daq-XR-x1h" secondAttribute="height" multiplier="0.6" id="Vom-iP-rFc"/>
+                            <constraint firstItem="zeq-9J-Zbs" firstAttribute="top" secondItem="ams-am-H9d" secondAttribute="bottom" id="YXb-bW-oao"/>
                             <constraint firstItem="TOw-ga-uth" firstAttribute="trailing" secondItem="ams-am-H9d" secondAttribute="trailing" id="dqi-XQ-vXc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TOw-ga-uth"/>
@@ -215,7 +212,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="WX4-hm-g10" kind="relationship" relationship="rootViewController" id="ZT8-eh-EVa"/>
+                        <segue destination="TiS-5i-uPy" kind="presentation" modalPresentationStyle="fullScreen" id="hDj-9a-ZLr"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M78-tf-ZfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
