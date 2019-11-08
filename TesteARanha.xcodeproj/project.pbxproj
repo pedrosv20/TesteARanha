@@ -85,7 +85,7 @@
 		07AAEC98235901FA001F6734 /* SH3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SH3.png; sourceTree = "<group>"; };
 		07AAEC99235901FB001F6734 /* Spinnen_Bein_tex.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex.jpg; sourceTree = "<group>"; };
 		07AAEC9B235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Spinnen_Bein_tex_COLOR_.jpg; sourceTree = "<group>"; };
-		07C5C41D2350BB3400AB67C9 /* TesteARanha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteARanha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C5C41D2350BB3400AB67C9 /* Phobit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C5C4202350BB3400AB67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel4ViewController.swift; sourceTree = "<group>"; };
 		07C5C4272350BB3400AB67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		07C5C41E2350BB3400AB67C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07C5C41D2350BB3400AB67C9 /* TesteARanha.app */,
+				07C5C41D2350BB3400AB67C9 /* Phobit.app */,
 				07C5C4332350BB3700AB67C9 /* TesteARanhaTests.xctest */,
 			);
 			name = Products;
@@ -317,7 +317,7 @@
 			);
 			name = TesteARanha;
 			productName = TesteARanha;
-			productReference = 07C5C41D2350BB3400AB67C9 /* TesteARanha.app */;
+			productReference = 07C5C41D2350BB3400AB67C9 /* Phobit.app */;
 			productType = "com.apple.product-type.application";
 		};
 		07C5C4322350BB3700AB67C9 /* TesteARanhaTests */ = {
@@ -670,7 +670,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Phobit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -688,7 +688,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Phobit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
