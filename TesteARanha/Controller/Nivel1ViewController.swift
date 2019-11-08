@@ -49,7 +49,7 @@ class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollec
         let fobia = selectedPhobia.cardsOne[indexPath.row]
         
         cell.infoTitle.text = fobia.text
-        cell.infoDescription.text = fobia.title
+        cell.infoText.text = fobia.title
         cell.layer.masksToBounds = true
         cell.layer.cornerRadius = cell.frame.width/17.0
         
