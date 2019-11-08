@@ -27,17 +27,17 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         title = "Phobits"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        let typesToShare: Set = [
-            HKQuantityType.workoutType()
-        ]
+//        let typesToShare: Set = [
+//            HKQuantityType.workoutType()
+//        ]
         
         let typesToRead: Set = [
             HKQuantityType.quantityType(forIdentifier: .heartRate)!,
-            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
-            HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+            //HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            //HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
         ]
         
-        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
+        healthStore.requestAuthorization(toShare: nil/*typesToShare*/, read: typesToRead) { (success, error) in
             // Handle error
             
         }
@@ -59,18 +59,17 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-        let index = scrollView.contentOffset.x / witdh
-        let roundedIndex = round(index)
-        print(roundedIndex)
-        
-    }
+//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+//        let index = scrollView.contentOffset.x / witdh
+//        let roundedIndex = round(index)
+//        print(roundedIndex)
+//
+//    }
     
     @objc func nextView(_ notification: Notification) {
         if let page = notification.userInfo?["tela"] as? Int {
-            
-            self.collectionView.scrollToItem(at: IndexPath(row: page, section: 0), at: .centeredHorizontally, animated: true)
+            collectionView.scrollToItem(at: IndexPath(row: page, section: 0), at: .centeredHorizontally, animated: true)
         }
     }
     
