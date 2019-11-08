@@ -7,8 +7,24 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        <#code#>
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        <#code#>
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        <#code#>
+    }
+    
+    var session: WCSession?
+    
     
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var phobiasTableView: UITableView!
@@ -17,6 +33,12 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         navigationController?.navigationBar.prefersLargeTitles = true
         nameTextField.delegate = self
+        
+        if WCSession.isSupported() {
+            session = WCSession.default
+            session?.delegate = self
+            session?.activate()
+        }
         
         updateText("Hillary")
     }

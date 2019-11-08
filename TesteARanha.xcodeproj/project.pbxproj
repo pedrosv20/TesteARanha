@@ -64,7 +64,6 @@
 		6CEEE9702375EC2A0098A283 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEE96F2375EC2A0098A283 /* NotificationController.swift */; };
 		6CEEE9722375EC2B0098A283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEEE9712375EC2B0098A283 /* Assets.xcassets */; };
 		6CEEE9772375EC2B0098A283 /* phobitches-w.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6CEEE95A2375EC270098A283 /* phobitches-w.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		6CEEE9812375ECEE0098A283 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEEE9802375ECEE0098A283 /* HealthKit.framework */; };
 		9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */; };
 		9D4C55752361D0D400062326 /* Etapa2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */; };
 		9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */; };
@@ -192,8 +191,6 @@
 		6CEEE9712375EC2B0098A283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CEEE9732375EC2B0098A283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CEEE9742375EC2B0098A283 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		6CEEE97F2375ECEE0098A283 /* Phobit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phobit.entitlements; sourceTree = "<group>"; };
-		6CEEE9802375ECEE0098A283 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		9D4C55712361D0C200062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa1ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55742361D0D400062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa2ViewController.storyboard; sourceTree = "<group>"; };
 		9D4C55772361D0E100062326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Etapa3ViewController.storyboard; sourceTree = "<group>"; };
@@ -900,7 +897,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = TesteARanhaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -922,7 +919,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = TesteARanhaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -944,7 +941,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				IBSC_MODULE = phobitches_w_Extension;
 				INFOPLIST_FILE = "phobitches-w/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha.watchkitapp;
@@ -963,7 +960,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				IBSC_MODULE = phobitches_w_Extension;
 				INFOPLIST_FILE = "phobitches-w/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.TesteARanha.watchkitapp;
@@ -981,7 +978,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = "phobitches-w Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1003,7 +1000,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AMXQN329PY;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = "phobitches-w Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
