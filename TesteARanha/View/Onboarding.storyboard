@@ -45,8 +45,8 @@
                                                     <rect key="frame" x="0.0" y="334.5" width="598.5" height="299"/>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-3a-q5A">
-                                                    <rect key="frame" x="539.5" y="785" width="39" height="30"/>
-                                                    <state key="normal" title="NEXT"/>
+                                                    <rect key="frame" x="510.5" y="785" width="68" height="30"/>
+                                                    <state key="normal" title="PROXIMO"/>
                                                     <connections>
                                                         <action selector="Touch:" destination="GXw-3l-sL2" eventType="touchUpInside" id="qkh-OE-z5i"/>
                                                     </connections>
@@ -100,15 +100,15 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpZ-Cd-1kZ">
-                                                    <rect key="frame" x="20" y="742" width="40" height="30"/>
-                                                    <state key="normal" title="BACK"/>
+                                                    <rect key="frame" x="20" y="742" width="56" height="30"/>
+                                                    <state key="normal" title="VOLTAR"/>
                                                     <connections>
                                                         <action selector="backTouched:" destination="ODA-cK-fYl" eventType="touchUpInside" id="uQd-VI-FOb"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXV-dP-2Xx">
                                                     <rect key="frame" x="421" y="747" width="39" height="30"/>
-                                                    <state key="normal" title="NEXT"/>
+                                                    <state key="normal" title="PROXIMO"/>
                                                     <connections>
                                                         <action selector="touched:" destination="ODA-cK-fYl" eventType="touchUpInside" id="qtJ-bA-5nQ"/>
                                                     </connections>
@@ -159,15 +159,15 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fld-na-s4x">
-                                                    <rect key="frame" x="519.5" y="742" width="39" height="30"/>
-                                                    <state key="normal" title="NEXT"/>
+                                                    <rect key="frame" x="490.5" y="742" width="68" height="30"/>
+                                                    <state key="normal" title="PROXIMO"/>
                                                     <connections>
                                                         <action selector="touched:" destination="s88-Qa-3IZ" eventType="touchUpInside" id="D7i-bb-qxu"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEc-NX-VfH">
-                                                    <rect key="frame" x="20" y="742" width="40" height="30"/>
-                                                    <state key="normal" title="BACK"/>
+                                                    <rect key="frame" x="20" y="742" width="56" height="30"/>
+                                                    <state key="normal" title="VOLTAR"/>
                                                     <connections>
                                                         <action selector="backTouched:" destination="s88-Qa-3IZ" eventType="touchUpInside" id="vTO-7e-IG8"/>
                                                     </connections>
@@ -226,19 +226,19 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvp-KG-zh0">
-                                                    <rect key="frame" x="20" y="785" width="40" height="30"/>
-                                                    <state key="normal" title="BACK"/>
+                                                    <rect key="frame" x="20" y="785" width="56" height="30"/>
+                                                    <state key="normal" title="VOLTAR"/>
                                                     <connections>
                                                         <action selector="backTouched:" destination="AQ8-Iy-o4p" eventType="touchUpInside" id="N5r-GW-bE4"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5u-aQ-26g">
-                                                    <rect key="frame" x="319" y="785" width="71" height="30"/>
+                                                    <rect key="frame" x="300" y="785" width="90" height="30"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="71" id="p4X-n5-B95"/>
+                                                        <constraint firstAttribute="width" constant="90" id="p4X-n5-B95"/>
                                                     </constraints>
                                                     <inset key="titleEdgeInsets" minX="5" minY="10" maxX="5" maxY="10"/>
-                                                    <state key="normal" title="NEXT"/>
+                                                    <state key="normal" title="PROXIMO"/>
                                                     <connections>
                                                         <action selector="touched:" destination="AQ8-Iy-o4p" eventType="touchUpInside" id="eQL-ZS-PU6"/>
                                                     </connections>
@@ -301,8 +301,8 @@
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uN8-o5-N60">
-                                                    <rect key="frame" x="20" y="785" width="40" height="30"/>
-                                                    <state key="normal" title="BACK"/>
+                                                    <rect key="frame" x="20" y="785" width="56" height="30"/>
+                                                    <state key="normal" title="VOLTAR"/>
                                                     <connections>
                                                         <action selector="backTouched:" destination="Mqq-uW-iaM" eventType="touchUpInside" id="nAq-Di-tE5"/>
                                                     </connections>
