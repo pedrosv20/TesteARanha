@@ -27,6 +27,8 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
             loadViewIfNeeded()
         }
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
+        
+        updateLabel(Model.shared.nomePessoa)
     }
     
     func reloadData() {
@@ -79,7 +81,17 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.select()
     }
     
-    @IBAction func editButtonTapped(_ sender: Any) {
-        
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateLabel(textField.text!)
+    }
+    
+    func updateLabel(_ text: String) {
+        nameTextField.text = "Olá, " + text
+        Model.shared.saveNome(text)
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J3a-qu-Roc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J3a-qu-Roc">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +11,7 @@
         <!--On Boarding View Controller-->
         <scene sceneID="QT9-2h-Luv">
             <objects>
-                <viewController id="WOR-IH-Zbd" customClass="OnBoardingViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WOR-IH-Zbd" customClass="OnBoardingViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5IW-nJ-ZoS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,7 +26,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="GXw-3l-sL2" customClass="TelaOnboarding1CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding1" translatesAutoresizingMaskIntoConstraints="NO" id="GXw-3l-sL2" customClass="TelaOnboarding1CollectionViewCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" placeholderIntrinsicWidth="410" placeholderIntrinsicHeight="855" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swq-wb-cL7">
@@ -78,7 +78,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding2" translatesAutoresizingMaskIntoConstraints="NO" id="ODA-cK-fYl" customClass="TelaOnboarding2CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding2" translatesAutoresizingMaskIntoConstraints="NO" id="ODA-cK-fYl" customClass="TelaOnboarding2CollectionViewCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="410" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48J-CS-6kc">
@@ -140,7 +140,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding3" translatesAutoresizingMaskIntoConstraints="NO" id="s88-Qa-3IZ" customClass="TelaOnboarding3CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding3" translatesAutoresizingMaskIntoConstraints="NO" id="s88-Qa-3IZ" customClass="TelaOnboarding3CollectionViewCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="820" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpO-I5-HWa">
@@ -200,7 +200,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding4" translatesAutoresizingMaskIntoConstraints="NO" id="AQ8-Iy-o4p" customClass="TelaOnboarding4CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding4" translatesAutoresizingMaskIntoConstraints="NO" id="AQ8-Iy-o4p" customClass="TelaOnboarding4CollectionViewCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="1230" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="b0r-JW-6GG">
@@ -266,7 +266,7 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding5" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-uW-iaM" customClass="TelaOnboarding5CollectionViewCell" customModule="TesteARanha" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="Onboarding5" translatesAutoresizingMaskIntoConstraints="NO" id="Mqq-uW-iaM" customClass="TelaOnboarding5CollectionViewCell" customModule="Phobit" customModuleProvider="target">
                                         <rect key="frame" x="1640" y="20.5" width="410" height="855"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="LKG-CU-eCD">
