@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G1z-25-AFf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G1z-25-AFf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -224,8 +224,13 @@
                                 <rect key="frame" x="0.0" y="859" width="414" height="37"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjH-rx-MEK">
-                                <rect key="frame" x="25" y="64" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="25" y="59" width="45" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="ZUN-GX-2kV"/>
+                                    <constraint firstAttribute="height" constant="37" id="hK3-0L-Rce"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="flechaBack"/>
                                 <connections>
                                     <action selector="didPressBackButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="j1x-iX-6hD"/>
                                 </connections>
@@ -233,7 +238,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RjH-rx-MEK" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="20" id="8WG-pc-fN8"/>
+                            <constraint firstItem="RjH-rx-MEK" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="15" id="8WG-pc-fN8"/>
                             <constraint firstItem="6c0-Im-Iwa" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GVW-i5-stf"/>
                             <constraint firstItem="6c0-Im-Iwa" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="K7e-FE-0ep"/>
                             <constraint firstItem="Lxb-HP-yNO" firstAttribute="width" secondItem="d14-cS-bwF" secondAttribute="width" id="TKU-rZ-NSX"/>
@@ -281,11 +286,10 @@ As instruções aparecerão na tela e logo depois os comandos estarão disponív
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iha-ei-Is2">
-                                        <rect key="frame" x="78" y="456" width="195" height="59"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                        <state key="normal" title="VAMOS LÁ!">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iha-ei-Is2">
+                                        <rect key="frame" x="260" y="505" width="82" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="COMEÇAR">
                                             <color key="titleColor" red="0.91764705879999997" green="0.51372549020000002" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -296,9 +300,11 @@ As instruções aparecerão na tela e logo depois os comandos estarão disponív
                                 <color key="backgroundColor" red="0.093123786149999999" green="0.19383513929999999" blue="0.28628587719999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="X0w-nA-UYi" secondAttribute="trailing" constant="15" id="H9W-b0-CRO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iha-ei-Is2" secondAttribute="trailing" constant="20" id="RS2-kW-Ne5"/>
                                     <constraint firstItem="X0w-nA-UYi" firstAttribute="leading" secondItem="IQ4-JG-1IX" secondAttribute="leading" constant="15" id="VSn-FW-qTn"/>
                                     <constraint firstAttribute="width" secondItem="IQ4-JG-1IX" secondAttribute="height" multiplier="181:279" id="fMD-eY-efi"/>
                                     <constraint firstItem="X0w-nA-UYi" firstAttribute="centerY" secondItem="IQ4-JG-1IX" secondAttribute="centerY" multiplier="0.8" id="lm5-3r-Adj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iha-ei-Is2" secondAttribute="bottom" constant="20" id="z0A-oS-yPX"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -324,6 +330,7 @@ As instruções aparecerão na tela e logo depois os comandos estarão disponív
         </scene>
     </scenes>
     <resources>
+        <image name="flechaBack" width="385" height="300"/>
         <image name="olhoCortadoBranco" width="300" height="300"/>
         <image name="playAnimation" width="268" height="268"/>
     </resources>
