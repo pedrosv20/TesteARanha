@@ -34,11 +34,11 @@ class Model {
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 2",
-                    audio: "night-at-the-club.mp3"//"audio_F_EN 2.wav"
+                    audio: "audio_F_EN 2.wav"
                 ),
                 StageTwo(
                     audioDescription: "Etapa Áudio 3",
-                    audio: "night-at-the-club.mp3"//"audio_F_EN 3.wav"
+                    audio: "audio_F_EN 3.wav"
                 )
             ],
             stageThree: [

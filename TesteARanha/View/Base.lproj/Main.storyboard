@@ -42,6 +42,10 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ew-8M-ZKj">
                                                     <rect key="frame" x="18" y="12" width="378" height="86"/>
                                                     <subviews>
+                                                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsm-lY-MJN">
+                                                            <rect key="frame" x="0.0" y="0.0" width="378" height="86"/>
+                                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aranhas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ve-5O-eqr">
                                                             <rect key="frame" x="85" y="32" width="164" height="22"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
@@ -58,6 +62,13 @@
                                                                 <constraint firstAttribute="height" constant="154" id="k9B-un-fOS"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock" translatesAutoresizingMaskIntoConstraints="NO" id="oXK-MW-3gI">
+                                                            <rect key="frame" x="177.5" y="10" width="300" height="66"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="66" id="6w9-nU-qEp"/>
+                                                                <constraint firstAttribute="width" constant="300" id="P7j-OA-pbG"/>
+                                                            </constraints>
+                                                        </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.93833941219999994" green="0.91723388429999997" blue="0.67418849469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -67,10 +78,16 @@
                                                         <constraint firstItem="4Ve-5O-eqr" firstAttribute="leading" secondItem="1Ew-8M-ZKj" secondAttribute="leading" constant="85" id="GLi-ZC-QyY"/>
                                                         <constraint firstAttribute="trailing" secondItem="Bn9-y0-qKS" secondAttribute="trailing" constant="-28" id="GuE-Qt-lXP"/>
                                                         <constraint firstItem="Bn9-y0-qKS" firstAttribute="centerY" secondItem="1Ew-8M-ZKj" secondAttribute="centerY" constant="30" id="Mcw-3q-YRz"/>
+                                                        <constraint firstItem="oXK-MW-3gI" firstAttribute="centerY" secondItem="4Ve-5O-eqr" secondAttribute="centerY" id="QJl-Or-0k7"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rsm-lY-MJN" secondAttribute="trailing" id="UHI-8Z-GMO"/>
                                                         <constraint firstItem="Bn9-y0-qKS" firstAttribute="leading" secondItem="4Ve-5O-eqr" secondAttribute="trailing" id="URa-Jp-Z5p"/>
+                                                        <constraint firstItem="rsm-lY-MJN" firstAttribute="leading" secondItem="1Ew-8M-ZKj" secondAttribute="leading" id="XEl-AE-S96"/>
                                                         <constraint firstItem="oRM-nn-Evv" firstAttribute="top" secondItem="1Ew-8M-ZKj" secondAttribute="top" constant="19" id="ZkQ-4G-DUw"/>
+                                                        <constraint firstItem="rsm-lY-MJN" firstAttribute="top" secondItem="1Ew-8M-ZKj" secondAttribute="top" id="a8c-Rt-DEH"/>
                                                         <constraint firstItem="oRM-nn-Evv" firstAttribute="leading" secondItem="1Ew-8M-ZKj" secondAttribute="leading" constant="17" id="dN4-lQ-bTy"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rsm-lY-MJN" secondAttribute="bottom" id="dZ8-FN-8gf"/>
                                                         <constraint firstItem="4Ve-5O-eqr" firstAttribute="leading" secondItem="oRM-nn-Evv" secondAttribute="trailing" constant="15" id="kEn-FT-KS5"/>
+                                                        <constraint firstItem="oXK-MW-3gI" firstAttribute="centerX" secondItem="Bn9-y0-qKS" secondAttribute="centerX" id="sLx-wP-wxq"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -88,6 +105,8 @@
                                             <outlet property="cardIconBig" destination="Bn9-y0-qKS" id="B40-Fl-Jvj"/>
                                             <outlet property="cardLabel" destination="4Ve-5O-eqr" id="dm3-OX-avd"/>
                                             <outlet property="cardView" destination="1Ew-8M-ZKj" id="ZBH-wZ-Fqc"/>
+                                            <outlet property="lock" destination="oXK-MW-3gI" id="cYe-Xc-oTp"/>
+                                            <outlet property="lockView" destination="rsm-lY-MJN" id="i3h-Xf-oso"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -208,5 +227,6 @@
         <image name="Oval-1" width="263" height="263"/>
         <image name="aranhaIcon" width="53" height="47"/>
         <image name="editingPencil" width="300" height="300"/>
+        <image name="lock" width="300" height="300"/>
     </resources>
 </document>

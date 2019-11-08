@@ -49,6 +49,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         if indexPath.row != 0 {
             cell.selectionStyle = .none
+            cell.lockCell()
+        } else {
+            cell.unlockCell()
+            cell.unselect()
         }
         
         cell.cardLabel.text = fobia.tipoFobia.rawValue
@@ -58,13 +62,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.cardView.layer.cornerRadius = 15
         cell.tipoFobia = fobia.tipoFobia
         
-        cell.unselect()
-        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         if indexPath.row != 0 {
             return;
         }

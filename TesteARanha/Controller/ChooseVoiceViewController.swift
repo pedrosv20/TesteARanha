@@ -13,8 +13,10 @@ class ChooseVoiceViewController: UIViewController {
     @IBOutlet weak var sexControl: UISegmentedControl!
     @IBOutlet var languageButtons: [UIButton]!
     var selectedPhobiaIndex: Int!
+    var selectedPhobia: Fobia {
+          Model.shared.fobias[selectedPhobiaIndex]
+    }
     var selectedButton = 0
-    var wentFurther = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,14 +25,15 @@ class ChooseVoiceViewController: UIViewController {
             button.layer.cornerRadius = 2
             button.adjustsImageWhenHighlighted = false
         }
-        //selectedButton = USER DEFAULTS
+        
+        selectedButton = UserDefaults.standard.object(forKey: "selectedButton") as? Int ?? 0
+        sexControl.selectedSegmentIndex = UserDefaults.standard.object(forKey: "selectedSex") as? Int ?? 0
+        
         updateSelection()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        if wentFurther {
-            
-        } else {
+        if self.isMovingToParent {
             parent?.viewWillAppear(true)
         }
     }
@@ -59,17 +62,33 @@ class ChooseVoiceViewController: UIViewController {
         button.borderColor = #colorLiteral(red: 0.9383394122, green: 0.9172338843, blue: 0.6741884947, alpha: 1)
         button.borderWidth = 5
         
-        //save in user defaults
+        UserDefaults.standard.set(selectedButton, forKey: "selectedButton")
     }
     
     @IBAction func sexChanged(_ sender: Any) {
         
-        // save in user defaults
+        UserDefaults.standard.set(sexControl.selectedSegmentIndex, forKey: "selectedSex")
     }
     
     @IBAction func next(_ sender: Any) {
         
-        // choose audio
+        var audioType = AudioType.F_EN
+        
+        if (selectedButton == 0) {
+            if (sexControl.selectedSegmentIndex == 0) {
+                audioType = AudioType.F_EN
+            } else {
+                audioType = AudioType.M_EN
+            }
+        } else if (selectedButton == 1) {
+            if (sexControl.selectedSegmentIndex == 0) {
+                audioType = AudioType.F_BR
+            } else {
+                audioType = AudioType.M_BR
+            }
+        }
+        
+        selectedPhobia.changeAudio(audio: audioType)
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
             vc.selectedPhobiaIndex = selectedPhobiaIndex

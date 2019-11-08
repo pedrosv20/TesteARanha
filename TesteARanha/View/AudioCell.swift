@@ -51,6 +51,7 @@ class AudioCell: UICollectionViewCell, AVAudioPlayerDelegate {
     func setAudioName(audio: AVAudioPlayer) {
         self.audio = audio
     }
+    
     // Update the slider value
     @objc func updateSlider() {
         slider.value = Float(audio.currentTime)
