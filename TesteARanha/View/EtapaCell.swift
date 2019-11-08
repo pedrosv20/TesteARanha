@@ -16,7 +16,7 @@ class EtapaCell: UITableViewCell {
     @IBOutlet weak var levelDescription: UILabel!
     @IBOutlet weak var levelIconBig: UIImageView!
     
-    var cellColor = #colorLiteral(red: 0.8156862745, green: 0.4470588235, blue: 0.5176470588, alpha: 1)
+    var cellColor = #colorLiteral(red: 0.8705882353, green: 0.4235294118, blue: 0.5215686275, alpha: 1)
     var selectionColor = UIColor.lightGray
     var isTheOneSelected: Bool = false
     

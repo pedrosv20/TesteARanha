@@ -10,7 +10,8 @@ import UIKit
 
 class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var nameLabel: UILabel! // input em cima do teclado
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel! // fazer input em cima do teclado
     @IBOutlet weak var phobiasTableView: UITableView!
     
     override func viewDidLoad() {
@@ -46,6 +47,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let fobia = Model.shared.fobias[indexPath.row]
         
+        if indexPath.row != 0 {
+            cell.selectionStyle = .none
+        }
+        
         cell.cardLabel.text = fobia.tipoFobia.rawValue
         cell.cardIcon.image = fobia.icon
         cell.cardIconBig.image = fobia.icon
@@ -59,7 +64,11 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Model.shared.fobiaSelecionada = indexPath.row
+        
+        if indexPath.row != 0 {
+            return;
+        }
+        
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
             vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)

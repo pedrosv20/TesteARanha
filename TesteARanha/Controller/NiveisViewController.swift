@@ -92,6 +92,7 @@ class NiveisViewController: UITableViewController {
             cell.levelDescription.text = content.description
             cell.levelView.layer.masksToBounds = true
             cell.selectionStyle = .none
+            //cell.levelView.backgroundColor = cell.cellColor
             
             cell.unselect()
             
@@ -111,7 +112,7 @@ class NiveisViewController: UITableViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         } else if indexPath.row == 1 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "preAudio") as? ChooseVoiceViewController {
                 vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }

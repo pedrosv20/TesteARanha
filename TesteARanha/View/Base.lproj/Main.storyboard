@@ -178,6 +178,7 @@
                     <connections>
                         <outlet property="nameLabel" destination="fnM-Ms-9eo" id="jCd-rD-AzE"/>
                         <outlet property="phobiasTableView" destination="zeq-9J-Zbs" id="d6Q-Ws-McU"/>
+                        <outlet property="welcomeLabel" destination="a4A-EB-DS2" id="7cI-Bu-vfQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1dY-Mo-fOT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
