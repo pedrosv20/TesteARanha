@@ -43,6 +43,7 @@ class NiveisViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -50,6 +51,7 @@ class NiveisViewController: UITableViewController {
             parentController.reloadData()
         }
     }
+
     
     @objc func callSettings(sender: UIBarButtonItem) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
@@ -122,7 +124,7 @@ class NiveisViewController: UITableViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         } else if indexPath.row == 3 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? Nivel4ViewController {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "AR") as? ArTextViewController {
                 vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }

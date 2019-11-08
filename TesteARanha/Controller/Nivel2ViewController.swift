@@ -22,12 +22,6 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
         navigationItem.title = "Etapa Áudio"
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        for card in selectedPhobia.cardsTwo {
-            card.audio.stop()
-        }
-    }
-    
     @objc func callSettings(sender: UIBarButtonItem) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
             self.navigationController?.pushViewController(vc, animated: true)

@@ -7,40 +7,15 @@
 //
 
 import UIKit
-import WatchConnectivity
 
-class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate, WCSessionDelegate {
-    
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        <#code#>
-    }
-    
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        <#code#>
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        <#code#>
-    }
-    
-    var session: WCSession?
-    
+class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel! // fazer input em cima do teclado
     @IBOutlet weak var phobiasTableView: UITableView!
-    @IBOutlet weak var nameTextField: UITextField!
     
     override func viewDidLoad() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        nameTextField.delegate = self
-        
-        if WCSession.isSupported() {
-            session = WCSession.default
-            session?.delegate = self
-            session?.activate()
-        }
-        
-        updateText("Hillary")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -107,27 +82,4 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func editButtonTapped(_ sender: Any) {
         
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        nameTextField.endEditing(true)
-        return false
-    }
-    
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        updateText(textField.text!)
-    }
-    
-    func updateText(_ text: String) {
-        nameTextField.text = "Olá, " + text
-    }
 }
-
-//extension Dictionary where Key: ExpressibleByStringLiteral {
-//    func getValue<T: RawRepresentable>(forKey key: T) -> Value? where T.RawValue == String {
-//        return self[key.rawValue as! Key]
-//    }
-//    mutating func setValue<T: RawRepresentable>(value: Value, forKey key: T) where T.RawValue == String {
-//        self[key.rawValue as! Key] = value
-//    }
-//}
