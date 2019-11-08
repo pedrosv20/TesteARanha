@@ -30,12 +30,12 @@
 		07CAB051235103C800E19AB4 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB048235103C800E19AB4 /* ship.png */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
-		07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */; };
 		07D889F32375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */; };
 		07D889F72375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F62375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift */; };
 		07D889F92375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */; };
 		07D889FB2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */; };
 		07D889FD2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */; };
+		07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */; };
 		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
 		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
 		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
@@ -130,12 +130,12 @@
 		07CAB048235103C800E19AB4 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
-		07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ChooseVoiceViewController 2.storyboard"; sourceTree = "<group>"; };
 		07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding1CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889F62375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding5CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding2CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding3CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding4CollectionViewCell.swift; sourceTree = "<group>"; };
+		07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ChooseVoiceViewController 2.storyboard"; sourceTree = "<group>"; };
 		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
 		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
@@ -735,7 +735,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -753,7 +753,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -772,7 +772,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = TesteARanhaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -794,7 +794,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZSLUMCNRNL;
+				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = TesteARanhaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -20,7 +20,7 @@
         <!--Fobias-->
         <scene sceneID="Oes-ij-5IG">
             <objects>
-                <viewController id="WX4-hm-g10" customClass="FobiasViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cu" id="WX4-hm-g10" customClass="FobiasViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Daq-XR-x1h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,6 +137,9 @@
                                         <rect key="frame" x="25" y="91" width="364" height="52"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="WX4-hm-g10" id="xGZ-Qe-i8P"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-Ik-5pm">
                                         <rect key="frame" x="25" y="71" width="25" height="23"/>
@@ -185,7 +188,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Fobias" largeTitleDisplayMode="always" id="wuF-tq-DJU"/>
                     <connections>
-                        <outlet property="nameTextField" destination="omG-Kc-9cb" id="Cor-4e-s0c"/>
+                        <outlet property="nameTextField" destination="omG-Kc-9cb" id="eop-Iy-vdv"/>
                         <outlet property="phobiasTableView" destination="zeq-9J-Zbs" id="d6Q-Ws-McU"/>
                     </connections>
                 </viewController>
