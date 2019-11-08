@@ -43,7 +43,6 @@
 		569C3EA4237589E100CD73C0 /* audio_M_EN 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 569C3E8A237589DC00CD73C0 /* audio_M_EN 2.wav */; };
 		569C3EA5237589E100CD73C0 /* audio_M_EN 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 569C3E8B237589DE00CD73C0 /* audio_M_EN 3.wav */; };
 		569C3EA6237589E100CD73C0 /* audio_M_BR 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 569C3E8C237589E100CD73C0 /* audio_M_BR 3.wav */; };
-		569C3EA82375964D00CD73C0 /* night-at-the-club.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 569C3EA72375964C00CD73C0 /* night-at-the-club.mp3 */; };
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
@@ -119,7 +118,6 @@
 		569C3E8A237589DC00CD73C0 /* audio_M_EN 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio_M_EN 2.wav"; sourceTree = "<group>"; };
 		569C3E8B237589DE00CD73C0 /* audio_M_EN 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio_M_EN 3.wav"; sourceTree = "<group>"; };
 		569C3E8C237589E100CD73C0 /* audio_M_BR 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio_M_BR 3.wav"; sourceTree = "<group>"; };
-		569C3EA72375964C00CD73C0 /* night-at-the-club.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "night-at-the-club.mp3"; sourceTree = "<group>"; };
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
 		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
@@ -248,7 +246,6 @@
 				569C3E82237589C900CD73C0 /* audio_M_EN.wav */,
 				569C3E8A237589DC00CD73C0 /* audio_M_EN 2.wav */,
 				569C3E8B237589DE00CD73C0 /* audio_M_EN 3.wav */,
-				569C3EA72375964C00CD73C0 /* night-at-the-club.mp3 */,
 			);
 			path = Audios;
 			sourceTree = "<group>";
@@ -417,7 +414,6 @@
 				9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */,
 				07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */,
 				569C3EA6237589E100CD73C0 /* audio_M_BR 3.wav in Resources */,
-				569C3EA82375964D00CD73C0 /* night-at-the-club.mp3 in Resources */,
 				07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
