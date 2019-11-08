@@ -8,14 +8,17 @@
 
 import UIKit
 
-class TelaOnboarding1CollectionViewCell: UICollectionViewCell {
+class TelaOnboarding3CollectionViewCell: UICollectionViewCell {
     
-    var index = 0
+    var index = 2
     
-    @IBAction func Touch(_ sender: Any) {
+    @IBAction func touched(_ sender: Any) {
         NotificationCenter.default.post(name: NSNotification.Name("nextTouched"), object: nil, userInfo: ["tela" : index + 1])
     }
     
+    @IBAction func backTouched(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name("nextTouched"), object: nil, userInfo: ["tela" : index - 1])
+    }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
@@ -23,6 +26,5 @@ class TelaOnboarding1CollectionViewCell: UICollectionViewCell {
         let roundedIndex = round(index)
         print(roundedIndex)
         }
-    
     }
 
