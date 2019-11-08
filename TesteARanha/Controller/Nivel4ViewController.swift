@@ -9,6 +9,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet var arView: ARView!
     @IBOutlet weak var collectionView: UICollectionView!
+
     @IBOutlet weak var backButton: UIButton!
     
     var cell : StageFourCardCell!
@@ -127,6 +128,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     @IBAction func didPressBackButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
        }
+
     
     @IBAction func showEntity(_ sender: Any) {
         
@@ -136,6 +138,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             entity.isEnabled = false
             running = false
             entity.stopAllAnimations()
+
         } else {
             cell.eyeImage.setImage(UIImage(named: "olhoCortadoBranco")!, for: .normal)
             cell.showLabel.text = "Esconder"
@@ -157,6 +160,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             animationCell.moveLabel.text = "Parar"
             
             print("começa animacao")
+
              entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             let quaternion = simd_quatf(angle: degreesToRadians(180),
                                         axis: simd_float3(x: 0,
@@ -166,6 +170,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             var vector = simd_float3(x: 0, y: 0, z: 0.1)
             vector = quaternion.act(vector)
             
+
             if !animation {
                 animation = true
                 entity.setOrientation(quaternion, relativeTo: entity)
@@ -175,6 +180,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { (_) in
                 self.moveSpider()
             }
+
 
             
             running = true
@@ -190,6 +196,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         entity.scale = SIMD3<Float>(repeating: Float(sender.value))
     }
     
+
     @IBAction func changeTexture(_ sender: UISegmentedControl) {
         let url: URL!
         if sender.selectedSegmentIndex == 0 {
@@ -220,6 +227,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
         
         if anchor.isAnchored == false {
+
             createSpider()
         } else {
             self.collectionView.isHidden = false
@@ -236,7 +244,17 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         config.frameSemantics.insert(.personSegmentationWithDepth)
         
         arView.session.run(config)
+
     }
+    
+//    fileprivate func togglePeopleOcclusion() {
+//        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
+//            return
+//        }
+//        config.frameSemantics.insert(.personSegmentationWithDepth)
+//
+//        arView.session.run(config)
+//    }
 }
 
 extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -271,6 +289,7 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width:self.arView.frame.width, height:300)
         
+
     }
 }
 
@@ -281,6 +300,3 @@ extension UIColor {
         return UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 0.50)
     }
 }
-
-
-

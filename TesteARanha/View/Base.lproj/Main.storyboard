@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="954-UQ-UtX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cdh-Sp-2Fu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,8 +20,8 @@
         <!--Fobias-->
         <scene sceneID="Oes-ij-5IG">
             <objects>
-                <viewController id="WX4-hm-g10" customClass="FobiasViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Daq-XR-x1h">
+                <viewController storyboardIdentifier="cu" id="TiS-5i-uPy" customClass="FobiasViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V1i-jj-nCc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -207,7 +207,7 @@
         <!--Navigation Controller-->
         <scene sceneID="IBf-xn-XCc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="954-UQ-UtX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="main" automaticallyAdjustsScrollViewInsets="NO" id="cdh-Sp-2Fu" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3kF-kp-hfc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
