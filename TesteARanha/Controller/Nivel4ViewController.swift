@@ -51,6 +51,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     override func viewDidDisappear(_ animated: Bool) {
+
         arView?.session.pause()
         arView?.removeFromSuperview()
         arView = nil

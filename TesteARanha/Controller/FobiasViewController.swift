@@ -10,6 +10,8 @@ import UIKit
 
 class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel! // fazer input em cima do teclado
     @IBOutlet weak var phobiasTableView: UITableView!
     
     override func viewDidLoad() {
@@ -27,6 +29,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
     }
     
+    func reloadData() {
+        phobiasTableView.reloadData()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -41,24 +47,39 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let fobia = Model.shared.fobias[indexPath.row]
         
+        if indexPath.row != 0 {
+            cell.selectionStyle = .none
+            cell.lockCell()
+        } else {
+            cell.unlockCell()
+            cell.unselect()
+        }
+        
         cell.cardLabel.text = fobia.tipoFobia.rawValue
         cell.cardIcon.image = fobia.icon
-        cell.cardBackground.image = fobia.backgroundIcon
-        cell.cardBackground.layer.masksToBounds = true
-        cell.cardBackground.layer.cornerRadius = cell.cardBackground.frame.width/19.0
+        cell.cardIconBig.image = fobia.icon
+        cell.cardView.layer.masksToBounds = true
+        cell.cardView.layer.cornerRadius = 15
         cell.tipoFobia = fobia.tipoFobia
         
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Model.shared.fobiaSelecionada = indexPath.row
+        if indexPath.row != 0 {
+            return;
+        }
+        
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
             vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        let cell = tableView.cellForRow(at: indexPath) as! FobiaCell
+        cell.select()
     }
-
     
+    @IBAction func editButtonTapped(_ sender: Any) {
+        
+    }
 }

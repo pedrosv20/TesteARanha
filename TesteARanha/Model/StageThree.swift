@@ -13,15 +13,18 @@ class StageThree {
     var title: String
     var description: String
     var image: UIImage
+    var isBlurred: Bool
     
     internal init(
         title: String,
         description: String,
-        image: String
+        image: String,
+        isBlurred: Bool
     ) {
         self.title = title
         self.description = description
         self.image = UIImage(named: image) ?? UIImage(named: "frogIcon.png")!
+        self.isBlurred = isBlurred
     }
     
 }

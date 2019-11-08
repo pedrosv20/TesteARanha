@@ -16,4 +16,23 @@ class EtapaCell: UITableViewCell {
     @IBOutlet weak var levelDescription: UILabel!
     @IBOutlet weak var levelIconBig: UIImageView!
     
+    var cellColor = #colorLiteral(red: 0.8705882353, green: 0.4235294118, blue: 0.5215686275, alpha: 1)
+    var selectionColor = UIColor.lightGray
+    var isTheOneSelected: Bool = false
+    
+    func select() {
+        UIView.animate(withDuration: 0.1, animations: {
+            self.levelView.backgroundColor = self.selectionColor
+        })
+        isTheOneSelected = true
+    }
+    
+    func unselect() {
+        if isTheOneSelected {
+            UIView.animate(withDuration: 0.8, animations: {
+                self.levelView.backgroundColor = self.cellColor
+            })
+        }
+        isTheOneSelected = false
+    }
 }

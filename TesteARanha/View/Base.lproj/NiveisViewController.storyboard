@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7z2-DB-ggT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7z2-DB-ggT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,7 +50,7 @@
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.81568627449999997" green="0.44705882349999998" blue="0.51764705879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.87058823529411766" green="0.42352941176470588" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="Hl0-ZN-UYt" firstAttribute="centerX" secondItem="zHh-GP-DCS" secondAttribute="centerX" id="8Be-lT-lo4"/>
                                                 <constraint firstAttribute="trailing" secondItem="zHh-GP-DCS" secondAttribute="trailing" constant="17" id="91V-eW-CGQ"/>
@@ -151,13 +151,13 @@
             </objects>
             <point key="canvasLocation" x="1287" y="-204"/>
         </scene>
-        <!--audio-->
+        <!--preAudio-->
         <scene sceneID="DjJ-Yn-KyN">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="audio" storyboardName="Etapa2ViewController" referencedIdentifier="audio" id="m53-qg-TWV" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="preAudio" storyboardName="ChooseVoiceViewController" referencedIdentifier="preAudio" id="m53-qg-TWV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrQ-jO-K7d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288" y="-58"/>
+            <point key="canvasLocation" x="1304" y="-58"/>
         </scene>
         <!--imagens-->
         <scene sceneID="W71-qu-44b">
