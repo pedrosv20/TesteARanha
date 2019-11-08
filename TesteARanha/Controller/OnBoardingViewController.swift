@@ -54,7 +54,7 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     @objc func startApp(_ notification: Notification) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "fobias") as? FobiasViewController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

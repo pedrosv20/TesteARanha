@@ -26,6 +26,7 @@ class TelaOnboarding5CollectionViewCell: UICollectionViewCell, UITextFieldDelega
     @IBAction func startApp(_ sender: Any) {
         if nameTextField.text != "" {
             print("olá pessoa")
+            NotificationCenter.default.post(name: NSNotification.Name("start"), object: nil, userInfo: ["tela" : index])
         }
     }
     
