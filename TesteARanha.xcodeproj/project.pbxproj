@@ -35,7 +35,6 @@
 		07D889F92375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */; };
 		07D889FB2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */; };
 		07D889FD2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */; };
-		07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */; };
 		07E7A630236A4E61009EEAB5 /* spiderAnimated.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */; };
 		560CD3E1237614470040AE99 /* Phobit WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 560CD3E0237614470040AE99 /* Phobit WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		560CD3E8237614470040AE99 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560CD3E7237614470040AE99 /* ExtensionDelegate.swift */; };
@@ -173,7 +172,6 @@
 		07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding2CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding3CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding4CollectionViewCell.swift; sourceTree = "<group>"; };
-		07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ChooseVoiceViewController 2.storyboard"; sourceTree = "<group>"; };
 		07E7A62F236A4E61009EEAB5 /* spiderAnimated.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = spiderAnimated.usdz; sourceTree = "<group>"; };
 		560CD3D4237614430040AE99 /* Phobit Watchkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phobit Watchkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		560CD3E0237614470040AE99 /* Phobit WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Phobit WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,7 +439,6 @@
 				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
 				56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */,
 				565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */,
-				07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */,
 				07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */,
 				07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */,
 				07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */,
@@ -585,7 +582,6 @@
 				07CAB04D235103C800E19AB4 /* spider2_color.jpg in Resources */,
 				07AAEC9F235901FB001F6734 /* Spinnen_Bein_tex.jpg in Resources */,
 				9D4C55722361D0C200062326 /* Etapa1ViewController.storyboard in Resources */,
-				07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */,
 				569C3E98237589E100CD73C0 /* audio_F_EN.wav in Resources */,
 				569C3E91237589E100CD73C0 /* audio_M_BR 2.wav in Resources */,
 				9D4C55752361D0D400062326 /* Etapa2ViewController.storyboard in Resources */,
