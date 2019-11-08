@@ -29,6 +29,13 @@ class Fobia {
         self.cardsTwo = stageTwo
         self.cardsThree = stageThree
     }
+    
+    func changeAudio(audio: AudioType) {
+        for (i, card) in cardsTwo.enumerated() {
+            let audioName = "audio_" + String(describing: audio) + (i != 0 ? " " + (i+1).description : "") + ".wav"
+            card.audio = (AVAudioPlayer.load(audioName))
+        }
+    }
 }
 
 enum TipoFobia: String {

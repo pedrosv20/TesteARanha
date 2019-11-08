@@ -27,16 +27,16 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         //TODO: bloquear tela e voltar pra etapa
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        parent?.viewWillAppear(true)
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         createSpider()
         //TODO: chamar set overlay quando der swipe pra terceira collection
     }
     override func viewDidAppear(_ animated: Bool) {
         togglePeopleOcclusion()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        parent?.viewWillAppear(true)
     }
     
     func createSpider() {

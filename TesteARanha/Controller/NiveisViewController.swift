@@ -37,8 +37,8 @@ class NiveisViewController: UITableViewController {
     
     override func viewDidLoad() {
         navigationItem.title = selectedPhobia.tipoFobia.rawValue
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
-        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+//        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Settings"), style: .plain, target: self, action: #selector(callSettings(sender:)))
+//        navigationItem.rightBarButtonItem?.tintColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -92,6 +92,7 @@ class NiveisViewController: UITableViewController {
             cell.levelDescription.text = content.description
             cell.levelView.layer.masksToBounds = true
             cell.selectionStyle = .none
+            //cell.levelView.backgroundColor = cell.cellColor
             
             cell.unselect()
             
@@ -111,7 +112,7 @@ class NiveisViewController: UITableViewController {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         } else if indexPath.row == 1 {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "audio") as? Nivel2ViewController {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "preAudio") as? ChooseVoiceViewController {
                 vc.selectedPhobiaIndex = selectedPhobiaIndex
                 self.navigationController?.pushViewController(vc, animated: true)
             }

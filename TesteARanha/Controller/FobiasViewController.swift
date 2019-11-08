@@ -10,6 +10,8 @@ import UIKit
 
 class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel! // fazer input em cima do teclado
     @IBOutlet weak var phobiasTableView: UITableView!
     
     override func viewDidLoad() {
@@ -45,6 +47,14 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         let fobia = Model.shared.fobias[indexPath.row]
         
+        if indexPath.row != 0 {
+            cell.selectionStyle = .none
+            cell.lockCell()
+        } else {
+            cell.unlockCell()
+            cell.unselect()
+        }
+        
         cell.cardLabel.text = fobia.tipoFobia.rawValue
         cell.cardIcon.image = fobia.icon
         cell.cardIconBig.image = fobia.icon
@@ -52,14 +62,14 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.cardView.layer.cornerRadius = 15
         cell.tipoFobia = fobia.tipoFobia
         
-        cell.unselect()
-        
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Model.shared.fobiaSelecionada = indexPath.row
+        if indexPath.row != 0 {
+            return;
+        }
+        
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
             vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
@@ -68,8 +78,10 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.cellForRow(at: indexPath) as! FobiaCell
         cell.select()
     }
-
     
+    @IBAction func editButtonTapped(_ sender: Any) {
+        
+    }
 }
 
 //extension Dictionary where Key: ExpressibleByStringLiteral {

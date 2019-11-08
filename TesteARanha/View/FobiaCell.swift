@@ -10,6 +10,8 @@ import UIKit
 
 class FobiaCell: UITableViewCell {
 
+    @IBOutlet weak var lockView: UIView!
+    @IBOutlet weak var lock: UIImageView!
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var cardIcon: UIImageView!
@@ -34,5 +36,17 @@ class FobiaCell: UITableViewCell {
             })
         }
         isTheOneSelected = false
+    }
+    
+    func lockCell() {
+        cardView.alpha = 0.8
+        lock.alpha = 0.35
+//        lock.image = lock.image?.withRenderingMode(.alwaysTemplate)
+//        lock.tintColor = UIColor.gray
+    }
+    
+    func unlockCell() {
+        lock.isHidden = true
+        lockView.isHidden = true
     }
 }

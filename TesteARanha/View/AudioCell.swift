@@ -37,10 +37,9 @@ class AudioCell: UICollectionViewCell, AVAudioPlayerDelegate {
             slider.value = 0.0
             slider.maximumValue = Float(audio.duration)
             timer = Timer.scheduledTimer(timeInterval: 0.0001, target: self, selector: #selector(self.updateSlider), userInfo: nil, repeats: true)
-            button.setImage(UIImage(named: "pauserosa"), for: .normal)
+            button.setImage(pauseButton, for: .normal)
             playing = true
         }
-        
     }
     
     // Controls the slider depending on the time
@@ -52,6 +51,7 @@ class AudioCell: UICollectionViewCell, AVAudioPlayerDelegate {
     func setAudioName(audio: AVAudioPlayer) {
         self.audio = audio
     }
+    
     // Update the slider value
     @objc func updateSlider() {
         slider.value = Float(audio.currentTime)

@@ -16,18 +16,21 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     @IBOutlet weak var pageControl: UIPageControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa Áudio"
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        parent?.viewWillAppear(true)
+    @objc func callSettings(sender: UIBarButtonItem) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "settings") as? SettingsTableViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-        let index = scrollView.contentOffset.x / witdh
+        let width = scrollView.frame.width - (scrollView.contentInset.left*2)
+        let index = scrollView.contentOffset.x / width
         let roundedIndex = round(index)
         self.pageControl?.currentPage = Int(roundedIndex)
     }
