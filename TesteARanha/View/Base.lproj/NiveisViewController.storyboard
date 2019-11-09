@@ -9,7 +9,7 @@
         <!--Etapas-->
         <scene sceneID="NZe-vp-EpV">
             <objects>
-                <tableViewController storyboardIdentifier="niveis" id="7z2-DB-ggT" customClass="NiveisViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="niveis" id="7z2-DB-ggT" customClass="NiveisViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OPv-vT-Ul4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -17,7 +17,7 @@
                         <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="125" id="hfv-g6-H7I" userLabel="EtapaCell" customClass="EtapaCell" customModule="TesteARanha" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="etapaCell" rowHeight="125" id="hfv-g6-H7I" userLabel="EtapaCell" customClass="EtapaCell" customModule="Phobit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hfv-g6-H7I" id="qTd-Tp-IZY">
@@ -88,7 +88,7 @@
                                     <outlet property="levelView" destination="ot6-nu-hNo" id="oOx-4Z-A42"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="viewProgressCell" rowHeight="55" id="gJx-Rb-gGV" userLabel="ProgressCell" customClass="ViewProgressCell" customModule="TesteARanha" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="viewProgressCell" rowHeight="55" id="gJx-Rb-gGV" userLabel="ProgressCell" customClass="ViewProgressCell" customModule="Phobit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="153" width="414" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gJx-Rb-gGV" id="SRE-2c-zF5">
@@ -170,7 +170,7 @@
         <!--Settings Table View Controller-->
         <scene sceneID="8Bl-AX-KNk">
             <objects>
-                <tableViewController storyboardIdentifier="settings" id="pwa-K2-aLo" customClass="SettingsTableViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="settings" id="pwa-K2-aLo" customClass="SettingsTableViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WVi-dg-UX1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

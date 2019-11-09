@@ -20,7 +20,6 @@
 		07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC9B235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg */; };
 		07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4202350BB3400AB67C9 /* AppDelegate.swift */; };
 		07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */; };
-		07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4262350BB3400AB67C9 /* Main.storyboard */; };
 		07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4292350BB3700AB67C9 /* Assets.xcassets */; };
 		07C5C42D2350BB3700AB67C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */; };
 		07C5C4382350BB3700AB67C9 /* TesteARanhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4372350BB3700AB67C9 /* TesteARanhaTests.swift */; };
@@ -49,7 +48,6 @@
 		560CD40A237614F80040AE99 /* Supporting Files in Resources */ = {isa = PBXBuildFile; fileRef = 560CD409237614F80040AE99 /* Supporting Files */; };
 		56277D622369CF01003CE021 /* AudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56277D612369CF01003CE021 /* AudioCell.swift */; };
 		56526EED236618F000A3C641 /* TextoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56526EEC236618F000A3C641 /* TextoCell.swift */; };
-		565582FC2374521B00632B3E /* ChooseVoiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */; };
 		565582FE2374534300632B3E /* ChooseVoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565582FD2374534300632B3E /* ChooseVoiceViewController.swift */; };
 		569C3E91237589E100CD73C0 /* audio_M_BR 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 569C3E77237589B400CD73C0 /* audio_M_BR 2.wav */; };
 		569C3E94237589E100CD73C0 /* audio_F_EN 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 569C3E7A237589B800CD73C0 /* audio_F_EN 2.wav */; };
@@ -66,6 +64,9 @@
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
+		56BBC86F2377253600447A81 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC86B2377253600447A81 /* Onboarding.storyboard */; };
+		56BBC8702377253600447A81 /* ChooseVoiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC86D2377253600447A81 /* ChooseVoiceViewController.storyboard */; };
+		56BBC873237725C700447A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC871237725C600447A81 /* Main.storyboard */; };
 		56D3564A2376163200B2565B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D356492376163200B2565B /* HealthKit.framework */; };
 		56E8C5CC23631DD0000F53FD /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIView+extensions.swift */; };
 		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
@@ -87,7 +88,6 @@
 		9D6726A12355F56D0030CAE7 /* Nivel2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */; };
 		9D6726A32355F5E50030CAE7 /* Nivel1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */; };
 		D98F0B392372F1CB0074D305 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */; };
-		D98F0B3B2372F1FF0074D305 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,7 +154,6 @@
 		07C5C41D2350BB3400AB67C9 /* Phobit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C5C4202350BB3400AB67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel4ViewController.swift; sourceTree = "<group>"; };
-		07C5C4272350BB3400AB67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C5C4292350BB3700AB67C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C5C42C2350BB3700AB67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C5C42E2350BB3700AB67C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,7 +185,6 @@
 		560CD409237614F80040AE99 /* Supporting Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Supporting Files"; sourceTree = "<group>"; };
 		56277D612369CF01003CE021 /* AudioCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioCell.swift; sourceTree = "<group>"; };
 		56526EEC236618F000A3C641 /* TextoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextoCell.swift; sourceTree = "<group>"; };
-		565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseVoiceViewController.storyboard; sourceTree = "<group>"; };
 		565582FD2374534300632B3E /* ChooseVoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseVoiceViewController.swift; sourceTree = "<group>"; };
 		569C3E77237589B400CD73C0 /* audio_M_BR 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio_M_BR 2.wav"; sourceTree = "<group>"; };
 		569C3E7A237589B800CD73C0 /* audio_F_EN 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio_F_EN 2.wav"; sourceTree = "<group>"; };
@@ -203,6 +201,9 @@
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
 		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
+		56BBC86C2377253600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		56BBC86E2377253600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChooseVoiceViewController.storyboard; sourceTree = "<group>"; };
+		56BBC872237725C600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56D356482376163200B2565B /* Phobit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phobit.entitlements; sourceTree = "<group>"; };
 		56D356492376163200B2565B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		56D3564B2376168100B2565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -228,7 +229,6 @@
 		9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel2ViewController.swift; sourceTree = "<group>"; };
 		9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel1ViewController.swift; sourceTree = "<group>"; };
 		D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,16 +429,16 @@
 				56E8C5D92363D604000F53FD /* ViewProgressCell.swift */,
 				0706E64423744AE800F65C09 /* StageFourCardCell.swift */,
 				076EDA1A23745FFE00FFE2A7 /* PlayAnimationCardCell.swift */,
+				56BBC86D2377253600447A81 /* ChooseVoiceViewController.storyboard */,
+				56BBC86B2377253600447A81 /* Onboarding.storyboard */,
+				56BBC871237725C600447A81 /* Main.storyboard */,
 				9D4C55702361D0C200062326 /* Etapa1ViewController.storyboard */,
 				9D4C55732361D0D400062326 /* Etapa2ViewController.storyboard */,
 				9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */,
-				D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */,
 				9D4C55792361D0F400062326 /* Etapa4ViewController.storyboard */,
-				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
 				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
 				56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */,
-				565582FB2374521B00632B3E /* ChooseVoiceViewController.storyboard */,
 				07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */,
 				07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */,
 				07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */,
@@ -588,6 +588,7 @@
 				569C3EA5237589E100CD73C0 /* audio_M_EN 3.wav in Resources */,
 				569C3E96237589E100CD73C0 /* audio_F_BR 3.wav in Resources */,
 				07CAB04F235103C800E19AB4 /* spider5_color.jpg in Resources */,
+				56BBC873237725C700447A81 /* Main.storyboard in Resources */,
 				569C3E9E237589E100CD73C0 /* audio_F_EN 3.wav in Resources */,
 				07C5C42D2350BB3700AB67C9 /* LaunchScreen.storyboard in Resources */,
 				07CAB04E235103C800E19AB4 /* spider3_color.jpg in Resources */,
@@ -596,19 +597,18 @@
 				07AAEC9D235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.png in Resources */,
 				07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */,
 				07AAEC9E235901FB001F6734 /* SH3.png in Resources */,
-				D98F0B3B2372F1FF0074D305 /* Onboarding.storyboard in Resources */,
 				07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */,
 				569C3E9D237589E100CD73C0 /* audio_M_BR.wav in Resources */,
 				569C3E9B237589E100CD73C0 /* audio_F_BR.wav in Resources */,
 				56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */,
+				56BBC8702377253600447A81 /* ChooseVoiceViewController.storyboard in Resources */,
+				56BBC86F2377253600447A81 /* Onboarding.storyboard in Resources */,
 				569C3EA4237589E100CD73C0 /* audio_M_EN 2.wav in Resources */,
 				07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */,
 				569C3E9C237589E100CD73C0 /* audio_M_EN.wav in Resources */,
-				565582FC2374521B00632B3E /* ChooseVoiceViewController.storyboard in Resources */,
 				9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */,
 				07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */,
 				569C3EA6237589E100CD73C0 /* audio_M_BR 3.wav in Resources */,
-				07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,14 +720,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07C5C4262350BB3400AB67C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07C5C4272350BB3400AB67C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -742,6 +734,30 @@
 				56A5DAAB23609D7E00BCC0F9 /* Base */,
 			);
 			name = NiveisViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		56BBC86B2377253600447A81 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56BBC86C2377253600447A81 /* Base */,
+			);
+			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
+		56BBC86D2377253600447A81 /* ChooseVoiceViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56BBC86E2377253600447A81 /* Base */,
+			);
+			name = ChooseVoiceViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		56BBC871237725C600447A81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56BBC872237725C600447A81 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */ = {
