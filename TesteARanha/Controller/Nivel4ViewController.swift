@@ -36,6 +36,12 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: nil) { (notification) in
+            self.dismiss(animated: false, completion: nil)
+
+            // run your code here (or whatever)
+        }
+        
         pageControl.pageIndicatorTintColor = UIColor(red:0.78, green:0.77, blue:0.77, alpha:1.0)
         pageControl.currentPageIndicatorTintColor = UIColor(red:0.82, green:0.45, blue:0.52, alpha:1.0)
         //TODO: bloquear tela e voltar pra etapa
@@ -53,7 +59,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     
     override func viewDidDisappear(_ animated: Bool) {
 
-        arView?.session.pause()
+        //arView?.session.pause()
         arView?.removeFromSuperview()
         arView = nil
         
@@ -66,7 +72,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         print("entrou")
         //1. Link The coachOverlay To Our Current Session
         
-        self.coachOverlay.session = self.arView.session
+        //self.coachOverlay.session = self.arView.session
         self.coachOverlay.delegate = self
         self.arView.addSubview(self.coachOverlay)
         NSLayoutConstraint.activate([
@@ -86,7 +92,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     func createSpider() {
         setOverlay(automatically: true, forDetectionType: .horizontalPlane)
         
-        self.anchor = AnchorEntity(plane: .horizontal)
+        //self.anchor = AnchorEntity(plane: .horizontal)
         self.arView.scene.addAnchor(self.anchor)
         let url = Bundle.main.url(forResource: "oi.usdz", withExtension: nil)
         self.entity = try? Entity.loadModel(contentsOf: url!)
@@ -238,12 +244,12 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     fileprivate func togglePeopleOcclusion() {
-        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
-            return
-        }
-        config.frameSemantics.insert(.personSegmentationWithDepth)
-        
-        arView.session.run(config)
+//        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
+//            return
+//        }
+//        config.frameSemantics.insert(.personSegmentationWithDepth)
+//        
+//        arView.session.run(config)
 
     }
     

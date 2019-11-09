@@ -67,6 +67,7 @@
 		56BBC86F2377253600447A81 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC86B2377253600447A81 /* Onboarding.storyboard */; };
 		56BBC8702377253600447A81 /* ChooseVoiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC86D2377253600447A81 /* ChooseVoiceViewController.storyboard */; };
 		56BBC873237725C700447A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC871237725C600447A81 /* Main.storyboard */; };
+		56BBC8752377479800447A81 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BBC8742377479800447A81 /* HealthKit.framework */; };
 		56D3564A2376163200B2565B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D356492376163200B2565B /* HealthKit.framework */; };
 		56E8C5CC23631DD0000F53FD /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CB23631DD0000F53FD /* UIView+extensions.swift */; };
 		56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8C5CF2363CC0E000F53FD /* SettingsTableViewController.swift */; };
@@ -204,6 +205,8 @@
 		56BBC86C2377253600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		56BBC86E2377253600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChooseVoiceViewController.storyboard; sourceTree = "<group>"; };
 		56BBC872237725C600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56BBC8742377479800447A81 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		56BBC87623774A9100447A81 /* Phobit WatchKit App Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Phobit WatchKit App Extension.entitlements"; sourceTree = "<group>"; };
 		56D356482376163200B2565B /* Phobit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Phobit.entitlements; sourceTree = "<group>"; };
 		56D356492376163200B2565B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		56D3564B2376168100B2565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,6 +254,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56BBC8752377479800447A81 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +343,7 @@
 		560CD3E4237614470040AE99 /* phobitchesWATCHOS Extension */ = {
 			isa = PBXGroup;
 			children = (
+				56BBC87623774A9100447A81 /* Phobit WatchKit App Extension.entitlements */,
 				56D3564B2376168100B2565B /* Info.plist */,
 				560CD3FA237614820040AE99 /* Supporting Files */,
 				560CD3FC237614840040AE99 /* WorkoutRow.swift */,
@@ -363,6 +368,7 @@
 		6C2B122623743CC200B95953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				56BBC8742377479800447A81 /* HealthKit.framework */,
 				56D356492376163200B2565B /* HealthKit.framework */,
 				6C2B122723743CC200B95953 /* HealthKit.framework */,
 			);
@@ -530,7 +536,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1100;
-				ORGANIZATIONNAME = "Pedro Vargas";
+				ORGANIZATIONNAME = "Wonder Woman";
 				TargetAttributes = {
 					07C5C41C2350BB3400AB67C9 = {
 						CreatedOnToolsVersion = 11.0;
@@ -1041,6 +1047,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "phobitchesWATCHOS Extension/Phobit WatchKit App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
@@ -1063,6 +1070,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "phobitchesWATCHOS Extension/Phobit WatchKit App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5MSP4455P9;
 				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";

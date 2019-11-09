@@ -20,6 +20,13 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !UserDefaults.isFirstLaunch() {
+            if let vc = storyboard?.instantiateViewController(withIdentifier: "fobias") as? FobiasViewController {
+                self.navigationController?.pushViewController(vc, animated: false)
+            }
+        }
+        
         NotificationCenter.default.addObserver(self, selector: #selector(nextView), name: NSNotification.Name("nextTouched"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(backView), name: NSNotification.Name("backTouched"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(startApp), name: NSNotification.Name("start"), object: nil)
@@ -28,17 +35,17 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         title = "Phobits"
         navigationController?.navigationBar.prefersLargeTitles = true
         
-//        let typesToShare: Set = [
-//            HKQuantityType.workoutType()
-//        ]
+        let typesToShare: Set = [
+            HKQuantityType.workoutType()
+        ]
         
         let typesToRead: Set = [
             HKQuantityType.quantityType(forIdentifier: .heartRate)!,
-            //HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
-            //HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+            HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
         ]
         
-        healthStore.requestAuthorization(toShare: nil/*typesToShare*/, read: typesToRead) { (success, error) in
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
             // Handle error
             
         }

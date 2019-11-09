@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14253.3" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14241.3"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14217"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
     </dependencies>
     <scenes>
         <!--Workout Start View-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="WorkoutStartView" customModule="SpeedySloth_WatchKit_App_Extension">
+                <controller id="AgC-eL-Hgc" customClass="WorkoutStartView" customModule="Phobit_WatchKit_App_Extension">
                     <items>
                         <group width="130" height="130" alignment="center" verticalAlignment="center" layout="vertical" radius="65" id="ZHW-ep-6y9">
                             <items>
@@ -31,30 +29,28 @@
         <!--WorkoutSession-->
         <scene sceneID="1W7-kw-LuB">
             <objects>
-                <controller identifier="WorkoutSession" id="XFn-uZ-zNM" customClass="WorkoutSession" customModule="SpeedySloth_WatchKit_App_Extension">
+                <controller identifier="WorkoutSession" id="XFn-uZ-zNM" customClass="WorkoutSession" customModule="Phobit_WatchKit_App_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="0.0" id="pex-p0-1NB">
                             <items>
                                 <timer alignment="left" id="fTe-Px-a5B">
                                     <fontDescription key="font" type="boldSystem" pointSize="28"/>
                                 </timer>
-                                <label alignment="left" text="0.0 cal" id="cLM-Yu-laI">
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
-                                </label>
                                 <label alignment="left" text="0.0 BPM" id="XaF-66-Mge">
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
-                                </label>
-                                <label alignment="left" text="0.0 m" id="Zpe-6h-42H">
                                     <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
                                 </label>
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
+                        <button width="136" height="56" alignment="center" verticalAlignment="center" title="STOP" id="9Xf-AN-wRp">
+                            <fontDescription key="font" type="system" weight="black" pointSize="36"/>
+                            <connections>
+                                <segue destination="5WY-gm-V9s" kind="modal" identifier="stopWorkout" id="iuw-7c-oGM"/>
+                            </connections>
+                        </button>
                     </items>
                     <menu key="menu" id="L6x-VN-nPs"/>
                     <connections>
-                        <outlet property="activeCaloriesLabel" destination="cLM-Yu-laI" id="au1-Up-ORm"/>
-                        <outlet property="distanceLabel" destination="Zpe-6h-42H" id="Mzf-yT-v9v"/>
                         <outlet property="heartRateLabel" destination="XaF-66-Mge" id="a4S-xn-pbF"/>
                         <outlet property="timer" destination="fTe-Px-a5B" id="zSr-h2-R17"/>
                     </connections>
@@ -81,9 +77,31 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SpeedySloth_WatchKit_App" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Phobit_Watchkit" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="479" y="643"/>
+        </scene>
+        <!--FinishedWorkout-->
+        <scene sceneID="s2M-Sm-K0g">
+            <objects>
+                <controller identifier="FinishedWorkout" title="FinishedWorkout" id="5WY-gm-V9s">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="CVu-Rz-1Hc">
+                            <items>
+                                <label alignment="left" text="Average Heart Rate" numberOfLines="0" id="zhy-Vg-fMm">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
+                                </label>
+                                <label alignment="left" text="0.0 BPM" id="FrN-RL-YkB">
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                    </items>
+                    <menu key="menu" id="EPo-cQ-Xcr"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="730" y="345"/>
         </scene>
     </scenes>
 </document>
