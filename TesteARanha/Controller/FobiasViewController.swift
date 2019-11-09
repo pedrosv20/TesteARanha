@@ -8,14 +8,15 @@
 
 import UIKit
 
-class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
-    @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel! // fazer input em cima do teclado
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phobiasTableView: UITableView!
     
     override func viewDidLoad() {
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        nameTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -26,6 +27,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
             phobiasTableView.reloadData()
             loadViewIfNeeded()
         }
+        
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
         
         updateLabel(Model.shared.nomePessoa)
@@ -95,3 +97,4 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         Model.shared.saveNome(text)
     }
 }
+
