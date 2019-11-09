@@ -20,7 +20,6 @@
 		07AAECA1235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07AAEC9B235901FB001F6734 /* Spinnen_Bein_tex_COLOR_.jpg */; };
 		07C5C4212350BB3400AB67C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4202350BB3400AB67C9 /* AppDelegate.swift */; };
 		07C5C4252350BB3400AB67C9 /* Nivel4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */; };
-		07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4262350BB3400AB67C9 /* Main.storyboard */; };
 		07C5C42A2350BB3700AB67C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C4292350BB3700AB67C9 /* Assets.xcassets */; };
 		07C5C42D2350BB3700AB67C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */; };
 		07C5C4382350BB3700AB67C9 /* TesteARanhaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C5C4372350BB3700AB67C9 /* TesteARanhaTests.swift */; };
@@ -30,7 +29,6 @@
 		07CAB051235103C800E19AB4 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB048235103C800E19AB4 /* ship.png */; };
 		07CAB053235103C800E19AB4 /* spider1_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04A235103C800E19AB4 /* spider1_color.jpg */; };
 		07CAB054235103C800E19AB4 /* spider4_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07CAB04B235103C800E19AB4 /* spider4_color.jpg */; };
-		07D889FF2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */; };
 		07D889F32375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */; };
 		07D889F72375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F62375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift */; };
 		07D889F92375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */; };
@@ -155,7 +153,6 @@
 		07C5C41D2350BB3400AB67C9 /* Phobit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Phobit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C5C4202350BB3400AB67C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C5C4242350BB3400AB67C9 /* Nivel4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel4ViewController.swift; sourceTree = "<group>"; };
-		07C5C4272350BB3400AB67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07C5C4292350BB3700AB67C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07C5C42C2350BB3700AB67C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07C5C42E2350BB3700AB67C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,7 +165,6 @@
 		07CAB048235103C800E19AB4 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
 		07CAB04A235103C800E19AB4 /* spider1_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider1_color.jpg; sourceTree = "<group>"; };
 		07CAB04B235103C800E19AB4 /* spider4_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spider4_color.jpg; sourceTree = "<group>"; };
-		07D889FE2375FF5C00DC4A33 /* ChooseVoiceViewController 2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "ChooseVoiceViewController 2.storyboard"; sourceTree = "<group>"; };
 		07D889F22375DE3300DC4A33 /* TelaOnboarding1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding1CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889F62375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding5CollectionViewCell.swift; sourceTree = "<group>"; };
 		07D889F82375EC5700DC4A33 /* TelaOnboarding2CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaOnboarding2CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -436,7 +432,6 @@
 				9D4C55762361D0E100062326 /* Etapa3ViewController.storyboard */,
 				D98F0B3A2372F1FF0074D305 /* Onboarding.storyboard */,
 				9D4C55792361D0F400062326 /* Etapa4ViewController.storyboard */,
-				07C5C4262350BB3400AB67C9 /* Main.storyboard */,
 				07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */,
 				56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */,
 				56E8C5DB2363DA47000F53FD /* ProgressViewController.storyboard */,
@@ -610,7 +605,6 @@
 				9D4C55782361D0E100062326 /* Etapa3ViewController.storyboard in Resources */,
 				07AAEC9C235901FB001F6734 /* Spinnen_Bein_tex_2.jpg in Resources */,
 				569C3EA6237589E100CD73C0 /* audio_M_BR 3.wav in Resources */,
-				07C5C4282350BB3400AB67C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,14 +716,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		07C5C4262350BB3400AB67C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07C5C4272350BB3400AB67C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		07C5C42B2350BB3700AB67C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
