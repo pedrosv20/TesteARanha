@@ -30,7 +30,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
         
-        updateLabel(Model.shared.nomePessoa)
+        updateLabel(Model.shared.nomePessoa ?? "você!")
     }
     
     func reloadData() {

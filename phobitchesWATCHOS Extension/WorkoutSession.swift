@@ -13,9 +13,7 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
     
     @IBOutlet weak var timer: WKInterfaceTimer!
     
-    @IBOutlet weak var activeCaloriesLabel: WKInterfaceLabel!
     @IBOutlet weak var heartRateLabel: WKInterfaceLabel!
-    @IBOutlet weak var distanceLabel: WKInterfaceLabel!
     
     var healthStore: HKHealthStore!
     var configuration: HKWorkoutConfiguration!
@@ -189,16 +187,8 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
     
     /// Retreive the WKInterfaceLabel object for the quantity types we are observing.
     func labelForQuantityType(_ type: HKQuantityType) -> WKInterfaceLabel? {
-        switch type {
-        case HKQuantityType.quantityType(forIdentifier: .heartRate):
-            return heartRateLabel
-        case HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned):
-            return activeCaloriesLabel
-        case HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning):
-            return distanceLabel
-        default:
-            return nil
-        }
+        //case HKQuantityType.quantityType(forIdentifier: .heartRate):
+        return heartRateLabel
     }
     
     /// Update the WKInterfaceLabels with new data.
