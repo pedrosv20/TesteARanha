@@ -45,6 +45,21 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
         parent?.viewWillAppear(true)
     }
     
+    func collectionView(_ collectionView: UICollectionView,
+                          layout collectionViewLayout: UICollectionViewLayout,
+                          minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width - 10, height: collectionView.frame.size.height - 10);
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5);
+    }
+
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imagemCell", for: indexPath) as! ImagemCell
         let fobia = selectedPhobia.cardsThree[indexPath.row]
