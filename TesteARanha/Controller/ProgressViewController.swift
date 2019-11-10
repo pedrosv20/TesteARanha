@@ -10,9 +10,27 @@ import UIKit
 
 class ProgressViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var bottomView: UIView!
+    @IBOutlet weak var textView: UIView!
+    @IBOutlet weak var soundView: UIView!
+    @IBOutlet weak var imagesView: UIView!
+    @IBOutlet weak var ARView: UIView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Progresso"
+        
+        topView.layer.cornerRadius = 10
+        bottomView.layer.cornerRadius = 10
+        textView.layer.cornerRadius = 10
+        soundView.layer.cornerRadius = 10
+        imagesView.layer.cornerRadius = 10
+        ARView.layer.cornerRadius = 10
+        
+        
     }
     
 
