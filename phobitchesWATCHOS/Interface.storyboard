@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--WorkoutSession-->
+        <!--Ongoing Session-->
         <scene sceneID="1W7-kw-LuB">
             <objects>
-                <controller identifier="WorkoutSession" id="XFn-uZ-zNM" customClass="WorkoutSession" customModule="Phobit_WatchKit_App_Extension">
+                <controller identifier="WorkoutSession" title="Ongoing Session" id="XFn-uZ-zNM" customClass="WorkoutSession" customModule="Phobit_WatchKit_App_Extension">
                     <items>
                         <group width="1" alignment="left" layout="vertical" spacing="0.0" id="pex-p0-1NB">
                             <items>
@@ -42,12 +42,6 @@
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                         </group>
-                        <button width="136" height="56" alignment="center" verticalAlignment="center" title="STOP" id="9Xf-AN-wRp">
-                            <fontDescription key="font" type="system" weight="black" pointSize="36"/>
-                            <connections>
-                                <segue destination="5WY-gm-V9s" kind="modal" identifier="stopWorkout" id="iuw-7c-oGM"/>
-                            </connections>
-                        </button>
                     </items>
                     <menu key="menu" id="L6x-VN-nPs"/>
                     <connections>
@@ -80,28 +74,6 @@
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Phobit_Watchkit" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="479" y="643"/>
-        </scene>
-        <!--FinishedWorkout-->
-        <scene sceneID="s2M-Sm-K0g">
-            <objects>
-                <controller identifier="FinishedWorkout" title="FinishedWorkout" id="5WY-gm-V9s">
-                    <items>
-                        <group width="1" alignment="left" layout="vertical" spacing="0.0" id="CVu-Rz-1Hc">
-                            <items>
-                                <label alignment="left" text="Average Heart Rate" numberOfLines="0" id="zhy-Vg-fMm">
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
-                                </label>
-                                <label alignment="left" text="0.0 BPM" id="FrN-RL-YkB">
-                                    <fontDescription key="font" type="system" weight="medium" pointSize="28"/>
-                                </label>
-                            </items>
-                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                        </group>
-                    </items>
-                    <menu key="menu" id="EPo-cQ-Xcr"/>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="730" y="345"/>
         </scene>
     </scenes>
 </document>

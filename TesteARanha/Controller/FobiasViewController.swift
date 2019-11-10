@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phobiasTableView: UITableView!
     
+//    var session: WCSession?
+    
     override func viewDidLoad() {
+//        if (WCSession.isSupported()) {
+//            session = WCSession.default
+//            session!.delegate = self
+//            session!.activate()
+//        }
+        
         navigationController?.navigationBar.prefersLargeTitles = true
         
         nameTextField.delegate = self
@@ -97,4 +106,3 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         Model.shared.saveNome(text)
     }
 }
-

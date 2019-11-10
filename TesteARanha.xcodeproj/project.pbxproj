@@ -64,6 +64,7 @@
 		56A5DAA823609B8700BCC0F9 /* FobiaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */; };
 		56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */; };
 		56A5DAAC23609D7E00BCC0F9 /* NiveisViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56A5DAAA23609D7E00BCC0F9 /* NiveisViewController.storyboard */; };
+		56B6E1D82378B53C0078D640 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B6E1D72378B53C0078D640 /* UIViewController+extensions.swift */; };
 		56BBC86F2377253600447A81 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC86B2377253600447A81 /* Onboarding.storyboard */; };
 		56BBC8702377253600447A81 /* ChooseVoiceViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC86D2377253600447A81 /* ChooseVoiceViewController.storyboard */; };
 		56BBC873237725C700447A81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56BBC871237725C600447A81 /* Main.storyboard */; };
@@ -202,6 +203,7 @@
 		56A5DAA623609B8700BCC0F9 /* FobiaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FobiaCell.swift; sourceTree = "<group>"; };
 		56A5DAA723609B8700BCC0F9 /* EtapaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtapaCell.swift; sourceTree = "<group>"; };
 		56A5DAAB23609D7E00BCC0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/NiveisViewController.storyboard; sourceTree = "<group>"; };
+		56B6E1D72378B53C0078D640 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		56BBC86C2377253600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		56BBC86E2377253600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ChooseVoiceViewController.storyboard; sourceTree = "<group>"; };
 		56BBC872237725C600447A81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 			children = (
 				56E8C5CB23631DD0000F53FD /* UIView+extensions.swift */,
 				6C61E03F236B163D004F50F3 /* AVAudioPlayer+extensions.swift */,
+				56B6E1D72378B53C0078D640 /* UIViewController+extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -650,6 +653,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A5DAA923609B8700BCC0F9 /* EtapaCell.swift in Sources */,
+				56B6E1D82378B53C0078D640 /* UIViewController+extensions.swift in Sources */,
 				07D889FD2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift in Sources */,
 				56E8C5D02363CC0E000F53FD /* SettingsTableViewController.swift in Sources */,
 				07009F352357ADEE0070FD28 /* Model.swift in Sources */,

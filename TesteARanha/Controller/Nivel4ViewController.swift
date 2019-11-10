@@ -1,6 +1,7 @@
 import UIKit
 import RealityKit
 import ARKit
+import WatchConnectivity
 
 class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachingOverlayViewDelegate {
     
@@ -59,20 +60,18 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     
     override func viewDidDisappear(_ animated: Bool) {
 
-        //arView?.session.pause()
+        arView?.session.pause()
         arView?.removeFromSuperview()
         arView = nil
         
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-   
-    
     func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
         print("entrou")
         //1. Link The coachOverlay To Our Current Session
         
-        //self.coachOverlay.session = self.arView.session
+        self.coachOverlay.session = self.arView.session
         self.coachOverlay.delegate = self
         self.arView.addSubview(self.coachOverlay)
         NSLayoutConstraint.activate([
@@ -92,7 +91,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     func createSpider() {
         setOverlay(automatically: true, forDetectionType: .horizontalPlane)
         
-        //self.anchor = AnchorEntity(plane: .horizontal)
+        self.anchor = AnchorEntity(plane: .horizontal)
         self.arView.scene.addAnchor(self.anchor)
         let url = Bundle.main.url(forResource: "oi.usdz", withExtension: nil)
         self.entity = try? Entity.loadModel(contentsOf: url!)
@@ -228,6 +227,10 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
             entity.scale = SIMD3<Float>(repeating: Float(0.5))
         }
         cell.sizeStepper.value = 0.5
+        
+        cell.eyeImage.setImage(UIImage(named: "olhoCortadoBranco")!, for: .normal)
+        cell.showLabel.text = "Esconder"
+        entity.isEnabled = true
     }
     
     public func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView) {
@@ -244,23 +247,13 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     fileprivate func togglePeopleOcclusion() {
-//        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
-//            return
-//        }
-//        config.frameSemantics.insert(.personSegmentationWithDepth)
-//        
-//        arView.session.run(config)
+        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
+            return
+        }
+        config.frameSemantics.insert(.personSegmentationWithDepth)
 
+        arView.session.run(config)
     }
-    
-//    fileprivate func togglePeopleOcclusion() {
-//        guard let config = arView.session.configuration as? ARWorldTrackingConfiguration, ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
-//            return
-//        }
-//        config.frameSemantics.insert(.personSegmentationWithDepth)
-//
-//        arView.session.run(config)
-//    }
 }
 
 extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -298,8 +291,6 @@ extension Nivel4ViewController: UICollectionViewDataSource, UICollectionViewDele
 
     }
 }
-
-
 
 extension UIColor {
     open class var transparentLightBlue: UIColor {

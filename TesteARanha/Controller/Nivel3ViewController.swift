@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreImage
-import SpriteKit
+import WatchConnectivity
 
 class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -18,7 +18,7 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     var selectedPhobia: Fobia {
         Model.shared.fobias[selectedPhobiaIndex]
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Etapa Imagem"
