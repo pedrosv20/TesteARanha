@@ -135,7 +135,8 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
         wcSession.transferUserInfo([
             "Start Value" : startValue,
             "Pike Value" : pikeValue,
-            "End Value" : endValue
+            "End Value" : endValue,
+            "Time" : 0.0
         ])
         
 //        WCSession.default.sendMessage(["Start Value" : startValue], replyHandler: nil) { error in
@@ -156,6 +157,7 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
             }
         }
         
+        //timer.
         send()
     }
     

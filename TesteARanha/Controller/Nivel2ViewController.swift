@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -17,7 +18,15 @@ class Nivel2ViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    var session: WCSession?
+    
     override func viewDidLoad() {
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session!.delegate = self
+            session!.activate()
+        }
+        
         super.viewDidLoad()
         navigationItem.title = "Etapa Áudio"
     }

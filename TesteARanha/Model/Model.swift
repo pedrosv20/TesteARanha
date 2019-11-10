@@ -12,14 +12,30 @@ import UIKit
 class Model {
     static let shared = Model()
     var fobias = [Fobia]()
-    var nomePessoa: String!
+    var nomePessoa: String {
+        didSet {
+            UserDefaults.standard.set(self.nomePessoa, forKey: "nome")
+        }
+    }
     
-    func saveNome(_ nome: String) {
+    var progresso = [
+        "Nível 1" : [0.0, 0.0, 0.0, 0.0],
+        "Nível 2" : [0.0, 0.0, 0.0, 0.0],
+        "Nível 3" : [0.0, 0.0, 0.0, 0.0],
+        "Nível 4" : [0.0, 0.0, 0.0, 0.0]
+    ]
+    
+    func changeLevelLastProgress(level: Int, start: Double, pike: Double, end: Double, time: Double) {
+        progresso["Nível " + level.description] = [start, pike, end, time]
+    }
+    
+    func setNome(_ nome: String) {
         nomePessoa = nome
-        UserDefaults.standard.set(nome, forKey: "nome")
     }
     
     private init() {
+        nomePessoa = UserDefaults.standard.string(forKey: "nome") ?? "você!"
+        
         fobias.append(Fobia(
             tipoFobia: .aranha,
             icon: UIImage(named: "aranhaIcon")!,
@@ -56,56 +72,56 @@ class Model {
             ],
             stageThree: [
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Cartoon",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderCartoon1",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Cartoon",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderCartoon2",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Cartoon",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderCartoon3",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Desenho",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderDraw1",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Desenho",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderDraw2",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Desenho",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderDraw3",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Fotografia",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderReal1",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Fotografia",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderReal2",
                     isBlurred: true
                 ),
                 StageThree(
-                    title: "Etapa Imagem",
-                    description: "Etapa Imagem",
+                    title: "Imagem Estilo Fotografia",
+                    description: "Toque na quadrado para revelar a imagem.",
                     image: "spiderReal3",
                     isBlurred: true
                 )

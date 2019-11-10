@@ -34,7 +34,15 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         Model.shared.fobias[selectedPhobiaIndex]
     }
     
+    var session: WCSession?
+    
     override func viewDidLoad() {
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session!.delegate = self
+            session!.activate()
+        }
+        
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: nil) { (notification) in
@@ -68,7 +76,7 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     }
     
     func setOverlay(automatically: Bool, forDetectionType goal: ARCoachingOverlayView.Goal){
-        print("entrou")
+        
         //1. Link The coachOverlay To Our Current Session
         
         self.coachOverlay.session = self.arView.session

@@ -12,7 +12,7 @@ import UIKit
 
 extension UIViewController: WCSessionDelegate {
     public func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-        
+        print(type(of: self))
     }
     
     public func sessionDidBecomeInactive(_ session: WCSession) {
@@ -34,16 +34,41 @@ extension UIViewController: WCSessionDelegate {
     }
     
     public func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        
         DispatchQueue.main.async {
+            var values = [0.0, 0.0, 0.0, 0.0]
+            
             if let value = userInfo["Start Value"] as? Double {
-                print("Start Value ", value)
+                values[0] = value
             }
             if let value = userInfo["Pike Value"] as? Double {
-                print("Pike Value ", value)
+                values[1] = value
             }
             if let value = userInfo["End Value"] as? Double {
-                print("End Value ", value)
+                values[2] = value
             }
+            if let value = userInfo["Time"] as? Double {
+                values[3] = value
+            }
+            
+            switch type(of: self) {
+            case is Nivel1ViewController.Type:
+                Model.shared.progresso["Nível 1"] = values
+                break
+            case is Nivel2ViewController.Type:
+                Model.shared.progresso["Nível 2"] = values
+                break
+            case is Nivel3ViewController.Type:
+                Model.shared.progresso["Nível 3"] = values
+                break
+            case is Nivel4ViewController.Type:
+                Model.shared.progresso["Nível 4"] = values
+                break
+            default:
+                break
+            }
+            
+            print(Model.shared.progresso)
         }
     }
 }

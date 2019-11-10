@@ -14,14 +14,14 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phobiasTableView: UITableView!
     
-//    var session: WCSession?
+    var session: WCSession?
     
     override func viewDidLoad() {
-//        if (WCSession.isSupported()) {
-//            session = WCSession.default
-//            session!.delegate = self
-//            session!.activate()
-//        }
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session!.delegate = self
+            session!.activate()
+        }
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
@@ -39,7 +39,7 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         phobiasTableView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) //tudo fica branco certinho e bonitinho
         
-        updateLabel(Model.shared.nomePessoa ?? "você!")
+        updateLabel(Model.shared.nomePessoa)
     }
     
     func reloadData() {
@@ -79,11 +79,12 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row != 0 {
+        if indexPath.row != 0 || nameTextField.isEditing {
             return;
         }
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "niveis") as? NiveisViewController {
+            
             vc.selectedPhobiaIndex = indexPath.row
             self.navigationController?.pushViewController(vc, animated: true)
         }
@@ -102,7 +103,8 @@ class FobiasViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func updateLabel(_ text: String) {
+        let text = text != "" ? text : "você!"
         nameTextField.text = "Olá, " + text
-        Model.shared.saveNome(text)
+        Model.shared.setNome(text)
     }
 }
