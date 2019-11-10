@@ -25,10 +25,10 @@ class ProgressViewController: UIViewController {
         
         topView.layer.cornerRadius = 10
         bottomView.layer.cornerRadius = 10
-        textView.layer.cornerRadius = 10
-        soundView.layer.cornerRadius = 10
-        imagesView.layer.cornerRadius = 10
-        ARView.layer.cornerRadius = 10
+        textView.layer.cornerRadius = 25
+        soundView.layer.cornerRadius = 25
+        imagesView.layer.cornerRadius = 25
+        ARView.layer.cornerRadius = 25
         
         
     }
