@@ -33,6 +33,8 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
     var pikeValue = 0.0
     var endValue = 0.0
     
+    var startingPoint: Date!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         setupWorkoutSessionInterface(with: context)
@@ -65,6 +67,8 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
         builder.beginCollection(withStart: Date()) { (success, error) in
             self.setDurationTimerDate(.running)
         }
+        
+        startingPoint = Date()
     }
     
     // Track elapsed time.
@@ -127,21 +131,17 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
     }
     
     func send() {
-       guard WCSession.default.isReachable else {
-           print("Phone is not reachable")
-           return
-       }
+        guard WCSession.default.isReachable else {
+            print("Phone is not reachable")
+            return
+        }
 
         wcSession.transferUserInfo([
             "Start Value" : startValue,
             "Pike Value" : pikeValue,
             "End Value" : endValue,
-            "Time" : 0.0
+            "Time" : Int(startingPoint.timeIntervalSinceNow * -1)-2
         ])
-        
-//        WCSession.default.sendMessage(["Start Value" : startValue], replyHandler: nil) { error in
-//           print("Error sending message to phone: \(error.localizedDescription)")
-//        }
     }
     
     func endWorkout() {
@@ -157,7 +157,6 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
             }
         }
         
-        //timer.
         send()
     }
     
@@ -238,7 +237,7 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
             return
         }
         
-        // Dispatch to main, because we are updating the interface.
+        // Dispatch to main, because we are updating the interfac
         DispatchQueue.main.async {
             switch statistics.quantityType {
             case HKQuantityType.quantityType(forIdentifier: .heartRate):

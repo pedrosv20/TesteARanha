@@ -20,12 +20,12 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if !UserDefaults.isFirstLaunch() {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "fobias") as? FobiasViewController {
-                self.navigationController?.pushViewController(vc, animated: false)
-            }
-        }
+//        
+//        if !UserDefaults.isFirstLaunch() {
+//            if let vc = storyboard?.instantiateViewController(withIdentifier: "fobias") as? FobiasViewController {
+//                self.navigationController?.pushViewController(vc, animated: false)
+//            }
+//        }
         
         NotificationCenter.default.addObserver(self, selector: #selector(nextView), name: NSNotification.Name("nextTouched"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(backView), name: NSNotification.Name("backTouched"), object: nil)
