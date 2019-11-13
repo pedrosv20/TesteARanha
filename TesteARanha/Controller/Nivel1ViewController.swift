@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -28,7 +29,15 @@ class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.pageControl?.currentPage = Int(roundedIndex)
     }
     
+    var session: WCSession?
+    
     override func viewDidLoad() {
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session!.delegate = self
+            session!.activate()
+        }
+        
         super.viewDidLoad()
         navigationItem.title = "Etapa Texto"
     }

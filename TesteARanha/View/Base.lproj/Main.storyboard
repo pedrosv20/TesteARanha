@@ -141,7 +141,7 @@
                                             <outlet property="delegate" destination="WX4-hm-g10" id="xGZ-Qe-i8P"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-Ik-5pm">
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-Ik-5pm">
                                         <rect key="frame" x="25" y="71" width="25" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="BL2-Ik-5pm" secondAttribute="height" multiplier="12:11" id="ImF-Xk-OVr"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreImage
-import SpriteKit
+import WatchConnectivity
 
 class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -18,8 +18,16 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     var selectedPhobia: Fobia {
         Model.shared.fobias[selectedPhobiaIndex]
     }
-
+    
+    var session: WCSession?
+    
     override func viewDidLoad() {
+        if (WCSession.isSupported()) {
+            session = WCSession.default
+            session!.delegate = self
+            session!.activate()
+        }
+        
         super.viewDidLoad()
         navigationItem.title = "Etapa Imagem"
     }
@@ -78,8 +86,20 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         
     }
-
-
+    
+    func collectionView(_ collectionView: UICollectionView,
+                          layout collectionViewLayout: UICollectionViewLayout,
+                          minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.size.width - 10, height: collectionView.frame.size.height - 10);
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5);
+    }
 }
 
 

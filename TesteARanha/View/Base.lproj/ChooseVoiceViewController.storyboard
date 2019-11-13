@@ -10,7 +10,7 @@
         <!--Choose Voice View Controller-->
         <scene sceneID="iww-K8-kiv">
             <objects>
-                <viewController storyboardIdentifier="preAudio" id="add-5Z-JgZ" customClass="ChooseVoiceViewController" customModule="TesteARanha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="preAudio" id="add-5Z-JgZ" customClass="ChooseVoiceViewController" customModule="Phobit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uQy-Xm-W0P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

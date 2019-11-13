@@ -8,8 +8,14 @@ THe workout session interface controller.
 import WatchKit
 import Foundation
 import HealthKit
+import WatchConnectivity
 
-class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate {
+class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate, WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
     
     @IBOutlet weak var timer: WKInterfaceTimer!
     
@@ -18,8 +24,16 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
     var healthStore: HKHealthStore!
     var configuration: HKWorkoutConfiguration!
     
+    var wcSession: WCSession = WCSession.default
+    
     var session: HKWorkoutSession!
     var builder: HKLiveWorkoutBuilder!
+    
+    var startValue = 0.0
+    var pikeValue = 0.0
+    var endValue = 0.0
+    
+    var startingPoint: Date!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -39,6 +53,9 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
         session.delegate = self
         builder.delegate = self
         
+        wcSession.delegate = self
+        wcSession.activate()
+        
         /// Set the workout builder's data source.
         /// - Tag: SetDataSource
         builder.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore,
@@ -50,6 +67,8 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
         builder.beginCollection(withStart: Date()) { (success, error) in
             self.setDurationTimerDate(.running)
         }
+        
+        startingPoint = Date()
     }
     
     // Track elapsed time.
@@ -111,6 +130,20 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
         session.resume()
     }
     
+    func send() {
+        guard WCSession.default.isReachable else {
+            print("Phone is not reachable")
+            return
+        }
+
+        wcSession.transferUserInfo([
+            "Start Value" : startValue,
+            "Pike Value" : pikeValue,
+            "End Value" : endValue,
+            "Time" : Int(startingPoint.timeIntervalSinceNow * -1)-2
+        ])
+    }
+    
     func endWorkout() {
         /// Update the timer based on the state we are in.
         /// - Tag: SaveWorkout
@@ -123,6 +156,8 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
                 }
             }
         }
+        
+        send()
     }
     
     func setupWorkoutSessionInterface(with context: Any?) {
@@ -187,8 +222,12 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
     
     /// Retreive the WKInterfaceLabel object for the quantity types we are observing.
     func labelForQuantityType(_ type: HKQuantityType) -> WKInterfaceLabel? {
-        //case HKQuantityType.quantityType(forIdentifier: .heartRate):
-        return heartRateLabel
+        switch type {
+        case HKQuantityType.quantityType(forIdentifier: .heartRate):
+            return heartRateLabel
+        default:
+            return nil
+        }
     }
     
     /// Update the WKInterfaceLabels with new data.
@@ -198,7 +237,7 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
             return
         }
         
-        // Dispatch to main, because we are updating the interface.
+        // Dispatch to main, because we are updating the interfac
         DispatchQueue.main.async {
             switch statistics.quantityType {
             case HKQuantityType.quantityType(forIdentifier: .heartRate):
@@ -206,19 +245,30 @@ class WorkoutSession: WKInterfaceController, HKWorkoutSessionDelegate, HKLiveWor
                 let heartRateUnit = HKUnit.count().unitDivided(by: HKUnit.minute())
                 let value = statistics.mostRecentQuantity()?.doubleValue(for: heartRateUnit)
                 let roundedValue = Double( round( 1 * value! ) / 1 )
+                
+                if self.startValue == 0 {
+                    self.startValue = roundedValue
+                }
+                
+                if self.pikeValue < roundedValue {
+                    self.pikeValue = roundedValue
+                }
+                
+                self.endValue = roundedValue
+                
                 label.setText("\(roundedValue) BPM")
-            case HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned):
-                let energyUnit = HKUnit.kilocalorie()
-                let value = statistics.sumQuantity()?.doubleValue(for: energyUnit)
-                let roundedValue = Double( round( 1 * value! ) / 1 )
-                label.setText("\(roundedValue) cal")
-                return
-            case HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning):
-                let meterUnit = HKUnit.meter()
-                let value = statistics.sumQuantity()?.doubleValue(for: meterUnit)
-                let roundedValue = Double( round( 1 * value! ) / 1 )
-                label.setText("\(roundedValue) m")
-                return
+//            case HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned):
+//                let energyUnit = HKUnit.kilocalorie()
+//                let value = statistics.sumQuantity()?.doubleValue(for: energyUnit)
+//                let roundedValue = Double( round( 1 * value! ) / 1 )
+//                label.setText("\(roundedValue) cal")
+//                return
+//            case HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning):
+//                let meterUnit = HKUnit.meter()
+//                let value = statistics.sumQuantity()?.doubleValue(for: meterUnit)
+//                let roundedValue = Double( round( 1 * value! ) / 1 )
+//                label.setText("\(roundedValue) m")
+//                return
             default:
                 return
             }

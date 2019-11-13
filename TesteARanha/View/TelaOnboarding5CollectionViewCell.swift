@@ -25,7 +25,7 @@ class TelaOnboarding5CollectionViewCell: UICollectionViewCell, UITextFieldDelega
     
     @IBAction func startApp(_ sender: Any) {
         if nameTextField.text != "" {
-            Model.shared.saveNome(nameTextField.text!)
+            Model.shared.setNome(nameTextField.text!)
             NotificationCenter.default.post(name: NSNotification.Name("start"), object: nil, userInfo: ["tela" : index])
         }
     }

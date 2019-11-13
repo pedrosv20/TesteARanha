@@ -20,12 +20,12 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if !UserDefaults.isFirstLaunch() {
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "fobias") as? FobiasViewController {
-                self.navigationController?.pushViewController(vc, animated: false)
-            }
-        }
+//        
+//        if !UserDefaults.isFirstLaunch() {
+//            if let vc = storyboard?.instantiateViewController(withIdentifier: "fobias") as? FobiasViewController {
+//                self.navigationController?.pushViewController(vc, animated: false)
+//            }
+//        }
         
         NotificationCenter.default.addObserver(self, selector: #selector(nextView), name: NSNotification.Name("nextTouched"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(backView), name: NSNotification.Name("backTouched"), object: nil)
@@ -34,21 +34,6 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
         title = "Phobits"
         navigationController?.navigationBar.prefersLargeTitles = true
-        
-        let typesToShare: Set = [
-            HKQuantityType.workoutType()
-        ]
-        
-        let typesToRead: Set = [
-            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
-            HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
-            HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
-        ]
-        
-        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
-            // Handle error
-            
-        }
     }
     
     
@@ -67,13 +52,28 @@ class OnBoardingViewController: UIViewController, UICollectionViewDelegate, UICo
         
     }
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
-//        let index = scrollView.contentOffset.x / witdh
-//        let roundedIndex = round(index)
-//        print(roundedIndex)
-//
-//    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let witdh = scrollView.frame.width - (scrollView.contentInset.left*2)
+        let index = scrollView.contentOffset.x / witdh
+        let roundedIndex = round(index)
+
+        if roundedIndex == 4 {
+            let typesToShare: Set = [
+                HKQuantityType.workoutType()
+            ]
+            
+            let typesToRead: Set = [
+                HKQuantityType.quantityType(forIdentifier: .heartRate)!,
+                HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned)!,
+                HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+            ]
+            
+            healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { (success, error) in
+                // Handle error
+                
+            }
+        }
+    }
     
     @objc func nextView(_ notification: Notification) {
         if let page = notification.userInfo?["tela"] as? Int {
