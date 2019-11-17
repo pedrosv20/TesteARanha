@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSHealthShareUsageDescription</key>
-	<string>sdfghjkllkjh ertyhujk tyui</string>
-	<key>NSHealthUpdateUsageDescription</key>
-	<string>dfghjk jhgf fghj jhgf</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -29,11 +25,15 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.wonderwoman.Fobias.watchkitapp</string>
+			<string>com.wonderwoman.Fobias2.watchkit</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>sdfghjkllkjh ertyhujk tyui</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>dfghjk jhgf fghj jhgf</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>

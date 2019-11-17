@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Última sessão" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ee5-Yx-RVr">
-                                <rect key="frame" x="25" y="64" width="127.5" height="23"/>
+                                <rect key="frame" x="25" y="108" width="127.5" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q60-PK-Xul">
-                                <rect key="frame" x="23" y="112" width="368" height="130"/>
+                                <rect key="frame" x="23" y="156" width="368" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etapa Texto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cL-Zo-3TL">
                                         <rect key="frame" x="21" y="24" width="89" height="20"/>
@@ -103,7 +103,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9K1-ep-uLg">
-                                <rect key="frame" x="23" y="274" width="368" height="130"/>
+                                <rect key="frame" x="23" y="318" width="368" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etapa Áudio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veG-Qa-ZC1">
                                         <rect key="frame" x="21" y="24" width="91" height="20"/>
@@ -184,7 +184,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1P8-yk-XNv">
-                                <rect key="frame" x="23" y="436" width="368" height="130"/>
+                                <rect key="frame" x="23" y="480" width="368" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etapa Imagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVe-2D-etW">
                                         <rect key="frame" x="21" y="24" width="108" height="20"/>
@@ -265,7 +265,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCu-Lm-H2G">
-                                <rect key="frame" x="23" y="598" width="368" height="130"/>
+                                <rect key="frame" x="23" y="642" width="368" height="130"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Etapa Realidade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8EE-oH-yfE">
                                         <rect key="frame" x="21" y="24" width="122" height="20"/>
@@ -366,6 +366,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4lp-93-srB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="H7B-sm-xIC"/>
                     <connections>
                         <outlet property="end1" destination="3eg-pt-aCK" id="eEK-mH-cag"/>
                         <outlet property="end2" destination="brD-YQ-S51" id="dmq-IN-Mz8"/>
@@ -383,9 +384,31 @@
                         <outlet property="time2" destination="3L8-bv-iyA" id="p1o-aP-URQ"/>
                         <outlet property="time3" destination="fXS-S3-Piz" id="CPR-4V-BwM"/>
                         <outlet property="time4" destination="sOf-Qo-HqY" id="8p5-am-WaD"/>
+                        <outlet property="view1" destination="Q60-PK-Xul" id="Abf-Uw-tz9"/>
+                        <outlet property="view2" destination="9K1-ep-uLg" id="Yoj-J1-uuG"/>
+                        <outlet property="view3" destination="1P8-yk-XNv" id="HKX-NU-9Gk"/>
+                        <outlet property="view4" destination="vCu-Lm-H2G" id="d14-7H-BHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1Z-jR-Wdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3584.057971014493" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OrJ-1u-kil">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NcP-H2-bzJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="niP-mY-vAp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Usr-we-pmw" kind="relationship" relationship="rootViewController" id="IPn-nQ-N88"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAx-I2-Ojc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2673.913043478261" y="87.723214285714278"/>
         </scene>

@@ -38,9 +38,13 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     
     override func viewDidLoad() {
         if (WCSession.isSupported()) {
-            session = WCSession.default
-            session!.delegate = self
-            session!.activate()
+            if session != nil {
+                if session!.isPaired {
+                    session = WCSession.default
+                    session!.delegate = self
+                    session!.activate()
+                }
+            }
         }
         
         super.viewDidLoad()
@@ -163,16 +167,12 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
         if running {
             entity.stopAllAnimations()
             running = false
-            
-            print("parou")
         
             animationCell.playButton.setImage(UIImage(named: "playAnimation")!, for: .normal)
             animationCell.moveLabel.text = "Mover"
         } else {
             animationCell.playButton.setImage(UIImage(named: "pauseAnimation")!, for: .normal)
             animationCell.moveLabel.text = "Parar"
-            
-            print("começa animacao")
 
              entity.playAnimation(entity.availableAnimations[1].repeat(count: .max))
             let quaternion = simd_quatf(angle: degreesToRadians(180),
@@ -194,8 +194,6 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
                 self.moveSpider()
             }
 
-
-            
             running = true
         }
     }

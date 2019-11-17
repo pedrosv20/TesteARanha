@@ -33,9 +33,13 @@ class Nivel1ViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         if (WCSession.isSupported()) {
-            session = WCSession.default
-            session!.delegate = self
-            session!.activate()
+            if session != nil {
+                if session!.isPaired {
+                    session = WCSession.default
+                    session!.delegate = self
+                    session!.activate()
+                }
+            }
         }
         
         super.viewDidLoad()

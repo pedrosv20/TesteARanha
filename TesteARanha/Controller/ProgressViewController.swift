@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class ProgressViewController: UIViewController {
 
@@ -14,31 +15,60 @@ class ProgressViewController: UIViewController {
     @IBOutlet weak var start1: UILabel!
     @IBOutlet weak var pike1: UILabel!
     @IBOutlet weak var end1: UILabel!
+    @IBOutlet weak var view1: UIView!
     
     @IBOutlet weak var time2: UILabel!
     @IBOutlet weak var start2: UILabel!
     @IBOutlet weak var pike2: UILabel!
     @IBOutlet weak var end2: UILabel!
+    @IBOutlet weak var view2: UIView!
     
     @IBOutlet weak var time3: UILabel!
     @IBOutlet weak var start3: UILabel!
     @IBOutlet weak var pike3: UILabel!
     @IBOutlet weak var end3: UILabel!
+    @IBOutlet weak var view3: UIView!
     
     @IBOutlet weak var time4: UILabel!
     @IBOutlet weak var start4: UILabel!
     @IBOutlet weak var pike4: UILabel!
     @IBOutlet weak var end4: UILabel!
+    @IBOutlet weak var view4: UIView!
     
     var progresso = Model.shared.progresso
+    
+    var session: WCSession?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Progresso"
+        
+        view1.layer.cornerRadius = 10.0
+        view2.layer.cornerRadius = 10.0
+        view3.layer.cornerRadius = 10.0
+        view4.layer.cornerRadius = 10.0
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print(Model.shared.progresso)
+        
+        if (!WCSession.isSupported() || session == nil) {
+            print("nao tem apple watch saia daqui")
+            
+            let alert = UIAlertController(title: "Apple Watch", message: "Você precisa parear um Apple Watch a seu dispositivo para acessar essa sessão", preferredStyle: UIAlertController.Style.alert)
+
+            alert.addAction(UIAlertAction(title: "OK",
+                                          style: UIAlertAction.Style.default,
+                                          handler: {(_: UIAlertAction!) in
+                                            self.navigationController?.popViewController(animated: true)
+
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            //self.dismiss(animated: false, completion: nil)
+        }
+        
         
         start1.text = progresso["Nível 1"]![0].description
         start2.text = progresso["Nível 2"]![0].description

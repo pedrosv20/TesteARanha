@@ -8,8 +8,6 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>NSCameraUsageDescription</key>
-	<string>We will now show you the spider.</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -22,6 +20,8 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>We will now show you the spider.</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>djfkdsjfklsjfksjf sdfljdslfkjdsklfj akdfjldsjf</string>
 	<key>NSHealthUpdateUsageDescription</key>

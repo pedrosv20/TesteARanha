@@ -233,6 +233,7 @@
 		9D67269E2355F4EB0030CAE7 /* Nivel3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel3ViewController.swift; sourceTree = "<group>"; };
 		9D6726A02355F56D0030CAE7 /* Nivel2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel2ViewController.swift; sourceTree = "<group>"; };
 		9D6726A22355F5E50030CAE7 /* Nivel1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nivel1ViewController.swift; sourceTree = "<group>"; };
+		9D88A1E8237F9C47000EBB09 /* TesteARanha-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TesteARanha-Bridging-Header.h"; sourceTree = "<group>"; };
 		D98F0B382372F1CB0074D305 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -453,6 +454,7 @@
 				07D889FA2375EC5900DC4A33 /* TelaOnboarding3CollectionViewCell.swift */,
 				07D889FC2375EC5A00DC4A33 /* TelaOnboarding4CollectionViewCell.swift */,
 				07D889F62375EC5500DC4A33 /* TelaOnboarding5CollectionViewCell.swift */,
+				9D88A1E8237F9C47000EBB09 /* TesteARanha-Bridging-Header.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,6 +545,7 @@
 				TargetAttributes = {
 					07C5C41C2350BB3400AB67C9 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1120;
 					};
 					07C5C4322350BB3700AB67C9 = {
 						CreatedOnToolsVersion = 11.0;
@@ -931,16 +934,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TesteARanha/Phobit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias2;
 				PRODUCT_NAME = Phobit;
+				SWIFT_OBJC_BRIDGING_HEADER = "TesteARanha/View/TesteARanha-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -950,16 +956,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = TesteARanha/Phobit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = TesteARanha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias2;
 				PRODUCT_NAME = Phobit;
+				SWIFT_OBJC_BRIDGING_HEADER = "TesteARanha/View/TesteARanha-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -971,7 +979,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = TesteARanhaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -993,7 +1001,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = TesteARanhaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1015,10 +1023,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				IBSC_MODULE = phobitchesWATCHOS_Extension;
 				INFOPLIST_FILE = phobitchesWATCHOS/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias2.watchkit;
 				PRODUCT_NAME = "Phobit Watchkit";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1034,10 +1042,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				IBSC_MODULE = phobitchesWATCHOS_Extension;
 				INFOPLIST_FILE = phobitchesWATCHOS/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias2.watchkit;
 				PRODUCT_NAME = "Phobit Watchkit";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1053,14 +1061,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "phobitchesWATCHOS Extension/Phobit WatchKit App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias2.watchkit.extension;
 				PRODUCT_NAME = "Phobit WatchKit App Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1076,14 +1085,15 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "phobitchesWATCHOS Extension/Phobit WatchKit App Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5MSP4455P9;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 725HB8W2V6;
 				INFOPLIST_FILE = "phobitchesWATCHOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wonderwoman.Fobias2.watchkit.extension;
 				PRODUCT_NAME = "Phobit WatchKit App Extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
