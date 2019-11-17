@@ -70,25 +70,25 @@ class ProgressViewController: UIViewController {
         }
         
         
-        start1.text = progresso["Nível 1"]![0].description
-        start2.text = progresso["Nível 2"]![0].description
-        start3.text = progresso["Nível 3"]![0].description
-        start4.text = progresso["Nível 4"]![0].description
+        start1.text = round(progresso["Nível 1"]![0]).description + " bpm"
+        start2.text = round(progresso["Nível 2"]![0]).description + " bpm"
+        start3.text = round(progresso["Nível 3"]![0]).description + " bpm"
+        start4.text = round(progresso["Nível 4"]![0]).description + " bpm"
         
-        pike1.text = progresso["Nível 1"]![1].description + "bpm"
-        pike2.text = progresso["Nível 2"]![1].description + "bpm"
-        pike3.text = progresso["Nível 3"]![1].description + "bpm"
-        pike4.text = progresso["Nível 4"]![1].description + "bpm"
+        pike1.text = round(progresso["Nível 1"]![1]).description + " bpm"
+        pike2.text = round(progresso["Nível 2"]![1]).description + " bpm"
+        pike3.text = round(progresso["Nível 3"]![1]).description + " bpm"
+        pike4.text = round(progresso["Nível 4"]![1]).description + " bpm"
         
-        end1.text = progresso["Nível 1"]![2].description + "bpm"
-        end2.text = progresso["Nível 2"]![2].description + "bpm"
-        end3.text = progresso["Nível 3"]![2].description + "bpm"
-        end4.text = progresso["Nível 4"]![2].description + "bpm"
+        end1.text = round(progresso["Nível 1"]![2]).description + " bpm"
+        end2.text = round(progresso["Nível 2"]![2]).description + " bpm"
+        end3.text = round(progresso["Nível 3"]![2]).description + " bpm"
+        end4.text = round(progresso["Nível 4"]![2]).description + " bpm"
         
-        time1.text = progresso["Nível 1"]![3].description + "bpm"
-        time2.text = progresso["Nível 2"]![3].description + "bpm"
-        time3.text = progresso["Nível 3"]![3].description + "bpm"
-        time4.text = progresso["Nível 4"]![3].description + "bpm"
+        time1.text = round(progresso["Nível 1"]![3]).description + " sec"
+        time2.text = round(progresso["Nível 2"]![3]).description + " sec"
+        time3.text = round(progresso["Nível 3"]![3]).description + " sec"
+        time4.text = round(progresso["Nível 4"]![3]).description + " sec"
     }
     
 
