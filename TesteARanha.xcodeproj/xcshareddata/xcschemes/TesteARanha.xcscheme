@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07C5C41C2350BB3400AB67C9"
-               BuildableName = "Phobit.app"
+               BuildableName = "Phobits.app"
                BlueprintName = "TesteARanha"
                ReferencedContainer = "container:TesteARanha.xcodeproj">
             </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07C5C41C2350BB3400AB67C9"
-            BuildableName = "Phobit.app"
+            BuildableName = "Phobits.app"
             BlueprintName = "TesteARanha"
             ReferencedContainer = "container:TesteARanha.xcodeproj">
          </BuildableReference>
@@ -73,7 +73,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07C5C41C2350BB3400AB67C9"
-            BuildableName = "Phobit.app"
+            BuildableName = "Phobits.app"
             BlueprintName = "TesteARanha"
             ReferencedContainer = "container:TesteARanha.xcodeproj">
          </BuildableReference>

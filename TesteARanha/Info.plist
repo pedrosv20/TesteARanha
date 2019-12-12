@@ -6,10 +6,10 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>NSCameraUsageDescription</key>
-	<string>We will now show you the spider.</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -19,13 +19,15 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>We will now show you the spider.</string>
 	<key>NSHealthShareUsageDescription</key>
-	<string>djfkdsjfklsjfksjf sdfljdslfkjdsklfj akdfjldsjf</string>
+	<string>$(PRODUCT_NAME) heath share use</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string>sajdksajdkasj asdjsakjd sdjka</string>
+	<string>$(PRODUCT_NAME) heath update use</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
