@@ -219,8 +219,12 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos medir seus batimentos, como forma de analisar as evoluções e estar bem alinhado com seus limites" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tj-Xx-ief">
-                                                    <rect key="frame" x="26" y="117" width="354" height="61"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tj-Xx-ief">
+                                                    <rect key="frame" x="26" y="117" width="354" height="183"/>
+                                                    <string key="text">Vamos medir seus batimentos, como forma de analisar as evoluções e estar bem alinhado com seus limites.
+
+Para isso, no momento em que você entrar em uma etapa, abra o app em seu Apple Watch e clique no botao run. 
+Quando acabar sua sessão, de um clique forte na tela do relógio para terminar. </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>

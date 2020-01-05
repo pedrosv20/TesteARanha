@@ -23,13 +23,15 @@ class Nivel3ViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         if (WCSession.isSupported()) {
-            if session != nil {
-                if session!.isPaired {
-                    session = WCSession.default
-                    session!.delegate = self
-                    session!.activate()
-                }
+            session = WCSession.default
+            session!.delegate = self
+            session!.activate()
+            if session!.isPaired {
+                Model.shared.appleWatch = true
+            } else {
+                Model.shared.appleWatch = false
             }
+            
         }
         
         super.viewDidLoad()

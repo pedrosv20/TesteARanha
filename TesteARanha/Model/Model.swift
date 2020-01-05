@@ -18,6 +18,8 @@ class Model {
         }
     }
     
+    var appleWatch = false
+    
     var progresso = [
         "Nível 1" : [0.0, 0.0, 0.0, 0.0],
         "Nível 2" : [0.0, 0.0, 0.0, 0.0],

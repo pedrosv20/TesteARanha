@@ -37,15 +37,17 @@ class Nivel4ViewController: UIViewController, UICollectionViewDelegate, ARCoachi
     var session: WCSession?
     
     override func viewDidLoad() {
-        if (WCSession.isSupported()) {
-            if session != nil {
-                if session!.isPaired {
-                    session = WCSession.default
-                    session!.delegate = self
-                    session!.activate()
-                }
-            }
-        }
+         if (WCSession.isSupported()) {
+             session = WCSession.default
+             session!.delegate = self
+             session!.activate()
+             if session!.isPaired {
+                 Model.shared.appleWatch = true
+             } else {
+                 Model.shared.appleWatch = false
+             }
+             
+         }
         
         super.viewDidLoad()
         

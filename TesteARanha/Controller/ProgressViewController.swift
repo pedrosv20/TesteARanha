@@ -37,7 +37,6 @@ class ProgressViewController: UIViewController {
     
     var progresso = Model.shared.progresso
     
-    var session: WCSession?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,10 +51,12 @@ class ProgressViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        if (!WCSession.isSupported() || session == nil) {
+        if (!Model.shared.appleWatch) {
             print("nao tem apple watch saia daqui")
+            print(WCSession.isSupported())
             
-            let alert = UIAlertController(title: "Apple Watch", message: "Você precisa parear um Apple Watch a seu dispositivo para acessar essa sessão", preferredStyle: UIAlertController.Style.alert)
+            
+            let alert = UIAlertController(title: "Apple Watch", message: "Você precisa parear um Apple Watch a seu dispositivo para acessar essa sessão. Se você já pareou, abra o app em seu Apple Watch e clique no botao RUN. Quando acabar sua sessão, dê um clique forte na tela do relógio para terminar.", preferredStyle: UIAlertController.Style.alert)
 
             alert.addAction(UIAlertAction(title: "OK",
                                           style: UIAlertAction.Style.default,
